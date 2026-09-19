@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>pi2pi.io</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    (async () => {
+      const res = await fetch("pi2pi-v5_3-sepolia.jsx");
+      let src = await res.text();
+
+      src = src.replace(/^import\s+React[\s\S]*?from\s+["']react["'];?\s*/m, "");
+      src = src.replace(/export\s+default\s+function\s+App/m, "function App");
+
+      const preamble = `
+        const { useState, useEffect, useRef, useMemo, useCallback, Fragment } = React;
+      `;
+      const postamble = `
+        ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+      `;
+
+      const fullSource = preamble + src + postamble;
+
+      const compiled = Babel.transform(fullSource, {
+        presets: ["react"],
+        filename: "pi2pi.jsx",
+      }).code;
+
+      const script = document.createElement("script");
+      script.textContent = compiled;
+      document.body.appendChild(script);
+    })().catch(err => {
+      document.getElementById("root").innerHTML =
+        '<div style="padding:40px;font-family:sans-serif;text-align:center">' +
+        '<h2>Failed to load pi2pi</h2><pre style="color:red;text-align:left;max-width:600px;margin:20px auto;white-space:pre-wrap">' +
+        err.message + '</pre>' +
+        '<p style="color:#666">Make sure you are serving this file via HTTP (not file://)</p></div>';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>pi2pi on Arc Testnet — USDC-native settlement | pi2pi</title>
+<meta name="description" content="Why pi2pi is built on Arc: native USDC gas, deterministic sub-second finality, and no bridges or wrapped tokens. Current contract addresses and chain ID."/>
+<link rel="canonical" href="https://my.pi2pi.io/arc"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="pi2pi"/>
+<meta property="og:title" content="pi2pi on Arc Testnet — USDC-native settlement | pi2pi"/>
+<meta property="og:description" content="Why pi2pi is built on Arc: native USDC gas, deterministic sub-second finality, and no bridges or wrapped tokens. Current contract addresses and chain ID."/>
+<meta property="og:url" content="https://my.pi2pi.io/arc"/>
+<meta property="og:image" content="https://my.pi2pi.io/images/tbilisi-day.jpg"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@dim_ul"/>
+<meta name="twitter:title" content="pi2pi on Arc Testnet — USDC-native settlement | pi2pi"/>
+<meta name="twitter:description" content="Why pi2pi is built on Arc: native USDC gas, deterministic sub-second finality, and no bridges or wrapped tokens. Current contract addresses and chain ID."/>
+<meta name="twitter:image" content="https://my.pi2pi.io/images/tbilisi-day.jpg"/>
+
+<link rel="stylesheet" href="/styles/tokens.css"/>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0;
+    font-family: var(--font-ui, -apple-system, system-ui, sans-serif);
+    background: var(--color-bg-primary, #0B0F1A);
+    color: var(--color-text-primary, #F4F6FA);
+    line-height: 1.6;
+  }
+  a { color: var(--color-primary, #16C784); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header.site { border-bottom: 1px solid var(--color-border, #23283A); padding: 16px 0; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; text-decoration: none; color: var(--color-text-primary, #F4F6FA); }
+  .brand span { color: var(--color-primary, #16C784); }
+  nav.primary { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+  nav.primary a { text-decoration: none; color: var(--color-text-secondary, #9AA3B8); }
+  nav.primary a:hover, nav.primary a[aria-current="page"] { color: var(--color-primary, #16C784); }
+  .cta { background: var(--color-primary, #16C784); color: #061012; padding: 8px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; white-space: nowrap; }
+  .testnet-banner { background: var(--color-warning-surface, #2A2210); color: var(--color-warning, #F59E0B); font-size: 13px; text-align: center; padding: 8px 12px; border-bottom: 1px solid var(--color-warning-border, rgba(245,158,11,0.2)); }
+  main { padding: 40px 0 60px; }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 36px 0 12px; }
+  .lede { font-size: 18px; color: var(--color-text-secondary, #9AA3B8); margin-bottom: 28px; }
+  .card { background: var(--color-bg-card, #131826); border: 1px solid var(--color-border, #23283A); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border, #23283A); }
+  code, .mono { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.92em; background: var(--color-bg-secondary, #1A2033); padding: 2px 6px; border-radius: 4px; }
+  ul.cities { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+  ul.cities a { display: inline-block; padding: 6px 12px; border: 1px solid var(--color-border, #23283A); border-radius: 20px; text-decoration: none; font-size: 14px; }
+  footer.site { border-top: 1px solid var(--color-border, #23283A); padding: 28px 0 40px; font-size: 13px; color: var(--color-text-secondary, #9AA3B8); }
+  footer.site nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+  footer.site nav a { color: var(--color-text-secondary, #9AA3B8); text-decoration: none; }
+  footer.site nav a:hover { color: var(--color-primary, #16C784); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"pi2pi","url":"https://my.pi2pi.io","logo":"https://my.pi2pi.io/favicon-32.png","sameAs":["https://x.com/dim_ul"],"description":"pi2pi is a USDC-native rental agreement execution layer on Arc Testnet. Tenants and landlords enter direct peer-to-peer rental agreements settled in USDC, with deposits held in smart-contract escrow."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"pi2pi","url":"https://my.pi2pi.io"}</script>
+</head>
+<body>
+<div class="testnet-banner">pi2pi runs on Arc Testnet. This is a working prototype, not a production financial product — do not use real-world funds beyond small test amounts.</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">pi<span>2</span>pi</a>
+    <nav class="primary">
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc" aria-current="page">Arc</a>
+        <a href="/faq">FAQ</a>
+    </nav>
+    <a class="cta" href="https://my.pi2pi.io">Open App →</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>pi2pi on Arc</h1>
+    <p class="lede">pi2pi is built on Arc, a blockchain designed around USDC as its native gas and settlement asset. That fits a rental protocol better than a general-purpose chain where you'd need a separate token just to pay transaction fees.</p>
+
+    <h2>Why Arc, specifically</h2>
+    <ul>
+      <li><strong>Native USDC gas.</strong> Tenants never need to hold a separate gas token (like ETH) just to sign an agreement or pay rent — USDC covers everything.</li>
+      <li><strong>Deterministic, fast finality.</strong> Arc targets sub-second (&lt;350ms) deterministic finality, which matters for a protocol where deposit confirmations and rent payments need to be predictable, not probabilistic.</li>
+      <li><strong>No bridges, no wrapped tokens.</strong> Rent and deposits are USDC on Arc directly — not a wrapped representation that needs to be bridged in and out.</li>
+    </ul>
+
+    <h2>Network details</h2>
+    <table>
+      <tr><th>Network</th><td>Arc Testnet</td></tr>
+      <tr><th>Chain ID</th><td class="mono">5042002</td></tr>
+      <tr><th>Settlement asset</th><td>USDC</td></tr>
+    </table>
+
+    <h2>Current active contracts</h2>
+    <p>This is a point-in-time snapshot as of when this page was generated. <a href="/project-info.json">/project-info.json</a> uses the same resolved runtime contract addresses as <code>/api/version</code>, including configured environment overrides.</p>
+    <table>
+      <tr><th>Contract</th><th>Address</th></tr>
+      <tr><td>RentalEscrow</td><td class="mono">0x6cbF4d958dA24b7AdC98Fb7633213Ac26b5a6f3a</td></tr>
+      <tr><td>PropDepEscrow</td><td class="mono">0x7428B32B61Ee0678c6e3706cB7d5aa4Ece818082</td></tr>
+    </table>
+    <p>This is Arc <em>Testnet</em>, not mainnet. See <a href="/security">Security</a> for what verification has and has not been performed.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc" aria-current="page">Arc</a>
+        <a href="/faq">FAQ</a>
+      <a href="/tbilisi">Tbilisi</a>
+        <a href="/batumi">Batumi</a>
+        <a href="/da-nang">Da Nang</a>
+        <a href="/nha-trang">Nha Trang</a>
+      <a href="https://my.pi2pi.io">Open App</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/project-info.json">project-info.json</a>
+    </nav>
+    <p>pi2pi — peer-to-peer rental agreements settled in USDC. Arc Testnet, chain ID 5042002. No platform fees, no commissions, no token. Contact: <a href="https://x.com/dim_ul">@dim_ul</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

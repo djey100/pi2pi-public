@@ -1,0 +1,39 @@
+# fly.toml app configuration file generated for pi2pi-project on 2026-04-08T20:47:44+07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'pi2pi-project'
+primary_region = 'syd'
+
+[build]
+  # Backend runtime network is set below in [env]; the frontend's network is
+  # a separate, build-time-only choice (Vite bakes VITE_NETWORK into the
+  # bundle) — this app's Dockerfile now requires it explicitly, no default,
+  # so it must be supplied here for `flyctl deploy` to keep working
+  # unchanged (TASK 10A-REVISION). This app is Arc Testnet end to end.
+  [build.args]
+    VITE_NETWORK = "arc-testnet"
+
+[env]
+  NETWORK = "arc-testnet"
+  RPC_URL = "https://rpc.testnet.arc.network"
+  # Target branded domain (TASK 10P) — not yet attached/certified as of this
+  # edit (see TASK 10O's cutover plan). server-arc.js now fails closed if
+  # APP_BASE_URL is unset when running under Fly, so this must stay in sync
+  # with whichever domain testnet.pi2pi.io/my.pi2pi.io actually points at.
+  APP_BASE_URL = "https://testnet.pi2pi.io"
+
+[http_service]
+  internal_port = 3001
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 1024

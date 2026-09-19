@@ -1,0 +1,54 @@
+# fly.mainnet.toml — Arc Mainnet Fly app configuration (TASK 10B)
+#
+# Dedicated config for the Arc Mainnet runtime, prepared alongside the
+# existing Arc Testnet fly.toml WITHOUT modifying it. Same Dockerfile/source
+# tree as pi2pi-project (TASK 10A-REVISION's VITE_NETWORK build-arg
+# mechanism), different app, different runtime NETWORK/RPC/config.
+#
+# NOT deployed by this file's existence — `fly apps create`, `flyctl deploy
+# --config fly.mainnet.toml`, and DNS cutover to my.pi2pi.io are all
+# separate, later, explicitly-authorized actions. See TASK 10B's report for
+# the exact commands and the required authorization phrase.
+#
+# APP_BASE_URL below is intentionally the temporary Fly-provided hostname
+# (pi2pi-mainnet.fly.dev), NOT my.pi2pi.io — DNS has not been cut over, and
+# this file must never reference a production hostname it isn't actually
+# serving yet (see network-scoped-db.test.js's project-info test, which
+# guards against exactly this class of mistake on the backend side).
+
+app = 'pi2pi-mainnet'
+primary_region = 'syd' # same as pi2pi-project — no concrete technical reason found to differ (same Arc RPC/infra region assumptions, same user base)
+
+[build]
+  # Mirrors fly.toml's mechanism exactly (TASK 10A-REVISION): the frontend's
+  # network is a separate, build-time-only choice from the backend's NETWORK
+  # below. This app is Arc Mainnet end to end.
+  [build.args]
+    VITE_NETWORK = "arc-mainnet"
+
+[env]
+  NETWORK = "arc-mainnet"
+  RPC_URL = "https://rpc.mainnet.arc.io"
+  # Target branded domain (TASK 10P) — NOT YET LIVE as of this edit:
+  # my.pi2pi.io still points at pi2pi-project (Testnet), and this value must
+  # NOT be deployed until TASK 10O's cutover has actually repointed
+  # my.pi2pi.io's DNS to this app (its final step, well after Testnet is
+  # fully migrated to testnet.pi2pi.io). Deploying this value early would
+  # make this app's CORS/webauthn/redirect behavior (all now derived from
+  # APP_BASE_URL) stop accepting requests from pi2pi-mainnet.fly.dev, which
+  # is still its only real domain today.
+  APP_BASE_URL = "https://my.pi2pi.io"
+
+[http_service]
+  internal_port = 3001
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 1024

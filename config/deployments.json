@@ -1,0 +1,78 @@
+{
+  "_comment": "Single local source of truth for pi2pi contract deployment state on Arc Testnet. Switched 2026-09-06: 'active' is now the 2026-06-13 pair (full security audit: round-2 + Codex round-3 C-1/C-2/C-3 + F-13-strict, 183/184 Foundry tests passing, verified byte-identical to contracts/src at switch time). The prior 2026-06-12 pair (missing round-2/round-3/F-13 fixes) is retired to 'legacy' below. See scripts/check-contract-addresses.mjs. Do NOT assume this file is auto-kept-in-sync with Fly.io secrets — env vars still win at runtime; both were updated together during this switch.",
+  "5042002": {
+    "network": "arc-testnet",
+    "chainId": 5042002,
+    "usdc": "0x3600000000000000000000000000000000000000",
+
+    "active": {
+      "_comment": "Switched to active 2026-09-06 (previously 'latestDeployedCandidate'). Contains the full security fix set: round-2 (illiquidity vs loss, CEI, rescue, strict invariants), Codex round-3 (C-1 index-revert survival, C-2 balance-delta, C-3 zero-scaled guard), and F-13-strict. Bytecode confirmed byte-identical (modulo immutables) to contracts/src at time of switch. Had zero on-chain agreements at switch time (nextAgreementId() == 0) — this is the first production use of this pair.",
+      "deployedAt": "2026-06-13T03:03:34Z",
+      "deployer": "0x497924669F8aeA089E399639D254cB2c708c267A",
+      "RentalEscrow": {
+        "address": "0x728FF16De0d6DfCAA1A8e7ed2FF95D9cB49663C8",
+        "deploymentTx": "0x1d3f42c10382d69efa368d1d2a9267d9a8390ada677e53cbe3cceaf684eb41ce"
+      },
+      "PropDepEscrow": {
+        "address": "0xe2190997F3811B771C25525C8401504a0e5330c5",
+        "deploymentTx": "0x9b2f5dc1ab23fe2e7dc561ad577a6afc43fe7f622b509057c575ed33a2a8d3ab"
+      },
+      "linkingTx": "0x895c37729848e973ba187dff3c6b33ae4fa54221c0faada10a53e79b3b013b58"
+    },
+
+    "historicalIntermediate": {
+      "_comment": "Historical intermediate deployment — confirmed on-chain (3/3 receipts successful, status=0x1, contracts mutually linked via CALL tx), superseded minutes later by the redeploy recorded above as 'latestDeployedCandidate'. No evidence was found that this intermediate pair was used by the production frontend, backend, or keeper. It was superseded by the later candidate deployment and has nextAgreementId()==0 (confirmed via read-only eth_call on 2026-08-18).",
+      "deployedAt": "2026-06-13T03:03:26Z",
+      "deployer": "0x497924669F8aeA089E399639D254cB2c708c267A",
+      "commit": "46cdb8c2",
+      "RentalEscrow": {
+        "address": "0x11184188c24ce546912617156c0693868a98b2a3",
+        "deploymentTx": "0x557e2e13e6d406a81722241522a3d45da11529b3649acee273b515a7d97c9a41"
+      },
+      "PropDepEscrow": {
+        "address": "0xfe7b14a5313e93d8e22c7c4edc62431eca0f0880",
+        "deploymentTx": "0x3a3fa4a9ce6737f6a62ac6bd8fafc85cb6df19aa2477f6f85d7f0db08f0da3df"
+      },
+      "linkingTx": "0x83cf1146cfe93311bf07294d5b3b781e4ef84446a3924c791c1e7041ab400e33"
+    },
+
+    "legacy": [
+      {
+        "_comment": "Retired 2026-09-06. Was 'active' from 2026-06-12 to 2026-09-06 — commit 1774ba4d only (security fixes, renewal removal, custom errors), missing round-2/round-3 Codex/F-13-strict fixes added later the same week. Had 1 real on-chain agreement (nextAgreementId() == 1) before retirement. Superseded by the fully-patched 2026-06-13 pair above.",
+        "RentalEscrow": { "address": "0x6cbF4d958dA24b7AdC98Fb7633213Ac26b5a6f3a" },
+        "PropDepEscrow": { "address": "0x7428B32B61Ee0678c6e3706cB7d5aa4Ece818082" }
+      },
+      {
+        "_comment": "Pre-audit pair. Appears in already-submitted historical application materials (pitch/circle-grant-form-final.md, submitted 2026-05-13). CORRECTION (TASK 9F, 2026-09-17): an earlier pass on this file incorrectly claimed this pair was 'not used by any runtime code' — that was factually wrong. Its original comment (commit 745663eb, 2026-08-18) correctly noted it was 'a hardcoded fallback default in server-arc.js / admin_routes.js', and live on-chain verification (TASK 9F) confirms nextAgreementId()==14 — 14 real production agreements were created on this contract. It was genuinely used in production for a real usage window (confirmed via on-chain getAgreement() matches against archived_contracts rows dated 2026-05-02 through 2026-05-21) before being superseded.",
+        "RentalEscrow": { "address": "0xEaC111678149818168dd8499882A234e2019A802" },
+        "PropDepEscrow": { "address": "0x9d9047E307FeFc1494e80A81E25A67653F6E96f7" }
+      },
+      {
+        "_comment": "Previously undocumented deployment, discovered TASK 9F (2026-09-17) while investigating ambiguous production DB rows: found hardcoded as the RentalEscrow/PropDepEscrow fallback default in backups/admin_routes_20260415_142559_pre-dispute-enrich.js and backups/admin_routes_20260415_144520_pre-history.js (confirmed default from at least 2026-04-15 through 2026-04-17). Live on-chain verification confirms nextAgreementId()==33 — the largest agreement count of any known Arc Testnet deployment, and the earliest-used one found so far (production active_contracts/archived_contracts rows exist from 2026-04-28 predating every other known deployment's confirmed usage window). No deployment transaction hash or exact deployment timestamp was found in this repository — only its usage window is confirmed via backup snapshots and on-chain state. Some early production rows (dated 2026-04-28/29) remain unresolved even against this deployment — a still-earlier or otherwise undiscovered generation may exist; see TASK 9F's report.",
+        "RentalEscrow": { "address": "0xC7791a029384D03B0CCD4fF03FB283575E7F0D8f" },
+        "PropDepEscrow": { "address": "0x0B6d95a9cD6d5F0C298703F2D7fa140d4C329CF5" }
+      }
+    ]
+  },
+
+  "5042": {
+    "network": "arc-mainnet",
+    "chainId": 5042,
+    "usdc": "0x3600000000000000000000000000000000000000",
+
+    "active": {
+      "_comment": "First Arc Mainnet deployment — controlled beta, TASK 6C/6D browser-wallet-signed broadcast, 2026-09-17. Lending/Aave intentionally not deployed — no verified Arc Mainnet Aave pool address exists in this repo; confirmed on-chain: lendingEnabled()==false, lendingAdapter()==address(0). devMode()==false confirmed on-chain on both contracts. nextAgreementId()==0 and activeAgreementCount()==0 at verification time (first use of this pair). Deployer and protocolTreasury are the SAME address (0x497924669F8aeA089E399639D254cB2c708c267A) by explicit operator choice for this controlled beta — not a code requirement; the contracts store these as two independent values. All 3 deployment/linking transactions confirmed with receipt status==1 via direct RPC read, independent of the local Foundry broadcast artifact.",
+      "deployedAt": "2026-09-17T03:51:13Z",
+      "deployer": "0x497924669F8aeA089E399639D254cB2c708c267A",
+      "RentalEscrow": {
+        "address": "0x06A2b584278f519ba7562c8ac27f4A5C31d52103",
+        "deploymentTx": "0xb140835168095c5509898841105fa112543770d92caa64c709c94b908838e140"
+      },
+      "PropDepEscrow": {
+        "address": "0x55dDa2FD8C37383E33DF32b15EED978Ac6B91532",
+        "deploymentTx": "0x17e60a8eb2e7ffb941219716576d2b4dd87830d41bb3d9f4ffafaf9e72c535f0"
+      },
+      "linkingTx": "0xa0d9930c48869d6f4e00aabcc7d0e68adefbc60ef3215bb590a66c188f1dd794"
+    }
+  }
+}

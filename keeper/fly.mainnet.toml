@@ -1,0 +1,51 @@
+# keeper/fly.mainnet.toml — Arc Mainnet keeper Fly app configuration (TASK 10AX)
+#
+# LOCAL PREPARATION ONLY as of this commit. This file's existence does NOT
+# create or deploy anything — `fly apps create pi2pi-keeper-mainnet`,
+# `flyctl secrets set ... -a pi2pi-keeper-mainnet`, and
+# `flyctl deploy --config keeper/fly.mainnet.toml -a pi2pi-keeper-mainnet`
+# are all separate, later, explicitly-authorized actions (see TASK 10AW's
+# report for the recommended safe order).
+#
+# Mirrors keeper/fly.toml's existing Arc Testnet pattern exactly, with two
+# differences: NETWORK=arc-mainnet and DRY_RUN=true (mandatory for the first
+# run after any mainnet activation — never DRY_RUN=false on a first deploy).
+#
+# Per the existing keeper architecture (confirmed via `flyctl secrets list -a
+# pi2pi-keeper`), the following are supplied as Fly secrets, NOT plain env/
+# toml values, for the existing Testnet keeper — this file follows the same
+# pattern and intentionally does NOT hardcode any of them here:
+#   RPC_URL, ESCROW_ADDRESS, PROPDEP_ADDRESS, KEEPER_PRIVATE_KEY,
+#   HEARTBEAT_URL, KEEPER_HEARTBEAT_SECRET
+#
+# Future (NOT executed) secrets command for this app, once it exists:
+#   flyctl secrets set -a pi2pi-keeper-mainnet \
+#     RPC_URL=https://rpc.mainnet.arc.io \
+#     ESCROW_ADDRESS=0x06A2b584278f519ba7562c8ac27f4A5C31d52103 \
+#     PROPDEP_ADDRESS=0x55dDa2FD8C37383E33DF32b15EED978Ac6B91532 \
+#     KEEPER_PRIVATE_KEY=<mainnet keeper signer private key — new, network-dedicated, never reused from Testnet> \
+#     HEARTBEAT_URL=https://my.pi2pi.io \
+#     KEEPER_HEARTBEAT_SECRET=<shared secret matching pi2pi-mainnet's backend config>
+#
+# KEEPER_PRIVATE_KEY is required by enforcer.ts's loadConfig()/runOnce() to
+# even start (a signer is constructed unconditionally), regardless of
+# DRY_RUN — DRY_RUN only gates whether execute()/sendRentMemo() actually
+# submit a transaction, it does not remove the need for a funded-or-unfunded
+# signer to exist. This key must be a Mainnet-dedicated keypair, never the
+# Testnet keeper's key reused.
+
+app = 'pi2pi-keeper-mainnet'
+primary_region = 'syd'
+
+[build]
+
+[env]
+  NETWORK = "arc-mainnet"
+  LOOP_INTERVAL = "15"
+  BATCH_SIZE = "100"
+  DRY_RUN = "true"
+
+[[vm]]
+  memory = '256mb'
+  cpu_kind = 'shared'
+  cpus = 1

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>pi2pi — Console</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="icon" type="image/png" href="/icon-192.png"/>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+</head>
+<body style="margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;">
+  <script>try{var t=localStorage.getItem('pi2pi-admin-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <div id="root"></div>
+  <script>
+    (async () => {
+      const res = await fetch("/pi2pi-console.jsx");
+      let src = await res.text();
+
+      // Strip any import lines (for compatibility if author adds them)
+      src = src.replace(/^import[\s\S]*?;\s*/gm, "");
+      src = src.replace(/export\s+default\s+function\s+AdminApp/m, "function AdminApp");
+
+      const preamble = `
+        const { useState, useEffect, useRef, useMemo, useCallback, Fragment } = React;
+      `;
+      const postamble = `
+        ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(AdminApp));
+      `;
+
+      const compiled = Babel.transform(preamble + src + postamble, {
+        presets: ["react"],
+        filename: "admin.jsx",
+      }).code;
+
+      const script = document.createElement("script");
+      script.textContent = compiled;
+      document.body.appendChild(script);
+    })().catch(err => {
+      document.getElementById("root").innerHTML =
+        '<div style="padding:40px;text-align:center">' +
+        '<h2>Failed to load admin panel</h2>' +
+        '<pre style="color:red;text-align:left;max-width:600px;margin:20px auto;white-space:pre-wrap">' +
+        err.message + '</pre></div>';
+    });
+  </script>
+</body>
+</html>

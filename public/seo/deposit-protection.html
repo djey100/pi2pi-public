@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deposit protection — how pi2pi escrow works | pi2pi</title>
+<meta name="description" content="How pi2pi protects rental deposits: smart-contract escrow, the equal-stakes deposit model, the on-chain agreement state machine, and the bond-and-freeze dispute process."/>
+<link rel="canonical" href="https://my.pi2pi.io/deposit-protection"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="pi2pi"/>
+<meta property="og:title" content="Deposit protection — how pi2pi escrow works | pi2pi"/>
+<meta property="og:description" content="How pi2pi protects rental deposits: smart-contract escrow, the equal-stakes deposit model, the on-chain agreement state machine, and the bond-and-freeze dispute process."/>
+<meta property="og:url" content="https://my.pi2pi.io/deposit-protection"/>
+<meta property="og:image" content="https://my.pi2pi.io/images/tbilisi-sunset.jpg"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@dim_ul"/>
+<meta name="twitter:title" content="Deposit protection — how pi2pi escrow works | pi2pi"/>
+<meta name="twitter:description" content="How pi2pi protects rental deposits: smart-contract escrow, the equal-stakes deposit model, the on-chain agreement state machine, and the bond-and-freeze dispute process."/>
+<meta name="twitter:image" content="https://my.pi2pi.io/images/tbilisi-sunset.jpg"/>
+
+<link rel="stylesheet" href="/styles/tokens.css"/>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0;
+    font-family: var(--font-ui, -apple-system, system-ui, sans-serif);
+    background: var(--color-bg-primary, #0B0F1A);
+    color: var(--color-text-primary, #F4F6FA);
+    line-height: 1.6;
+  }
+  a { color: var(--color-primary, #16C784); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header.site { border-bottom: 1px solid var(--color-border, #23283A); padding: 16px 0; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; text-decoration: none; color: var(--color-text-primary, #F4F6FA); }
+  .brand span { color: var(--color-primary, #16C784); }
+  nav.primary { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+  nav.primary a { text-decoration: none; color: var(--color-text-secondary, #9AA3B8); }
+  nav.primary a:hover, nav.primary a[aria-current="page"] { color: var(--color-primary, #16C784); }
+  .cta { background: var(--color-primary, #16C784); color: #061012; padding: 8px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; white-space: nowrap; }
+  .testnet-banner { background: var(--color-warning-surface, #2A2210); color: var(--color-warning, #F59E0B); font-size: 13px; text-align: center; padding: 8px 12px; border-bottom: 1px solid var(--color-warning-border, rgba(245,158,11,0.2)); }
+  main { padding: 40px 0 60px; }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 36px 0 12px; }
+  .lede { font-size: 18px; color: var(--color-text-secondary, #9AA3B8); margin-bottom: 28px; }
+  .card { background: var(--color-bg-card, #131826); border: 1px solid var(--color-border, #23283A); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border, #23283A); }
+  code, .mono { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.92em; background: var(--color-bg-secondary, #1A2033); padding: 2px 6px; border-radius: 4px; }
+  ul.cities { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+  ul.cities a { display: inline-block; padding: 6px 12px; border: 1px solid var(--color-border, #23283A); border-radius: 20px; text-decoration: none; font-size: 14px; }
+  footer.site { border-top: 1px solid var(--color-border, #23283A); padding: 28px 0 40px; font-size: 13px; color: var(--color-text-secondary, #9AA3B8); }
+  footer.site nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+  footer.site nav a { color: var(--color-text-secondary, #9AA3B8); text-decoration: none; }
+  footer.site nav a:hover { color: var(--color-primary, #16C784); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"pi2pi","url":"https://my.pi2pi.io","logo":"https://my.pi2pi.io/favicon-32.png","sameAs":["https://x.com/dim_ul"],"description":"pi2pi is a USDC-native rental agreement execution layer on Arc Testnet. Tenants and landlords enter direct peer-to-peer rental agreements settled in USDC, with deposits held in smart-contract escrow."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"pi2pi","url":"https://my.pi2pi.io"}</script>
+</head>
+<body>
+<div class="testnet-banner">pi2pi runs on Arc Testnet. This is a working prototype, not a production financial product — do not use real-world funds beyond small test amounts.</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">pi<span>2</span>pi</a>
+    <nav class="primary">
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection" aria-current="page">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+    </nav>
+    <a class="cta" href="https://my.pi2pi.io">Open App →</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>Deposit protection</h1>
+    <p class="lede">The core problem pi2pi solves: in most cross-border rentals, a tenant's deposit sits in a landlord's personal bank account with no enforceable guarantee it comes back. pi2pi moves that deposit into a smart contract instead.</p>
+
+    <h2>The equal-stakes deposit model</h2>
+    <p>Both sides post a stake into the same escrow contract — this isn't a one-sided security deposit against the tenant:</p>
+    <table>
+      <tr><th>Deposit</th><th>Posted by</th><th>Amount</th><th>Purpose</th></tr>
+      <tr><td>Commitment Deposit</td><td>Tenant</td><td>1× monthly rent</td><td>Tenant's commitment to the lease</td></tr>
+      <tr><td>Hosting Deposit</td><td>Landlord</td><td>1× monthly rent</td><td>Landlord's commitment to honor the agreement</td></tr>
+      <tr><td>Property Security Deposit</td><td>Tenant (optional)</td><td>0–3× monthly rent</td><td>Covers potential property damage, set per listing</td></tr>
+    </table>
+
+    <h2>Where the money actually sits</h2>
+    <p>All of it goes into the <code>RentalEscrow</code> smart contract (and <code>PropDepEscrow</code> for the property security deposit specifically) on Arc Testnet — addresses are published at <a href="/arc">/arc</a> and <a href="/project-info.json">/project-info.json</a>. Neither party, and not pi2pi as a company, can move these funds outside the rules encoded in the contract.</p>
+
+    <h2>The on-chain lifecycle</h2>
+    <p class="mono">Created → AwaitingLandlordDep / AwaitingTenantDep → Active → CheckoutProposed / EarlyTermProposed → DamageClaimed → DisputeOpen → Settled</p>
+    <p>At a clean checkout with no damage claim, the contract's rules release deposits back to each party. If a landlord raises a damage claim, the agreement moves into a bond-posting and freeze-window process before any dispute is settled — this prevents either side from unilaterally grabbing funds by simply staying silent.</p>
+
+    <h2>Automated enforcement — not automated payment</h2>
+    <p>An off-chain "keeper" bot is implemented to continuously monitor every active agreement for deadline-based conditions and trigger the corresponding permissionless on-chain action. It enforces deadlines — it does not pay rent or move funds into anyone's wallet on their behalf; tenants and landlords still send their own payment and deposit transactions:</p>
+    <ul>
+      <li>Rent overdue → flags the agreement as rent-missed</li>
+      <li>Landlord raised a damage claim and the tenant stayed silent past the deadline → executes the claim</li>
+      <li>Landlord didn't post the required bond in time → the claim expires</li>
+      <li>A dispute's freeze window has expired → frozen funds are released per the contract's rules</li>
+    </ul>
+    <p>This is what the deadline-enforcement code is designed to do. It does not mean every path above has been exercised end-to-end in production — Infrastructure and the main public surfaces were operating, but full production end-to-end testing of financial and contract workflows has not been performed.</p>
+
+    <h2>Yield on escrowed funds</h2>
+    <p>While a deposit sits in escrow, it can be routed through ERC-4626 yield adapters (Aave, Morpho). Yield is split 70% back to the two parties and 30% to the protocol treasury — this is how pi2pi earns revenue instead of charging fees. The escrow contract tracks the principal amount owed to each party separately from yield performance; this design has not been independently audited or stress-tested against an adapter loss scenario.</p>
+
+    <p>See <a href="/security">Security</a> for audit status and <a href="/how-it-works">How it works</a> for the full agreement flow.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection" aria-current="page">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+      <a href="/tbilisi">Tbilisi</a>
+        <a href="/batumi">Batumi</a>
+        <a href="/da-nang">Da Nang</a>
+        <a href="/nha-trang">Nha Trang</a>
+      <a href="https://my.pi2pi.io">Open App</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/project-info.json">project-info.json</a>
+    </nav>
+    <p>pi2pi — peer-to-peer rental agreements settled in USDC. Arc Testnet, chain ID 5042002. No platform fees, no commissions, no token. Contact: <a href="https://x.com/dim_ul">@dim_ul</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

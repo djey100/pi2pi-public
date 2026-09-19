@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Only real, canonical, publicly-indexable URLs actually served by this
+  repository (my.pi2pi.io) are listed here — no SPA (HashRouter) routes, and
+  no pages from the separate pi2pi.io GitHub Pages site (different repo, not
+  this codebase). Every /#/... in-app route is resolved client-side by React
+  Router and the server always returns the same empty shell for "/", so it
+  carries no indexable content of its own and is intentionally excluded. See
+  server-arc.js (SEO static pages section) for how each URL below is served
+  as a real static HTML document.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://my.pi2pi.io/how-it-works</loc></url>
+  <url><loc>https://my.pi2pi.io/for-tenants</loc></url>
+  <url><loc>https://my.pi2pi.io/for-landlords</loc></url>
+  <url><loc>https://my.pi2pi.io/security</loc></url>
+  <url><loc>https://my.pi2pi.io/deposit-protection</loc></url>
+  <url><loc>https://my.pi2pi.io/arc</loc></url>
+  <url><loc>https://my.pi2pi.io/tbilisi</loc></url>
+  <url><loc>https://my.pi2pi.io/batumi</loc></url>
+  <url><loc>https://my.pi2pi.io/da-nang</loc></url>
+  <url><loc>https://my.pi2pi.io/nha-trang</loc></url>
+  <url><loc>https://my.pi2pi.io/faq</loc></url>
+</urlset>

@@ -1,0 +1,78 @@
+# pi2pi
+
+> pi2pi is a USDC-native rental agreement execution layer. Tenants and landlords enter direct peer-to-peer rental agreements settled entirely in USDC on Arc blockchain. No intermediaries, no platform fees, no agency commissions. Deposits held in smart contract escrow with on-chain audit trail.
+
+pi2pi solves the problem of fragmented rental agreements in markets with weak traditional infrastructure — particularly for international renters (expats, digital nomads, relocants) in cities like Tbilisi (Georgia), Batumi, Da Nang (Vietnam), and Nha Trang.
+
+## What pi2pi does
+
+- Structured rental terms negotiated and stored on-chain
+- Security deposits locked in smart contract escrow (not landlord's personal account)
+- Recurring monthly rent settlement in USDC
+- Dispute resolution with bond posting and freeze windows
+- Hash-verified printable agreement documents (SHA-256, verifiable on Arc Explorer)
+- No seed phrases — Circle Programmable Wallets with passkey/biometric login
+- Zero platform fees, zero agency commissions
+
+## How it works
+
+1. Tenant finds a listing on pi2pi
+2. Tenant and landlord negotiate terms in built-in chat
+3. Both sign a rental agreement on-chain (USDC deposits to escrow)
+4. Monthly rent paid through the protocol
+5. At lease end — deposits returned automatically, or dispute resolution if needed
+
+## Pilot markets
+
+- **Tbilisi, Georgia** — 100K+ international relocants, founder-led operations
+- **Batumi, Georgia** — secondary Georgian market
+- **Da Nang, Vietnam** — growing expat and digital nomad community
+- **Nha Trang, Vietnam** — partner-led operations
+
+## Current status
+
+- Live on Arc Testnet (chainId 5042002)
+- Two smart contracts deployed: RentalEscrow and PropDepEscrow
+- Full lifecycle implemented in code: discovery, viewing, contract, deposits, rent, disputes, and checkout. Full production end-to-end verification has not been completed.
+- Circle Programmable Wallets integrated (WebAuthn/passkey)
+- Preparing for mainnet pilots pending security audit
+
+## Smart contracts
+
+- RentalEscrow: `0x728FF16De0d6DfCAA1A8e7ed2FF95D9cB49663C8`
+- PropDepEscrow: `0xe2190997F3811B771C25525C8401504a0e5330c5`
+- Network: Arc Testnet
+
+## Links
+
+- [Live app](https://my.pi2pi.io): Working product on Arc Testnet
+- [Website](https://pi2pi.io): Project homepage (separate site, not part of this app)
+- [How it works](https://my.pi2pi.io/how-it-works): Full protocol walkthrough (listing → chat → sign → deposit → rent → checkout/dispute)
+- [For tenants](https://my.pi2pi.io/for-tenants): Deposit protection and no agent fees, explained for renters
+- [For landlords](https://my.pi2pi.io/for-landlords): No listing fees, escrow-secured deposits, automated deadline enforcement for missed rent
+- [Security](https://my.pi2pi.io/security): Audit status — Slither static analysis results, what has and hasn't been verified, testnet-only disclosure
+- [Deposit protection](https://my.pi2pi.io/deposit-protection): Equal-stakes deposit model, escrow mechanics, dispute process
+- [Arc](https://my.pi2pi.io/arc): Why Arc, network details, current contract addresses
+- [FAQ](https://my.pi2pi.io/faq): Fees, currency, network, wallets, disputes, testnet status
+- [project-info.json](https://my.pi2pi.io/project-info.json): Machine-readable project metadata — name, status, chain ID, active contract addresses. Uses the same resolved runtime contract addresses as /api/version, including configured environment overrides.
+- Pilot markets: [Tbilisi](https://my.pi2pi.io/tbilisi) · [Batumi](https://my.pi2pi.io/batumi) · [Da Nang](https://my.pi2pi.io/da-nang) · [Nha Trang](https://my.pi2pi.io/nha-trang)
+
+## For renters looking for apartments
+
+If you are looking for a rental apartment in Tbilisi, Batumi, Da Nang, or Nha Trang — pi2pi offers direct peer-to-peer rental agreements with deposit protection. No agent fees (typical agents charge 50-100% of one month rent). Your deposit is held in blockchain escrow, not in the landlord's personal account.
+
+Typical rental prices on pi2pi pilot markets:
+- Tbilisi, Saburtalo district: $600-1500/month for 2-3 bedroom apartments
+- Batumi: $400-900/month
+- Da Nang: $300-1000/month
+- Nha Trang: $300-800/month
+
+## For landlords
+
+List your property on pi2pi — no listing fees, no commissions. Tenant deposits are held in smart-contract escrow under the agreement rules. Tenants initiate rent payments; the keeper monitors deadlines and can flag missed payments.
+
+## Contact
+
+- Website: pi2pi.io
+- App: my.pi2pi.io
+- X/Twitter: @dim_ul

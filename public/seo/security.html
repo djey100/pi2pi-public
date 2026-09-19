@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Security — pi2pi smart contract escrow | pi2pi</title>
+<meta name="description" content="pi2pi's security posture: Arc Testnet status, automated Slither static analysis results, internal/AI-assisted code review, and what has not yet been done (no third-party human audit, no mainnet)."/>
+<link rel="canonical" href="https://my.pi2pi.io/security"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="pi2pi"/>
+<meta property="og:title" content="Security — pi2pi smart contract escrow | pi2pi"/>
+<meta property="og:description" content="pi2pi's security posture: Arc Testnet status, automated Slither static analysis results, internal/AI-assisted code review, and what has not yet been done (no third-party human audit, no mainnet)."/>
+<meta property="og:url" content="https://my.pi2pi.io/security"/>
+<meta property="og:image" content="https://my.pi2pi.io/images/tbilisi-day.jpg"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@dim_ul"/>
+<meta name="twitter:title" content="Security — pi2pi smart contract escrow | pi2pi"/>
+<meta name="twitter:description" content="pi2pi's security posture: Arc Testnet status, automated Slither static analysis results, internal/AI-assisted code review, and what has not yet been done (no third-party human audit, no mainnet)."/>
+<meta name="twitter:image" content="https://my.pi2pi.io/images/tbilisi-day.jpg"/>
+
+<link rel="stylesheet" href="/styles/tokens.css"/>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0;
+    font-family: var(--font-ui, -apple-system, system-ui, sans-serif);
+    background: var(--color-bg-primary, #0B0F1A);
+    color: var(--color-text-primary, #F4F6FA);
+    line-height: 1.6;
+  }
+  a { color: var(--color-primary, #16C784); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header.site { border-bottom: 1px solid var(--color-border, #23283A); padding: 16px 0; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; text-decoration: none; color: var(--color-text-primary, #F4F6FA); }
+  .brand span { color: var(--color-primary, #16C784); }
+  nav.primary { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+  nav.primary a { text-decoration: none; color: var(--color-text-secondary, #9AA3B8); }
+  nav.primary a:hover, nav.primary a[aria-current="page"] { color: var(--color-primary, #16C784); }
+  .cta { background: var(--color-primary, #16C784); color: #061012; padding: 8px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; white-space: nowrap; }
+  .testnet-banner { background: var(--color-warning-surface, #2A2210); color: var(--color-warning, #F59E0B); font-size: 13px; text-align: center; padding: 8px 12px; border-bottom: 1px solid var(--color-warning-border, rgba(245,158,11,0.2)); }
+  main { padding: 40px 0 60px; }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 36px 0 12px; }
+  .lede { font-size: 18px; color: var(--color-text-secondary, #9AA3B8); margin-bottom: 28px; }
+  .card { background: var(--color-bg-card, #131826); border: 1px solid var(--color-border, #23283A); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border, #23283A); }
+  code, .mono { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.92em; background: var(--color-bg-secondary, #1A2033); padding: 2px 6px; border-radius: 4px; }
+  ul.cities { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+  ul.cities a { display: inline-block; padding: 6px 12px; border: 1px solid var(--color-border, #23283A); border-radius: 20px; text-decoration: none; font-size: 14px; }
+  footer.site { border-top: 1px solid var(--color-border, #23283A); padding: 28px 0 40px; font-size: 13px; color: var(--color-text-secondary, #9AA3B8); }
+  footer.site nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+  footer.site nav a { color: var(--color-text-secondary, #9AA3B8); text-decoration: none; }
+  footer.site nav a:hover { color: var(--color-primary, #16C784); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"pi2pi","url":"https://my.pi2pi.io","logo":"https://my.pi2pi.io/favicon-32.png","sameAs":["https://x.com/dim_ul"],"description":"pi2pi is a USDC-native rental agreement execution layer on Arc Testnet. Tenants and landlords enter direct peer-to-peer rental agreements settled in USDC, with deposits held in smart-contract escrow."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"pi2pi","url":"https://my.pi2pi.io"}</script>
+</head>
+<body>
+<div class="testnet-banner">pi2pi runs on Arc Testnet. This is a working prototype, not a production financial product — do not use real-world funds beyond small test amounts.</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">pi<span>2</span>pi</a>
+    <nav class="primary">
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security" aria-current="page">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+    </nav>
+    <a class="cta" href="https://my.pi2pi.io">Open App →</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>Security</h1>
+    <p class="lede">Deposits are only worth locking in escrow if the escrow itself is trustworthy. Here is exactly what has and has not been done to verify pi2pi's smart contracts, stated plainly.</p>
+
+    <h2>Testnet status — read this first</h2>
+    <p><strong>pi2pi runs on Arc Testnet only (chain ID 5042002).</strong> It is not deployed to mainnet. Do not treat funds used on Arc Testnet as real-world savings — this is a working prototype for pilot and demo purposes, actively preparing for a formal audit ahead of any mainnet deployment. Infrastructure and the main public surfaces were operating, but full production end-to-end testing of financial and contract workflows has not been performed.</p>
+
+    <h2>What has been done</h2>
+    <ul>
+      <li><strong>Automated static analysis:</strong> the two core contracts (<code>RentalEscrow.sol</code>, <code>PropDepEscrow.sol</code>) have been run through Slither (slither-analyzer). Result: 0 High severity findings; 1 Medium finding reviewed and dispositioned as a false positive (intentional state-enum equality check); 3 Low findings reviewed (2 accepted as low risk, 1 noted for a future fix); 4 Info findings acknowledged.</li>
+      <li><strong>Automated test suite:</strong> an extensive Foundry test suite covers the agreement lifecycle, deposit accounting, adapter integrations (Aave, Morpho), dispute flows, and multiple regression/security-fix scenarios.</li>
+      <li><strong>Internal and AI-assisted code review passes</strong> have been performed against the contracts and the off-chain enforcement bot as part of ongoing development.</li>
+    </ul>
+
+    <h2>What has not been done yet</h2>
+    <ul>
+      <li>No formal third-party human security audit has been completed. This is planned before any mainnet deployment.</li>
+      <li>No mainnet deployment exists. No production financial guarantees are made or implied.</li>
+      <li>No legal opinion has been obtained on the enforceability of on-chain rental agreements in any jurisdiction.</li>
+    </ul>
+
+    <h2>How the deposit escrow is structured</h2>
+    <p>Deposits are held by the <code>RentalEscrow</code> contract (and, for optional property-damage coverage, the linked <code>PropDepEscrow</code> contract) — not by either party directly, and not by pi2pi as a company. The contract implements a fixed on-chain state machine, and an automated enforcement bot is implemented to handle deadline-based transitions (missed rent, unanswered claims, expired dispute-freeze windows) instead of requiring manual staff intervention. This describes what the code implements, not a claim that every path has been exercised end-to-end in production. See <a href="/deposit-protection">Deposit protection</a> for the full mechanics.</p>
+
+    <h2>Report a security issue</h2>
+    <p>If you find a vulnerability, contact <a href="https://x.com/dim_ul">@dim_ul</a> directly rather than disclosing it publicly.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security" aria-current="page">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+      <a href="/tbilisi">Tbilisi</a>
+        <a href="/batumi">Batumi</a>
+        <a href="/da-nang">Da Nang</a>
+        <a href="/nha-trang">Nha Trang</a>
+      <a href="https://my.pi2pi.io">Open App</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/project-info.json">project-info.json</a>
+    </nav>
+    <p>pi2pi — peer-to-peer rental agreements settled in USDC. Arc Testnet, chain ID 5042002. No platform fees, no commissions, no token. Contact: <a href="https://x.com/dim_ul">@dim_ul</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+// Lease agreement text — English (authoritative version)
+// Source: Claude-reviewed legal text v2
+
+export const LEASE_EN = {
+  title: "RESIDENTIAL LEASE AGREEMENT",
+  subtitle: "pi2pi.io — Decentralised Rental Protocol",
+  contractNo: "Contract No. {contractNo}",
+  dateOfExecution: "Date of Execution: {signedDate}",
+
+  // Section 0
+  s0_title: "0. DECLARATIONS AND CONSENT OF THE PARTIES",
+  s0_intro: "By signing this Agreement with a cryptographic signature of their blockchain wallet, each Party confirms and agrees to the following:",
+  s0_1_title: "0.1. Voluntariness and Capacity",
+  s0_1: "The Parties enter into this Agreement voluntarily, of their own free will, being of sound mind and judgment, and fully understanding the nature, consequences, and risks of the obligations assumed.",
+  s0_2_title: "0.2. Mutual Verification",
+  s0_2: "The Parties have independently reviewed the identity documents and title documents of the counterparty, uploaded to the protocol in encrypted form (IPFS with on-chain hash references), and accept them as sufficient for entering into this Agreement. The Operator of the protocol does not perform document verification. The cryptographic signature by each Party's wallet constitutes explicit acknowledgment that such review has been completed.",
+  s0_3_title: "0.3. Understanding of Technology",
+  s0_3: "The Parties understand that this Agreement is executed through smart contracts on the blockchain, that its terms are recorded on-chain and cannot be unilaterally modified after signing, and that the cryptographic signature of the wallet constitutes a legally binding act.",
+  s0_4_title: "0.4. Status of the Protocol Operator",
+  s0_4_intro: "The operator of the pi2pi.io protocol (the \"Operator\") is not a party to this Agreement. The Operator provides the Parties with access to decentralised software infrastructure (smart contracts, user interface, encrypted document storage), which executes automatically according to predefined rules. The Operator:",
+  s0_4_bullets: [
+    "does not provide financial services;",
+    "does not hold, retain, or transfer funds of the Parties;",
+    "does not provide legal, advisory, or intermediary services;",
+    "does not verify the identity of the Parties, the authenticity of documents, or the actual condition of the Property;",
+    "does not act as an arbitrator, mediator, or representative of either Party."
+  ],
+  s0_4_footer: "All funds of the Parties, throughout the entire term of this Agreement, remain exclusively under the control of automated smart contracts, the logic of which is predefined and available to the Parties for review.",
+  s0_5_title: "0.5. Protocol Fee",
+  s0_5: "Thirty percent (30%) of the yield accrued on deposited funds during their placement in the third-party decentralised lending protocol Aave v2 is directed to the protocol treasury as a protocol usage fee. The said fee does not constitute remuneration to the Operator for services rendered; does not constitute a charge for the storage or management of the Parties' funds; represents a fee for access to the protocol's software infrastructure and compensates for costs of its development, deployment, and maintenance. The Parties confirm that they were informed of the amount of the fee prior to signing this Agreement and consider it reasonable and acceptable.",
+  s0_6_title: "0.6. Acceptance of Risks",
+  s0_6_intro: "The Parties accept and release the Operator from liability for:",
+  s0_6_bullets: [
+    "risks of third-party smart contracts (including Aave v2);",
+    "risks of USDC depeg or loss of value;",
+    "blockchain risks (forks, network outages, transaction delays);",
+    "risks of loss, compromise, or theft of the Parties' private keys;",
+    "actions, inaction, or bad faith of the counterparty;",
+    "the authenticity, currency, or accuracy of documents uploaded by the counterparty;",
+    "the actual condition of the Property and its correspondence to the description in the Agreement."
+  ],
+  s0_7_title: "0.7. Resolution of Claims",
+  s0_7: "All claims and disputes between the Parties are resolved exclusively between the Parties in the manner established by Section 6 of this Agreement, and, where necessary, in judicial proceedings in accordance with Section 6.9. The Operator is not a party to any dispute and does not participate in its resolution.",
+  s0_8_title: "0.8. Operator's Technical Personnel",
+  s0_8: "Natural persons performing the development, deployment, and technical maintenance of the protocol's software infrastructure perform solely technical functions to maintain the operational capacity of the software code. Such persons are not a party to this Agreement, do not participate in the execution of its terms, do not provide the Parties with legal, financial, advisory, or intermediary services, do not perform identity verification, document review, Property valuation, dispute mediation, or any other acts going to the substance of the Agreement, and do not have access to the deposited funds of the Parties.",
+
+  // Section 1
+  s1_title: "1. PARTIES",
+  landlord: "LANDLORD",
+  tenant: "TENANT",
+  fullLegalName: "Full Legal Name",
+  walletAddress: "Blockchain Wallet Address (legal identifier)",
+  idDocument: "Identity Document",
+
+  // Section 2
+  s2_title: "2. PROPERTY",
+  address: "Address",
+  conditionNote: "The condition of the Property (photographs and inventory) was documented at the time of execution of this Agreement — see Appendix B.",
+  itemsIncluded: "Items included with the rental: {count} item(s) — see Appendix C.",
+  ownershipCert: "Property Ownership Certificate",
+
+  // Section 3
+  s3_title: "3. LEASE TERMS",
+  startDate: "Commencement Date",
+  endDate: "Expiry Date",
+  duration: "Duration",
+  monthlyRent: "Monthly Rent",
+  paymentSchedule: "Payment Schedule",
+  paymentScheduleValue: "Monthly from the Commencement Date",
+  paymentMethod: "Payment Method",
+  paymentMethodValue: "USDC stablecoin on Arc Testnet blockchain",
+  gracePeriod: "Rent Grace Period",
+  gracePeriodValue: "{days} calendar days",
+  leaseGrantTitle: "Lease Grant and Core Obligations",
+  leaseGrant: "The Landlord leases the Property to the Tenant, and the Tenant accepts the Property for residential use, for the lease term and monthly rent stated in this Agreement.\n\nThe Tenant shall pay the monthly rent in USDC according to the payment schedule stated above. The Parties acknowledge that deposits, rent payment status, deadlines, and releases are governed by the smart contract records linked to this Agreement.\n\nThe Property condition, uploaded photographs, ownership document, identity documents, and inventory list are incorporated into this Agreement as appendices. By signing, each Party confirms that they reviewed the appendices available to them before execution.\n\nAt the end of the lease, the Tenant shall return the Property in substantially the same condition, except for normal wear and tear, subject to the inspection and dispute procedures in this Agreement.",
+
+  // Section 4
+  s4_title: "4. DEPOSITS AND ESCROW",
+  s4_intro: "All deposits are held in a non-custodial smart contract escrow. Neither party, nor the Operator, may unilaterally access or redirect deposited funds.",
+  commitmentDeposit: "Commitment Deposit (Tenant)",
+  commitmentNote: "Returned at clean lease expiry. Forfeited to Landlord upon rent default or Tenant-initiated unilateral termination.",
+  hostingDeposit: "Hosting Deposit (Landlord)",
+  hostingNote: "Returned at clean lease expiry. Forfeited to Tenant upon wrongful eviction or Landlord-initiated unilateral termination.",
+  propDeposit: "Property Security Deposit (Tenant)",
+  propNote: "Held in PropDepEscrow. 7-day inspection window after lease end. Returned if no damage claim.",
+  yieldTitle: "Staking Yield",
+  yieldNote: "70% — split equally between Tenant and Landlord; 30% — protocol usage fee.",
+  smartContractAddr: "Smart Contract Address",
+  depositedBy: "Deposited by",
+  amount: "Amount",
+
+  // Section 5
+  s5_title: "5. VERIFIED DOCUMENTS SUBMITTED",
+  uploaded: "Uploaded",
+  notProvided: "Not provided",
+
+  // Section 6
+  s6_title: "6. DISPUTE RESOLUTION AND TERMINATION",
+  s6_1_title: "6.1. Early Termination — Mutual Exit",
+  s6_1: "Both parties sign an on-chain mutual exit transaction. Each party receives its own deposit in full. No penalties apply.",
+  s6_2_title: "6.2. Early Termination — Unilateral Exit with Liquidated Damages",
+  s6_2: "Either Party may terminate this Agreement unilaterally. The deposit of the initiating Party is automatically transferred to the counterparty as pre-agreed compensation (liquidated damages). Execution requires a single on-chain transaction; the counterparty's signature is not required.",
+  s6_3_title: "6.3. Early Termination — Disputed Exit",
+  s6_3: "Where a Party asserts a claim to the counterparty's deposit, both deposits are frozen for sixty (60) calendar days. The counterparty may: Accept (deposits to claimant), Concede (deposits to counterparty), or Wait (wash settlement after 60 days).",
+  s6_4_title: "6.4. Vacate Deadlines",
+  s6_4: "Tenant-initiated: 3 calendar days. Landlord-initiated: 7 calendar days.",
+  s6_5_title: "6.5. Property Security Deposit — Inspection Window",
+  s6_5: "7-day inspection window after lease end. No claim filed → full deposit returns to Tenant automatically.",
+  s6_6_title: "6.6. Property Damage Claim",
+  s6_6: "Landlord may claim up to the Property Security Deposit. Tenant has 3 days to Accept or Dispute. If disputed, Landlord posts bond; 60-day freeze applies.",
+  s6_7_title: "6.7. Rent Default",
+  s6_7: "Grace period applies. Landlord may extend by up to 14 days. After expiry, Tenant's Commitment Deposit is forfeited to Landlord.",
+  s6_8_title: "6.8. Lease End",
+  s6_8: "When the lease period expires, deposits are returned and the agreement is settled. To continue renting, parties must create a new agreement from scratch.",
+  s6_9_title: "6.9. Governing Law and Jurisdiction",
+  s6_9: "Governed by lex rei sitae (law of the place where the property is situated). Disputes submitted to courts of the Property's jurisdiction. All on-chain records admissible as evidence. EIP-191 signature recognised as equivalent to handwritten signature.",
+  s6_10_title: "6.10. Stablecoin Acknowledgment",
+  s6_10: "All amounts in USDC. Parties agree USDC satisfies all monetary obligations despite not being legal tender.",
+  s6_11_title: "6.11. Smart Contract Authority",
+  s6_11: "Funds governed by smart contract logic. Releases are automatic and not subject to unilateral action by any party.",
+
+  // Section 7
+  s7_title: "7. ADDITIONAL PROVISIONS",
+  s7_1_title: "7.1. Permitted Use",
+  s7_1: "Residential purposes only. No commercial use, short-term sub-letting, or unlawful activities.",
+  s7_2_title: "7.2. Utilities",
+  s7_2: "Tenant responsible for utilities unless otherwise agreed. Payments made off-chain to providers.",
+  s7_3_title: "7.3. Maintenance",
+  s7_3: "Tenant: ordinary upkeep and minor repairs. Landlord: structural and system repairs. Normal wear and tear is not grounds for damage claim.",
+  s7_4_title: "7.4. Data Protection",
+  s7_4: "Documents stored encrypted on IPFS. Operator processes data only for protocol functionality.",
+  s7_5_title: "7.5. Language",
+  s7_5: "English version is authoritative. Translations provided for convenience only.",
+  s7_6_title: "7.6. Severability",
+  s7_6: "Invalid provisions replaced by closest valid equivalent. Remaining provisions unaffected.",
+  s7_7_title: "7.7. Entire Agreement",
+  s7_7: "This Agreement with on-chain records constitutes the entire agreement between the Parties.",
+
+  // Section 8
+  s8_title: "8. CRYPTOGRAPHIC SIGNATURES",
+  signatureMethod: "Signature Method: personal_sign (EIP-191)",
+  signedAt: "Signed at",
+  notYetSigned: "Not yet signed",
+
+  // Footer
+  verification: "VERIFICATION",
+  agreementId: "Agreement ID",
+  createdOnChain: "Created on-chain",
+  verify: "Verify",
+  documentHash: "Document SHA-256",
+  footer: "This Agreement was generated and signed through the pi2pi.io decentralised rental protocol. The on-chain record is the authoritative version.",
+};

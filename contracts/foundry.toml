@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+via_ir = true
+optimizer = true
+optimizer_runs = 1
+
+[invariant]
+runs = 1000
+depth = 100
+fail_on_revert = false
+
+[profile.strict.invariant]
+runs = 500
+depth = 100
+fail_on_revert = true

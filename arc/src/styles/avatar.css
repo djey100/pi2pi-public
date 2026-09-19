@@ -1,0 +1,11 @@
+.pi2pi-avatar {
+  display: block;
+  object-fit: cover;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #1a1a2e;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+.pi2pi-avatar--round { border-radius: 50%; }
+.pi2pi-avatar--square { border-radius: 14px; }

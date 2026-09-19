@@ -1,0 +1,49 @@
+# Environment / secrets — never commit real values.
+# Narrow exceptions only for the specific, non-secret, source-controlled
+# Vite build-time network-selection files (VITE_NETWORK only — see each
+# file's own header comment) — never widen this to a blanket !.env.* rule.
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+!arc/.env.production
+!arc/.env.development
+!arc/.env.test
+
+# Dependencies / build artifacts
+node_modules/
+dist/
+build/
+coverage/
+arc/dist/
+contracts/out/
+contracts/cache/
+
+# Keys / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# Logs / dumps / temp data
+*.log
+*.dump
+*.sql.gz
+users-arc.json
+users.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local Claude Code settings (project-tracked config, if any, stays; local overrides don't)
+.claude/settings.local.json
+.claude/worktrees/
+
+# Legacy/internal snapshot directories — never intended for this repo
+backups/
+_memory/
+snapshots/

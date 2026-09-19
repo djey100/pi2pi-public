@@ -1,0 +1,470 @@
+pi2pi Lease Agreement — Translation Template (EN → KA)
+Total keys: 111
+IMPORTANT: Keep {placeholders} exactly as they are. Do not translate text inside {}.
+Arrays (bullets) must remain as arrays with the same number of items.
+================================================================================
+
+KEY: title
+EN:  RESIDENTIAL LEASE AGREEMENT
+KA:  
+
+KEY: subtitle
+EN:  pi2pi.io — Decentralised Rental Protocol
+KA:  
+
+KEY: contractNo
+EN:  Contract No. {contractNo}
+KA:  
+
+KEY: dateOfExecution
+EN:  Date of Execution: {signedDate}
+KA:  
+
+KEY: s0_title
+EN:  0. DECLARATIONS AND CONSENT OF THE PARTIES
+KA:  
+
+KEY: s0_intro
+EN:  By signing this Agreement with a cryptographic signature of their blockchain wallet, each Party confirms and agrees to the following:
+KA:  
+
+KEY: s0_1_title
+EN:  0.1. Voluntariness and Capacity
+KA:  
+
+KEY: s0_1
+EN:  The Parties enter into this Agreement voluntarily, of their own free will, being of sound mind and judgment, and fully understanding the nature, consequences, and risks of the obligations assumed.
+KA:  
+
+KEY: s0_2_title
+EN:  0.2. Mutual Verification
+KA:  
+
+KEY: s0_2
+EN:  The Parties have independently reviewed the identity documents and title documents of the counterparty, uploaded to the protocol in encrypted form (IPFS with on-chain hash references), and accept them as sufficient for entering into this Agreement. The Operator of the protocol does not perform document verification. The cryptographic signature by each Party's wallet constitutes explicit acknowledgment that such review has been completed.
+KA:  
+
+KEY: s0_3_title
+EN:  0.3. Understanding of Technology
+KA:  
+
+KEY: s0_3
+EN:  The Parties understand that this Agreement is executed through smart contracts on the blockchain, that its terms are recorded on-chain and cannot be unilaterally modified after signing, and that the cryptographic signature of the wallet constitutes a legally binding act.
+KA:  
+
+KEY: s0_4_title
+EN:  0.4. Status of the Protocol Operator
+KA:  
+
+KEY: s0_4_intro
+EN:  The operator of the pi2pi.io protocol (the "Operator") is not a party to this Agreement. The Operator provides the Parties with access to decentralised software infrastructure (smart contracts, user interface, encrypted document storage), which executes automatically according to predefined rules. The Operator:
+KA:  
+
+KEY: s0_4_bullets (ARRAY - 5 items)
+EN[0]: does not provide financial services;
+KA[0]: 
+EN[1]: does not hold, retain, or transfer funds of the Parties;
+KA[1]: 
+EN[2]: does not provide legal, advisory, or intermediary services;
+KA[2]: 
+EN[3]: does not verify the identity of the Parties, the authenticity of documents, or the actual condition of the Property;
+KA[3]: 
+EN[4]: does not act as an arbitrator, mediator, or representative of either Party.
+KA[4]: 
+
+KEY: s0_4_footer
+EN:  All funds of the Parties, throughout the entire term of this Agreement, remain exclusively under the control of automated smart contracts, the logic of which is predefined and available to the Parties for review.
+KA:  
+
+KEY: s0_5_title
+EN:  0.5. Protocol Fee
+KA:  
+
+KEY: s0_5
+EN:  Thirty percent (30%) of the yield accrued on deposited funds during their placement in the third-party decentralised lending protocol Aave v2 is directed to the protocol treasury as a protocol usage fee. The said fee does not constitute remuneration to the Operator for services rendered; does not constitute a charge for the storage or management of the Parties' funds; represents a fee for access to the protocol's software infrastructure and compensates for costs of its development, deployment, and maintenance. The Parties confirm that they were informed of the amount of the fee prior to signing this Agreement and consider it reasonable and acceptable.
+KA:  
+
+KEY: s0_6_title
+EN:  0.6. Acceptance of Risks
+KA:  
+
+KEY: s0_6_intro
+EN:  The Parties accept and release the Operator from liability for:
+KA:  
+
+KEY: s0_6_bullets (ARRAY - 7 items)
+EN[0]: risks of third-party smart contracts (including Aave v2);
+KA[0]: 
+EN[1]: risks of USDC depeg or loss of value;
+KA[1]: 
+EN[2]: blockchain risks (forks, network outages, transaction delays);
+KA[2]: 
+EN[3]: risks of loss, compromise, or theft of the Parties' private keys;
+KA[3]: 
+EN[4]: actions, inaction, or bad faith of the counterparty;
+KA[4]: 
+EN[5]: the authenticity, currency, or accuracy of documents uploaded by the counterparty;
+KA[5]: 
+EN[6]: the actual condition of the Property and its correspondence to the description in the Agreement.
+KA[6]: 
+
+KEY: s0_7_title
+EN:  0.7. Resolution of Claims
+KA:  
+
+KEY: s0_7
+EN:  All claims and disputes between the Parties are resolved exclusively between the Parties in the manner established by Section 6 of this Agreement, and, where necessary, in judicial proceedings in accordance with Section 6.9. The Operator is not a party to any dispute and does not participate in its resolution.
+KA:  
+
+KEY: s0_8_title
+EN:  0.8. Operator's Technical Personnel
+KA:  
+
+KEY: s0_8
+EN:  Natural persons performing the development, deployment, and technical maintenance of the protocol's software infrastructure perform solely technical functions to maintain the operational capacity of the software code. Such persons are not a party to this Agreement, do not participate in the execution of its terms, do not provide the Parties with legal, financial, advisory, or intermediary services, do not perform identity verification, document review, Property valuation, dispute mediation, or any other acts going to the substance of the Agreement, and do not have access to the deposited funds of the Parties.
+KA:  
+
+KEY: s1_title
+EN:  1. PARTIES
+KA:  
+
+KEY: landlord
+EN:  LANDLORD
+KA:  
+
+KEY: tenant
+EN:  TENANT
+KA:  
+
+KEY: fullLegalName
+EN:  Full Legal Name
+KA:  
+
+KEY: walletAddress
+EN:  Blockchain Wallet Address (legal identifier)
+KA:  
+
+KEY: idDocument
+EN:  Identity Document
+KA:  
+
+KEY: s2_title
+EN:  2. PROPERTY
+KA:  
+
+KEY: address
+EN:  Address
+KA:  
+
+KEY: conditionNote
+EN:  The condition of the Property (photographs and inventory) was documented at the time of execution of this Agreement — see Appendix B.
+KA:  
+
+KEY: itemsIncluded
+EN:  Items included with the rental: {count} item(s) — see Appendix C.
+KA:  
+
+KEY: ownershipCert
+EN:  Property Ownership Certificate
+KA:  
+
+KEY: s3_title
+EN:  3. LEASE TERMS
+KA:  
+
+KEY: startDate
+EN:  Commencement Date
+KA:  
+
+KEY: endDate
+EN:  Expiry Date
+KA:  
+
+KEY: duration
+EN:  Duration
+KA:  
+
+KEY: monthlyRent
+EN:  Monthly Rent
+KA:  
+
+KEY: paymentSchedule
+EN:  Payment Schedule
+KA:  
+
+KEY: paymentScheduleValue
+EN:  Monthly from the Commencement Date
+KA:  
+
+KEY: paymentMethod
+EN:  Payment Method
+KA:  
+
+KEY: paymentMethodValue
+EN:  USDC stablecoin on Arc Testnet blockchain
+KA:  
+
+KEY: gracePeriod
+EN:  Rent Grace Period
+KA:  
+
+KEY: gracePeriodValue
+EN:  {days} calendar days
+KA:  
+
+KEY: s4_title
+EN:  4. DEPOSITS AND ESCROW
+KA:  
+
+KEY: s4_intro
+EN:  All deposits are held in a non-custodial smart contract escrow. Neither party, nor the Operator, may unilaterally access or redirect deposited funds.
+KA:  
+
+KEY: commitmentDeposit
+EN:  Commitment Deposit (Tenant)
+KA:  
+
+KEY: commitmentNote
+EN:  Returned at clean lease expiry. Forfeited to Landlord upon rent default or Tenant-initiated unilateral termination.
+KA:  
+
+KEY: hostingDeposit
+EN:  Hosting Deposit (Landlord)
+KA:  
+
+KEY: hostingNote
+EN:  Returned at clean lease expiry. Forfeited to Tenant upon wrongful eviction or Landlord-initiated unilateral termination.
+KA:  
+
+KEY: propDeposit
+EN:  Property Security Deposit (Tenant)
+KA:  
+
+KEY: propNote
+EN:  Held in PropDepEscrow. 7-day inspection window after lease end. Returned if no damage claim.
+KA:  
+
+KEY: yieldTitle
+EN:  Staking Yield
+KA:  
+
+KEY: yieldNote
+EN:  70% — split equally between Tenant and Landlord; 30% — protocol usage fee.
+KA:  
+
+KEY: smartContractAddr
+EN:  Smart Contract Address
+KA:  
+
+KEY: depositedBy
+EN:  Deposited by
+KA:  
+
+KEY: amount
+EN:  Amount
+KA:  
+
+KEY: s5_title
+EN:  5. VERIFIED DOCUMENTS SUBMITTED
+KA:  
+
+KEY: uploaded
+EN:  Uploaded
+KA:  
+
+KEY: notProvided
+EN:  Not provided
+KA:  
+
+KEY: s6_title
+EN:  6. DISPUTE RESOLUTION AND TERMINATION
+KA:  
+
+KEY: s6_1_title
+EN:  6.1. Early Termination — Mutual Exit
+KA:  
+
+KEY: s6_1
+EN:  Both parties sign an on-chain mutual exit transaction. Each party receives its own deposit in full. No penalties apply.
+KA:  
+
+KEY: s6_2_title
+EN:  6.2. Early Termination — Unilateral Exit with Liquidated Damages
+KA:  
+
+KEY: s6_2
+EN:  Either Party may terminate this Agreement unilaterally. The deposit of the initiating Party is automatically transferred to the counterparty as pre-agreed compensation (liquidated damages). Execution requires a single on-chain transaction; the counterparty's signature is not required.
+KA:  
+
+KEY: s6_3_title
+EN:  6.3. Early Termination — Disputed Exit
+KA:  
+
+KEY: s6_3
+EN:  Where a Party asserts a claim to the counterparty's deposit, both deposits are frozen for sixty (60) calendar days. The counterparty may: Accept (deposits to claimant), Concede (deposits to counterparty), or Wait (wash settlement after 60 days).
+KA:  
+
+KEY: s6_4_title
+EN:  6.4. Vacate Deadlines
+KA:  
+
+KEY: s6_4
+EN:  Tenant-initiated: 3 calendar days. Landlord-initiated: 7 calendar days.
+KA:  
+
+KEY: s6_5_title
+EN:  6.5. Property Security Deposit — Inspection Window
+KA:  
+
+KEY: s6_5
+EN:  7-day inspection window after lease end. No claim filed → full deposit returns to Tenant automatically.
+KA:  
+
+KEY: s6_6_title
+EN:  6.6. Property Damage Claim
+KA:  
+
+KEY: s6_6
+EN:  Landlord may claim up to the Property Security Deposit. Tenant has 3 days to Accept or Dispute. If disputed, Landlord posts bond; 60-day freeze applies.
+KA:  
+
+KEY: s6_7_title
+EN:  6.7. Rent Default
+KA:  
+
+KEY: s6_7
+EN:  Grace period applies. Landlord may extend by up to 14 days. After expiry, Tenant's Commitment Deposit is forfeited to Landlord.
+KA:  
+
+KEY: s6_8_title
+EN:  6.8. Lease Renewal
+KA:  
+
+KEY: s6_8
+EN:  Renewal vote opens 30 days before expiry. Options: Extend, Renegotiate, or End.
+KA:  
+
+KEY: s6_9_title
+EN:  6.9. Governing Law and Jurisdiction
+KA:  
+
+KEY: s6_9
+EN:  Governed by lex rei sitae (law of the place where the property is situated). Disputes submitted to courts of the Property's jurisdiction. All on-chain records admissible as evidence. EIP-191 signature recognised as equivalent to handwritten signature.
+KA:  
+
+KEY: s6_10_title
+EN:  6.10. Stablecoin Acknowledgment
+KA:  
+
+KEY: s6_10
+EN:  All amounts in USDC. Parties agree USDC satisfies all monetary obligations despite not being legal tender.
+KA:  
+
+KEY: s6_11_title
+EN:  6.11. Smart Contract Authority
+KA:  
+
+KEY: s6_11
+EN:  Funds governed by smart contract logic. Releases are automatic and not subject to unilateral action by any party.
+KA:  
+
+KEY: s7_title
+EN:  7. ADDITIONAL PROVISIONS
+KA:  
+
+KEY: s7_1_title
+EN:  7.1. Permitted Use
+KA:  
+
+KEY: s7_1
+EN:  Residential purposes only. No commercial use, short-term sub-letting, or unlawful activities.
+KA:  
+
+KEY: s7_2_title
+EN:  7.2. Utilities
+KA:  
+
+KEY: s7_2
+EN:  Tenant responsible for utilities unless otherwise agreed. Payments made off-chain to providers.
+KA:  
+
+KEY: s7_3_title
+EN:  7.3. Maintenance
+KA:  
+
+KEY: s7_3
+EN:  Tenant: ordinary upkeep and minor repairs. Landlord: structural and system repairs. Normal wear and tear is not grounds for damage claim.
+KA:  
+
+KEY: s7_4_title
+EN:  7.4. Data Protection
+KA:  
+
+KEY: s7_4
+EN:  Documents stored encrypted on IPFS. Operator processes data only for protocol functionality.
+KA:  
+
+KEY: s7_5_title
+EN:  7.5. Language
+KA:  
+
+KEY: s7_5
+EN:  English version is authoritative. Translations provided for convenience only.
+KA:  
+
+KEY: s7_6_title
+EN:  7.6. Severability
+KA:  
+
+KEY: s7_6
+EN:  Invalid provisions replaced by closest valid equivalent. Remaining provisions unaffected.
+KA:  
+
+KEY: s7_7_title
+EN:  7.7. Entire Agreement
+KA:  
+
+KEY: s7_7
+EN:  This Agreement with on-chain records constitutes the entire agreement between the Parties.
+KA:  
+
+KEY: s8_title
+EN:  8. CRYPTOGRAPHIC SIGNATURES
+KA:  
+
+KEY: signatureMethod
+EN:  Signature Method: personal_sign (EIP-191)
+KA:  
+
+KEY: signedAt
+EN:  Signed at
+KA:  
+
+KEY: notYetSigned
+EN:  Not yet signed
+KA:  
+
+KEY: verification
+EN:  VERIFICATION
+KA:  
+
+KEY: agreementId
+EN:  Agreement ID
+KA:  
+
+KEY: createdOnChain
+EN:  Created on-chain
+KA:  
+
+KEY: verify
+EN:  Verify
+KA:  
+
+KEY: documentHash
+EN:  Document SHA-256
+KA:  
+
+KEY: footer
+EN:  This Agreement was generated and signed through the pi2pi.io decentralised rental protocol. The on-chain record is the authoritative version.
+KA:  
+

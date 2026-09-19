@@ -1,0 +1,152 @@
+// Lease agreement text — Brazilian Portuguese translation (pt-BR)
+// Source: Translation of Claude-reviewed legal text v2 (English authoritative)
+
+export const LEASE_PT = {
+  title: "CONTRATO DE LOCAÇÃO RESIDENCIAL",
+  subtitle: "pi2pi.io — Protocolo Descentralizado de Locação",
+  contractNo: "Contrato Nº {contractNo}",
+  dateOfExecution: "Data de Celebração: {signedDate}",
+
+  // Section 0
+  s0_title: "0. DECLARAÇÕES E CONSENTIMENTO DAS PARTES",
+  s0_intro: "Ao assinar este Contrato com a assinatura criptográfica de sua carteira blockchain, cada Parte confirma e concorda com o seguinte:",
+  s0_1_title: "0.1. Voluntariedade e Capacidade",
+  s0_1: "As Partes celebram este Contrato voluntariamente, por sua livre e espontânea vontade, encontrando-se em pleno gozo de suas faculdades mentais e de discernimento, compreendendo plenamente a natureza, as consequências e os riscos das obrigações assumidas.",
+  s0_2_title: "0.2. Verificação Recíproca",
+  s0_2: "As Partes analisaram, de forma independente, os documentos de identidade e os documentos de propriedade da contraparte, carregados no protocolo em forma criptografada (IPFS com referências de hash on-chain), e os aceitam como suficientes para a celebração deste Contrato. O Operador do protocolo não realiza verificação de documentos. A assinatura criptográfica da carteira de cada Parte constitui reconhecimento expresso de que tal análise foi concluída.",
+  s0_3_title: "0.3. Compreensão da Tecnologia",
+  s0_3: "As Partes compreendem que este Contrato é executado por meio de smart contracts na blockchain, que seus termos são registrados on-chain e não podem ser modificados unilateralmente após a assinatura, e que a assinatura criptográfica da carteira constitui ato juridicamente vinculante.",
+  s0_4_title: "0.4. Status do Operador do Protocolo",
+  s0_4_intro: "O operador do protocolo pi2pi.io (o \"Operador\") não é parte deste Contrato. O Operador disponibiliza às Partes acesso a uma infraestrutura de software descentralizada (smart contracts, interface de usuário, armazenamento criptografado de documentos), que é executada automaticamente conforme regras predefinidas. O Operador:",
+  s0_4_bullets: [
+    "não presta serviços financeiros;",
+    "não detém, retém ou transfere recursos das Partes;",
+    "não presta serviços jurídicos, de assessoria ou de intermediação;",
+    "não verifica a identidade das Partes, a autenticidade dos documentos ou as condições reais do Imóvel;",
+    "não atua como árbitro, mediador ou representante de qualquer das Partes."
+  ],
+  s0_4_footer: "Todos os recursos das Partes, durante toda a vigência deste Contrato, permanecem exclusivamente sob o controle de smart contracts automatizados, cuja lógica é predefinida e está disponível às Partes para análise.",
+  s0_5_title: "0.5. Taxa do Protocolo",
+  s0_5: "Trinta por cento (30%) do rendimento auferido sobre os recursos depositados durante sua alocação no protocolo descentralizado de empréstimos de terceiros Aave v2 são destinados ao tesouro do protocolo a título de taxa de uso do protocolo. A referida taxa não constitui remuneração ao Operador por serviços prestados; não constitui cobrança pela guarda ou administração dos recursos das Partes; representa uma taxa pelo acesso à infraestrutura de software do protocolo e compensa os custos de seu desenvolvimento, implantação e manutenção. As Partes confirmam que foram informadas do valor da taxa antes da assinatura deste Contrato e a consideram razoável e aceitável.",
+  s0_6_title: "0.6. Aceitação de Riscos",
+  s0_6_intro: "As Partes aceitam e isentam o Operador de responsabilidade por:",
+  s0_6_bullets: [
+    "riscos de smart contracts de terceiros (incluindo Aave v2);",
+    "riscos de perda de paridade do USDC ou de seu valor;",
+    "riscos da blockchain (forks, indisponibilidade da rede, atrasos em transações);",
+    "riscos de perda, comprometimento ou furto das chaves privadas das Partes;",
+    "atos, omissões ou má-fé da contraparte;",
+    "autenticidade, vigência ou exatidão dos documentos carregados pela contraparte;",
+    "as condições reais do Imóvel e sua correspondência com a descrição constante do Contrato."
+  ],
+  s0_7_title: "0.7. Resolução de Reclamações",
+  s0_7: "Todas as reclamações e disputas entre as Partes serão resolvidas exclusivamente entre as Partes na forma estabelecida na Seção 6 deste Contrato e, quando necessário, em processo judicial nos termos da Seção 6.9. O Operador não é parte de qualquer disputa e não participa de sua resolução.",
+  s0_8_title: "0.8. Pessoal Técnico do Operador",
+  s0_8: "As pessoas físicas que realizam o desenvolvimento, a implantação e a manutenção técnica da infraestrutura de software do protocolo desempenham unicamente funções técnicas para manter a operacionalidade do código de software. Tais pessoas não são parte deste Contrato, não participam da execução de seus termos, não prestam às Partes serviços jurídicos, financeiros, de assessoria ou de intermediação, não realizam verificação de identidade, análise de documentos, avaliação do Imóvel, mediação de disputas ou quaisquer outros atos relacionados à substância do Contrato, e não têm acesso aos recursos depositados das Partes.",
+
+  // Section 1
+  s1_title: "1. PARTES",
+  landlord: "LOCADOR",
+  tenant: "LOCATÁRIO",
+  fullLegalName: "Nome Completo",
+  walletAddress: "Endereço da Carteira Blockchain (identificador legal)",
+  idDocument: "Documento de Identidade",
+
+  // Section 2
+  s2_title: "2. IMÓVEL",
+  address: "Endereço",
+  conditionNote: "As condições do Imóvel (fotografias e inventário) foram documentadas no momento da celebração deste Contrato — vide Anexo B.",
+  itemsIncluded: "Itens incluídos na locação: {count} item(ns) — vide Anexo C.",
+  ownershipCert: "Certidão de Propriedade do Imóvel",
+
+  // Section 3
+  s3_title: "3. CONDIÇÕES DA LOCAÇÃO",
+  startDate: "Data de Início",
+  endDate: "Data de Término",
+  duration: "Prazo",
+  monthlyRent: "Aluguel Mensal",
+  paymentSchedule: "Cronograma de Pagamentos",
+  paymentScheduleValue: "Mensalmente a partir da Data de Início",
+  paymentMethod: "Forma de Pagamento",
+  paymentMethodValue: "Stablecoin USDC na blockchain Arc Testnet",
+  gracePeriod: "Período de Carência do Aluguel",
+  gracePeriodValue: "{days} dias corridos",
+  leaseGrantTitle: "Outorga da Locação e Obrigações Principais",
+  leaseGrant: "O Locador dá em locação o Imóvel ao Locatário, e o Locatário aceita o Imóvel para uso residencial, pelo prazo de locação e pelo aluguel mensal estipulados neste Contrato.\n\nO Locatário pagará o aluguel mensal em USDC conforme o cronograma de pagamentos indicado acima. As Partes reconhecem que os depósitos, o status de pagamento do aluguel, os prazos e as liberações são regidos pelos registros do smart contract vinculado a este Contrato.\n\nAs condições do Imóvel, as fotografias carregadas, o documento de propriedade, os documentos de identidade e a relação de itens passam a integrar este Contrato como anexos. Ao assinar, cada Parte confirma ter analisado os anexos a ela disponibilizados antes da celebração.\n\nAo término da locação, o Locatário devolverá o Imóvel substancialmente nas mesmas condições, ressalvado o desgaste natural pelo uso, observados os procedimentos de vistoria e de resolução de disputas previstos neste Contrato.",
+
+  // Section 4
+  s4_title: "4. DEPÓSITOS E ESCROW",
+  s4_intro: "Todos os depósitos são mantidos em escrow não custodial em smart contract. Nenhuma das partes, nem o Operador, podem unilateralmente acessar ou redirecionar os recursos depositados.",
+  commitmentDeposit: "Depósito de Compromisso (Locatário)",
+  commitmentNote: "Devolvido ao término regular da locação. Perdido em favor do Locador em caso de inadimplência do aluguel ou de rescisão unilateral iniciada pelo Locatário.",
+  hostingDeposit: "Depósito de Hospedagem (Locador)",
+  hostingNote: "Devolvido ao término regular da locação. Perdido em favor do Locatário em caso de despejo indevido ou de rescisão unilateral iniciada pelo Locador.",
+  propDeposit: "Caução do Imóvel (Locatário)",
+  propNote: "Mantido no PropDepEscrow. Janela de vistoria de 7 dias após o término da locação. Devolvido caso não haja reclamação por danos.",
+  yieldTitle: "Rendimento de Staking",
+  yieldNote: "70% — divididos igualmente entre Locatário e Locador; 30% — taxa de uso do protocolo.",
+  smartContractAddr: "Endereço do Smart Contract",
+  depositedBy: "Depositado por",
+  amount: "Valor",
+
+  // Section 5
+  s5_title: "5. DOCUMENTOS VERIFICADOS APRESENTADOS",
+  uploaded: "Enviado",
+  notProvided: "Não fornecido",
+
+  // Section 6
+  s6_title: "6. RESOLUÇÃO DE DISPUTAS E RESCISÃO",
+  s6_1_title: "6.1. Rescisão Antecipada — Saída Mútua",
+  s6_1: "Ambas as partes assinam uma transação on-chain de saída mútua. Cada parte recebe seu próprio depósito integralmente. Não se aplicam penalidades.",
+  s6_2_title: "6.2. Rescisão Antecipada — Saída Unilateral com Cláusula Penal Compensatória",
+  s6_2: "Qualquer das Partes poderá rescindir este Contrato unilateralmente. O depósito da Parte que iniciou a rescisão é automaticamente transferido à contraparte como compensação previamente acordada (cláusula penal compensatória). A execução requer uma única transação on-chain; não é exigida a assinatura da contraparte.",
+  s6_3_title: "6.3. Rescisão Antecipada — Saída Disputada",
+  s6_3: "Quando uma Parte apresenta reivindicação sobre o depósito da contraparte, ambos os depósitos ficam congelados por sessenta (60) dias corridos. A contraparte poderá: Aceitar (Accept) — depósitos ao reclamante, Conceder (Concede) — depósitos à contraparte, ou Aguardar (Wait) — liquidação neutra após 60 dias.",
+  s6_4_title: "6.4. Prazos de Desocupação",
+  s6_4: "Iniciada pelo Locatário: 3 dias corridos. Iniciada pelo Locador: 7 dias corridos.",
+  s6_5_title: "6.5. Caução do Imóvel — Janela de Vistoria",
+  s6_5: "Janela de vistoria de 7 dias após o término da locação. Inexistindo reclamação → o depósito integral é devolvido automaticamente ao Locatário.",
+  s6_6_title: "6.6. Reclamação por Dano ao Imóvel",
+  s6_6: "O Locador poderá reclamar até o valor da Caução do Imóvel. O Locatário tem 3 dias para Aceitar ou Contestar. Em caso de contestação, o Locador deposita garantia; aplica-se o congelamento de 60 dias.",
+  s6_7_title: "6.7. Inadimplência do Aluguel",
+  s6_7: "Aplica-se o período de carência. O Locador poderá prorrogá-lo por até 14 dias. Esgotado o prazo, o Depósito de Compromisso do Locatário é perdido em favor do Locador.",
+  s6_8_title: "6.8. Término da Locação",
+  s6_8: "Expirado o prazo da locação, os depósitos são devolvidos e o contrato é liquidado. Para continuar a locação, as partes deverão celebrar um novo contrato do zero.",
+  s6_9_title: "6.9. Lei Aplicável e Jurisdição",
+  s6_9: "Regido pela lex rei sitae (lei do local onde se situa o imóvel). As disputas serão submetidas aos tribunais da jurisdição do Imóvel. Todos os registros on-chain são admissíveis como prova. A assinatura EIP-191 é reconhecida como equivalente à assinatura manuscrita.",
+  s6_10_title: "6.10. Reconhecimento da Stablecoin",
+  s6_10: "Todos os valores em USDC. As Partes concordam que o USDC satisfaz todas as obrigações pecuniárias, ainda que não se trate de moeda de curso legal.",
+  s6_11_title: "6.11. Autoridade do Smart Contract",
+  s6_11: "Os recursos são regidos pela lógica do smart contract. As liberações são automáticas e não estão sujeitas à atuação unilateral de qualquer das partes.",
+
+  // Section 7
+  s7_title: "7. DISPOSIÇÕES ADICIONAIS",
+  s7_1_title: "7.1. Uso Permitido",
+  s7_1: "Apenas para fins residenciais. Vedado o uso comercial, a sublocação por temporada e atividades ilícitas.",
+  s7_2_title: "7.2. Utilidades",
+  s7_2: "O Locatário é responsável pelas utilidades, salvo acordo em contrário. Os pagamentos são feitos off-chain diretamente aos prestadores.",
+  s7_3_title: "7.3. Manutenção",
+  s7_3: "Locatário: conservação ordinária e pequenos reparos. Locador: reparos estruturais e de sistemas. O desgaste natural pelo uso não constitui fundamento para reclamação por dano.",
+  s7_4_title: "7.4. Proteção de Dados",
+  s7_4: "Os documentos são armazenados de forma criptografada no IPFS. O Operador trata dados apenas para o funcionamento do protocolo.",
+  s7_5_title: "7.5. Idioma",
+  s7_5: "A versão em inglês é a prevalecente. As traduções são fornecidas apenas para conveniência.",
+  s7_6_title: "7.6. Independência das Cláusulas",
+  s7_6: "Cláusulas inválidas serão substituídas pelo equivalente válido mais próximo. As demais cláusulas permanecem inalteradas.",
+  s7_7_title: "7.7. Acordo Integral",
+  s7_7: "Este Contrato, em conjunto com os registros on-chain, constitui o acordo integral entre as Partes.",
+
+  // Section 8
+  s8_title: "8. ASSINATURAS CRIPTOGRÁFICAS",
+  signatureMethod: "Método de Assinatura: personal_sign (EIP-191)",
+  signedAt: "Assinado em",
+  notYetSigned: "Ainda não assinado",
+
+  // Footer
+  verification: "VERIFICAÇÃO",
+  agreementId: "ID do Contrato",
+  createdOnChain: "Criado on-chain",
+  verify: "Verificar",
+  documentHash: "SHA-256 do Documento",
+  footer: "Este Contrato foi gerado e assinado por meio do protocolo descentralizado de locação pi2pi.io. O registro on-chain é a versão prevalecente.",
+};

@@ -1,0 +1,24 @@
+# my.pi2pi.io — robots.txt
+#
+# This file covers only what this repository/server serves, at my.pi2pi.io.
+# The bare pi2pi.io domain is a separate GitHub Pages site with its own
+# repository, not this one — it is out of scope here and has its own
+# robots.txt if any.
+#
+# Public marketing/informational pages are open to crawling and indexing.
+# The app itself (everything after "#" in the URL, e.g. /#/feed, /#/dashboard)
+# is a client-side-rendered SPA (HashRouter) that crawlers cannot execute —
+# there is nothing server-side to disallow or allow at those paths, since the
+# server only ever sees "/". API endpoints and the admin console are explicitly
+# disallowed below.
+#
+# Note: robots.txt is a crawling directive, not an access-control mechanism.
+# It does not protect private data — actual authorization is enforced by the
+# application's existing session/auth layer, unchanged by this file.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+
+Sitemap: https://my.pi2pi.io/sitemap.xml

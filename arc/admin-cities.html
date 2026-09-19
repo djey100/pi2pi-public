@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex"/>
+  <title>pi2pi Admin — City Settings</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0f1c; color: #e2e8f0; padding: 20px; max-width: 600px; margin: 0 auto; }
+    h1 { font-size: 20px; margin-bottom: 6px; }
+    .sub { font-size: 12px; color: #64748b; margin-bottom: 20px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+    .row { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+    .row input { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #e2e8f0; font-size: 14px; font-family: inherit; }
+    .row input[type=number] { max-width: 120px; }
+    .btn { padding: 10px 20px; border-radius: 8px; border: none; font-weight: 700; font-size: 13px; cursor: pointer; font-family: inherit; }
+    .btn-primary { background: #3b82f6; color: white; }
+    .btn-danger { background: #ef4444; color: white; font-size: 11px; padding: 6px 12px; }
+    .btn-success { background: #22c55e; color: white; }
+    .btn-ghost { background: none; border: 1px solid #334155; color: #94a3b8; }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .city-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1e293b; }
+    .city-name { flex: 1; font-weight: 600; font-size: 14px; }
+    .city-min { font-size: 13px; color: #3b82f6; font-weight: 700; }
+    .status { padding: 8px 12px; border-radius: 8px; font-size: 12px; margin-top: 10px; }
+    .status-ok { background: #052e16; color: #22c55e; border: 1px solid #166534; }
+    .status-err { background: #450a0a; color: #ef4444; border: 1px solid #991b1b; }
+    .login-form { margin-top: 40px; }
+    .login-form input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #e2e8f0; font-size: 14px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>City Settings</h1>
+  <div class="sub">Minimum wallet balance required to publish a listing in each city</div>
+
+  <div id="login-section" style="display:none">
+    <div class="card login-form">
+      <div style="font-weight:700;margin-bottom:12px">Admin Login</div>
+      <input type="email" id="login-email" placeholder="Email"/>
+      <input type="password" id="login-pass" placeholder="Password"/>
+      <button class="btn btn-primary" style="width:100%" onclick="doLogin()">Login</button>
+      <div id="login-error" class="status status-err" style="display:none"></div>
+    </div>
+  </div>
+
+  <div id="main-section" style="display:none">
+    <div id="city-list"></div>
+
+    <div class="card" style="margin-top:16px">
+      <div style="font-weight:700;margin-bottom:10px">Add City</div>
+      <div class="row">
+        <input type="text" id="new-city" placeholder="City name (e.g. Tbilisi)"/>
+        <input type="number" id="new-min" placeholder="Min USDC" min="0" step="1"/>
+        <button class="btn btn-primary" onclick="addCity()">Add</button>
+      </div>
+    </div>
+
+    <button class="btn btn-success" style="width:100%;margin-top:12px" onclick="saveAll()">Save All</button>
+    <div id="save-status" style="display:none"></div>
+  </div>
+
+  <script>
+    let cities = [];
+    let cookie = null;
+
+    async function checkAuth() {
+      try {
+        const r = await fetch('/api/admin/me');
+        if (r.ok) { cookie = true; showMain(); return; }
+      } catch {}
+      document.getElementById('login-section').style.display = 'block';
+    }
+
+    async function doLogin() {
+      const email = document.getElementById('login-email').value;
+      const pass = document.getElementById('login-pass').value;
+      const errEl = document.getElementById('login-error');
+      try {
+        const r = await fetch('/api/admin/login', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({email, password: pass})
+        });
+        const d = await r.json();
+        if (r.ok) { cookie = true; showMain(); }
+        else { errEl.textContent = d.error || 'Login failed'; errEl.style.display = 'block'; }
+      } catch (e) { errEl.textContent = e.message; errEl.style.display = 'block'; }
+    }
+
+    async function showMain() {
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('main-section').style.display = 'block';
+      try {
+        const r = await fetch('/api/admin/city-settings');
+        if (r.ok) cities = await r.json();
+      } catch {}
+      render();
+    }
+
+    function render() {
+      const el = document.getElementById('city-list');
+      if (cities.length === 0) {
+        el.innerHTML = '<div class="card" style="text-align:center;color:#64748b">No cities configured yet</div>';
+        return;
+      }
+      el.innerHTML = '<div class="card">' + cities.map((c, i) =>
+        '<div class="city-item">' +
+          '<div class="city-name">' + esc(c.city) + '</div>' +
+          '<input type="number" min="0" step="1" value="' + c.min_balance + '" ' +
+            'onchange="updateMin(' + i + ', this.value)" ' +
+            'style="width:80px;padding:6px 8px;border-radius:6px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;font-size:13px;font-weight:700;text-align:right"/>' +
+          '<span style="font-size:11px;color:#64748b">USDC</span>' +
+          '<button class="btn btn-danger" onclick="removeCity(' + i + ')">✕</button>' +
+        '</div>'
+      ).join('') + '</div>';
+    }
+
+    function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    function updateMin(i, val) { cities[i].min_balance = Number(val) || 0; }
+    function removeCity(i) { cities.splice(i, 1); render(); }
+
+    function addCity() {
+      const name = document.getElementById('new-city').value.trim();
+      const min = Number(document.getElementById('new-min').value) || 0;
+      if (!name) return;
+      if (cities.some(c => c.city.toLowerCase() === name.toLowerCase())) { alert('City already exists'); return; }
+      cities.push({ city: name, min_balance: min });
+      document.getElementById('new-city').value = '';
+      document.getElementById('new-min').value = '';
+      render();
+    }
+
+    async function saveAll() {
+      const el = document.getElementById('save-status');
+      try {
+        const r = await fetch('/api/admin/city-settings', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({ cities })
+        });
+        const d = await r.json();
+        if (r.ok) {
+          el.className = 'status status-ok';
+          el.textContent = 'Saved! ' + cities.length + ' cities configured.';
+        } else {
+          el.className = 'status status-err';
+          el.textContent = d.error || 'Save failed';
+        }
+      } catch (e) {
+        el.className = 'status status-err';
+        el.textContent = e.message;
+      }
+      el.style.display = 'block';
+      setTimeout(() => { el.style.display = 'none'; }, 4000);
+    }
+
+    checkAuth();
+  </script>
+</body>
+</html>

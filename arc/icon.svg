@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#00E599"/>
+  <!-- House outline (open left wall) -->
+  <path d="M256 100 L420 210 L420 400 Q420 420 400 420 L140 420 Q120 420 120 400 L120 310" stroke="#0A1F3D" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="256" y="360" font-family="-apple-system, system-ui, sans-serif" font-size="140" font-weight="900" fill="#0A1F3D" text-anchor="middle" letter-spacing="-4">pi2pi</text>
+</svg>

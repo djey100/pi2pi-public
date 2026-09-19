@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>World ID — pi2pi</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; background: #1e3a5f; color: white; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .box { text-align: center; padding: 40px 28px; max-width: 360px; }
+    .icon { font-size: 56px; margin-bottom: 18px; }
+    h1 { font-size: 22px; margin: 0 0 10px; font-weight: 800; }
+    p { font-size: 14px; line-height: 1.6; opacity: 0.85; margin: 0 0 18px; }
+    .err { color: #fca5a5; }
+    .ok { color: #86efac; }
+    .spinner { width: 32px; height: 32px; border: 3px solid rgba(255,255,255,0.2); border-top-color: #86efac; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    a { color: #86efac; text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="box" id="box">
+    <div class="spinner"></div>
+    <h1>Verifying World ID…</h1>
+    <p>Please wait while we confirm your verification.</p>
+  </div>
+  <script>
+    (async () => {
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      const state = params.get("state");
+      const error = params.get("error");
+      const box = document.getElementById("box");
+      const renderError = (msg) => {
+        box.innerHTML = '<div class="icon">⚠️</div><h1 class="err">Verification failed</h1><p>' + msg + '</p><p><a href="/">← Back to pi2pi</a></p>';
+      };
+      const renderSuccess = () => {
+        box.innerHTML = '<div class="icon">✅</div><h1 class="ok">You are verified!</h1><p>Your World ID is now linked to your wallet. Redirecting back to pi2pi…</p>';
+        setTimeout(() => { window.location.href = "/?worldid_verified=1"; }, 1500);
+      };
+      if (error) return renderError("World ID returned error: " + error);
+      if (!code || !state) return renderError("Missing code or state in callback URL.");
+      let verifier = null;
+      try { verifier = localStorage.getItem("pi2pi_worldid_pkce_verifier"); } catch {}
+      if (!verifier) return renderError("Lost PKCE verifier. Please try again from pi2pi profile.");
+      try {
+        const r = await fetch("/api/verify/worldid-oidc", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code, code_verifier: verifier, addr: state, redirect_uri: window.location.origin + "/worldid-callback.html" }),
+        });
+        const data = await r.json();
+        if (!r.ok) return renderError(data.error || data.message || "Token exchange failed");
+        try { localStorage.removeItem("pi2pi_worldid_pkce_verifier"); } catch {}
+        renderSuccess();
+      } catch (e) {
+        renderError("Network error: " + e.message);
+      }
+    })();
+  </script>
+</body>
+</html>

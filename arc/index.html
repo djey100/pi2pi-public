@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+  <title>pi2pi.io</title>
+
+  <!-- PWA: install as standalone app -->
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#1e3a5f"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="pi2pi"/>
+  <link rel="apple-touch-icon" href="/icon-192.png"/>
+  <link rel="icon" type="image/png" href="/icon-192.png"/>
+
+  <!-- Design tokens v1.0 — must load BEFORE app CSS so tokens are available on first paint -->
+  <link rel="stylesheet" href="/styles/tokens.css"/>
+  <link rel="stylesheet" href="app.css"/>
+  <script>
+    // Restore persisted theme on load (default: light)
+    (function() {
+      try {
+        var t = localStorage.getItem('pi2pi-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { /* localStorage unavailable — keep default */ }
+    })();
+  </script>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
+  <!-- WalletConnect is loaded LAZILY on first click of the WC button (see
+       wallet adapter in wallet.js). We do NOT load it here so that
+       a network/CDN failure can never block the main app from rendering. -->
+
+  <!-- Leaflet for ListingWizard map step (added M5, 2026-04-16) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="i18n-ru.js"></script>
+  <script src="i18n-es.js"></script>
+  <script src="i18n-pt.js"></script>
+  <script src="i18n-en.js"></script>
+  <script src="helpers.js"></script>
+  <script src="wallet.js"></script>
+  <script src="mocks.js"></script>
+  <script src="pi2pi-app.js"></script>
+</body>
+</html>

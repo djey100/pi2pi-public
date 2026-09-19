@@ -1,0 +1,5835 @@
+pi2pi i18n Translation Template
+Total keys: 1166
+Missing in EN: 0
+Missing in RU: 0
+================================================================================
+
+KEY: a11y.close
+EN:  Close
+RU:  Закрыть
+NEW: 
+
+KEY: a11y.notifications
+EN:  Notifications
+RU:  Уведомления
+NEW: 
+
+KEY: a11y.qr_code
+EN:  QR
+RU:  QR
+NEW: 
+
+KEY: account.binance
+EN:  Binance
+RU:  Binance
+NEW: 
+
+KEY: account.binance_short
+EN:  Binance
+RU:  Binance
+NEW: 
+
+KEY: account.binance_verified
+EN:  Binance Verified
+RU:  Binance verified
+NEW: 
+
+KEY: account.biometric
+EN:  Biometric
+RU:  Биометрия
+NEW: 
+
+KEY: account.biometric_short
+EN:  Biometric
+RU:  Биометрия
+NEW: 
+
+KEY: account.biometric_wallet
+EN:  Biometric Wallet
+RU:  Биометрический кошелёк
+NEW: 
+
+KEY: account.circle_wallet
+EN:  Circle Wallet
+RU:  Circle Wallet
+NEW: 
+
+KEY: account.coinbase
+EN:  Coinbase
+RU:  Coinbase
+NEW: 
+
+KEY: account.coinbase_short
+EN:  Coinbase
+RU:  Coinbase
+NEW: 
+
+KEY: account.coinbase_verified
+EN:  Coinbase Verified
+RU:  Coinbase verified
+NEW: 
+
+KEY: account.contracts
+EN:  contracts
+RU:  контракты
+NEW: 
+
+KEY: account.injected_wallet
+EN:  Injected Wallet
+RU:  Injected-кошелёк
+NEW: 
+
+KEY: account.tap_to_get
+EN:  Tap to get {label}
+RU:  Нажмите, чтобы получить {label}
+NEW: 
+
+KEY: account.verified_suffix
+EN:  verified
+RU:  verified
+NEW: 
+
+KEY: account.viewings
+EN:  viewings
+RU:  просмотры
+NEW: 
+
+KEY: account.world_id
+EN:  World ID
+RU:  World ID
+NEW: 
+
+KEY: account.world_id_label
+EN:  World ID
+RU:  World ID
+NEW: 
+
+KEY: alert.world_id_verified
+EN:  Verified! You are now linked to your World ID.
+RU:  Подтверждено! Вы привязаны к вашему World ID.
+NEW: 
+
+KEY: balance.gate_check
+EN:  Checking balance...
+RU:  Проверка баланса...
+NEW: 
+
+KEY: balance.gate_city
+EN:  Minimum for {city}: {amount} USDC
+RU:  Минимум для {city}: {amount} USDC
+NEW: 
+
+KEY: balance.gate_insufficient
+EN:  The minimum monthly rent for {city} is {amount} USDC. Your wallet must hold at least this amount to publish a listing. This is not a payment — funds stay in your wallet.
+RU:  Минимальная месячная аренда для {city} — {amount} USDC. На кошельке должна быть как минимум эта сумма для публикации объявления. Это не оплата — средства остаются на вашем кошельке.
+NEW: 
+
+KEY: balance.gate_ok
+EN:  Balance sufficient. You can proceed.
+RU:  Баланс достаточен. Можете продолжить.
+NEW: 
+
+KEY: balance.gate_title
+EN:  Minimum balance required
+RU:  Требуется минимальный баланс
+NEW: 
+
+KEY: balance.gate_topup
+EN:  Top up your wallet to continue.
+RU:  Пополните кошелёк для продолжения.
+NEW: 
+
+KEY: balance.gate_your
+EN:  Your wallet balance: {balance} USDC
+RU:  Баланс вашего кошелька: {balance} USDC
+NEW: 
+
+KEY: banner.active.month_progress
+EN:  Month {month} of {total} · {daysLeft} days remaining
+RU:  Месяц {month} из {total} · осталось {daysLeft} дней
+NEW: 
+
+KEY: banner.active.onchain
+EN:  Contract active on-chain
+RU:  Контракт активен on-chain
+NEW: 
+
+KEY: banner.checkout.declined_renewal
+EN:  Either party declined renewal
+RU:  Одна из сторон отказалась от продления
+NEW: 
+
+KEY: banner.damage.response_required
+EN:  Response required within 3 days
+RU:  Ответ требуется в течение 3 дней
+NEW: 
+
+KEY: banner.dispute.freeze_expired
+EN:  Freeze expired · ready to release
+RU:  Заморозка истекла · готово к разблокировке
+NEW: 
+
+KEY: banner.dispute.frozen_countdown
+EN:  Frozen · unfreezes in {countdown}
+RU:  Заморожено · разморозка через {countdown}
+NEW: 
+
+KEY: banner.dispute.resolving
+EN:  Deposits frozen · resolving via protocol
+RU:  Депозиты заморожены · разрешение по протоколу
+NEW: 
+
+KEY: banner.ended.concluded
+EN:  Lease concluded · landlord checks property, then releases deposit
+RU:  Аренда завершена · владелец осматривает объект и возвращает депозит
+NEW: 
+
+KEY: banner.ended.inspection_countdown
+EN:  Landlord inspection · {countdown} left to file damage claim
+RU:  Осмотр владельцем · осталось {countdown} для подачи претензии
+NEW: 
+
+KEY: banner.ended.inspection_expired
+EN:  Inspection window expired · deposit auto-returns to tenant
+RU:  Срок осмотра истёк · депозит автоматически возвращается жильцу
+NEW: 
+
+KEY: banner.ending.prepare_checkout
+EN:  Prepare for checkout · renewal vote opens soon
+RU:  Готовьтесь к выезду · голосование за продление скоро откроется
+NEW: 
+
+KEY: banner.et.awaiting_response
+EN:  One side requested termination · awaiting response
+RU:  Одна сторона запросила расторжение · ожидание ответа
+NEW: 
+
+KEY: banner.propdep.bond_countdown
+EN:  Bond posted · unfreezes in {countdown}
+RU:  Бонд внесён · разморозка через {countdown}
+NEW: 
+
+KEY: banner.propdep.bond_offchain
+EN:  Bond posted · 60-day freeze · resolving off-chain
+RU:  Бонд внесён · 60-дневная заморозка · разрешение off-chain
+NEW: 
+
+KEY: banner.propdep.claimed_response
+EN:  Tenant response required within 3 days
+RU:  Ответ жильца требуется в течение 3 дней
+NEW: 
+
+KEY: banner.propdep.disputed_awaiting_bond
+EN:  Tenant contested · awaiting landlord bond
+RU:  Жилец оспорил · ожидание бонда владельца
+NEW: 
+
+KEY: banner.propdep.freeze_expired
+EN:  Freeze expired · ready to release
+RU:  Заморозка истекла · готово к разблокировке
+NEW: 
+
+KEY: banner.provisional.awaiting_landlord
+EN:  Awaiting Landlord deposit
+RU:  Ожидание депозита владельца
+NEW: 
+
+KEY: banner.provisional.awaiting_tenant
+EN:  Awaiting Tenant deposit
+RU:  Ожидание депозита жильца
+NEW: 
+
+KEY: banner.provisional.created
+EN:  Created
+RU:  Создан
+NEW: 
+
+KEY: banner.provisional.pending
+EN:  Pending
+RU:  В ожидании
+NEW: 
+
+KEY: banner.settled.closed
+EN:  Contract closed · all funds distributed
+RU:  Контракт закрыт · все средства распределены
+NEW: 
+
+KEY: banner.settled_partial.pending_propdep
+EN:  Agreement closed · awaiting property deposit resolution
+RU:  Контракт закрыт · ожидание распределения депозита за имущество
+NEW: 
+
+KEY: banner.unknown.state_code
+EN:  State code: {code}
+RU:  Код состояния: {code}
+NEW: 
+
+KEY: body.active_contract
+EN:  Active contract
+RU:  Активный контракт
+NEW: 
+
+KEY: body.all_confirmed
+EN:  All transactions confirmed on-chain
+RU:  Все транзакции подтверждены on-chain
+NEW: 
+
+KEY: body.awaiting_deposits_activate
+EN:  Awaiting deposits to activate
+RU:  Ожидание депозитов для активации
+NEW: 
+
+KEY: body.blocked_contract
+EN:  You have an active contract. Settle it before switching.
+RU:  У вас есть активный контракт. Закройте его перед сменой роли.
+NEW: 
+
+KEY: body.blocked_listings
+EN:  You have active listings. Archive them before switching.
+RU:  У вас есть активные объявления. Архивируйте их перед сменой роли.
+NEW: 
+
+KEY: body.both_deposit_activate
+EN:  Both sides must deposit to activate contract
+RU:  Обе стороны должны внести депозит для активации контракта
+NEW: 
+
+KEY: body.both_must_deposit
+EN:  Both parties must deposit.
+RU:  Обе стороны должны внести депозит.
+NEW: 
+
+KEY: body.choose_name_desc
+EN:  Choose a name that will replace your wallet address everywhere on pi2pi (profile, listings, chat).
+RU:  Выберите имя, которое заменит ваш адрес кошелька везде на pi2pi (профиль, объявления, чат).
+NEW: 
+
+KEY: body.confirm_in_wallet
+EN:  Confirm the signature in your wallet app
+RU:  Подтвердите подпись в вашем приложении кошелька
+NEW: 
+
+KEY: body.connect_wallet
+EN:  Connect your wallet · {network}
+RU:  Подключите кошелёк · {network}
+NEW:
+
+KEY: body.contract_message_alerts
+EN:  Contract & message alerts
+RU:  Уведомления о контрактах и сообщениях
+NEW: 
+
+KEY: body.damage_claim_settled
+EN:  Damage claim settled
+RU:  Претензия по ущербу закрыта
+NEW: 
+
+KEY: body.dark_desc
+EN:  Optimized for low-light environments
+RU:  Оптимизирована для условий низкой освещённости
+NEW: 
+
+KEY: body.dark_mode
+EN:  Dark mode
+RU:  Тёмная тема
+NEW: 
+
+KEY: body.deposit_secured
+EN:  Deposit secured
+RU:  Депозит защищён
+NEW: 
+
+KEY: body.deposited
+EN:  Deposited
+RU:  Внесено
+NEW: 
+
+KEY: body.dispute_claimant
+EN:  You claimed counterparty's deposit. Waiting for resolution via local law or counterparty's acceptance.
+RU:  Вы претендуете на депозит контрагента. Ожидание разрешения по местному праву или согласия контрагента.
+NEW: 
+
+KEY: body.dispute_respondent
+EN:  Counterparty claimed your deposit. You can accept, or wait for freeze expiry — deposits return to each owner.
+RU:  Контрагент претендует на ваш депозит. Вы можете принять или дождаться окончания заморозки — депозиты вернутся каждому.
+NEW: 
+
+KEY: body.do_not_close
+EN:  Do not close this window
+RU:  Не закрывайте это окно
+NEW: 
+
+KEY: body.email_instructions
+EN:  Add your email to receive alerts — new messages, viewing requests, contract updates.
+RU:  Добавьте email для уведомлений — новые сообщения, запросы на просмотр, обновления контрактов.
+NEW: 
+
+KEY: body.email_sent
+EN:  Confirmation sent to {email}. Check inbox + Spam. Click the link inside to verify.
+RU:  Письмо с подтверждением отправлено на {email}. Проверьте «Входящие» и «Спам». Перейдите по ссылке для подтверждения.
+NEW: 
+
+KEY: body.escrow_protected
+EN:  Escrow protected
+RU:  Под защитой эскроу
+NEW: 
+
+KEY: body.et_cannot_undo
+EN:  Terminate early cannot be undone. Once submitted, the counterparty will be notified.
+RU:  Досрочное расторжение нельзя отменить. После отправки контрагент получит уведомление.
+NEW: 
+
+KEY: body.et_choose
+EN:  Choose how to handle deposits upon exit.
+RU:  Выберите, как распределить депозиты при выходе.
+NEW: 
+
+KEY: body.et_discuss
+EN:  We recommend discussing the situation in chat before initiating early exit.
+RU:  Рекомендуем обсудить ситуацию в чате перед инициированием досрочного выхода.
+NEW: 
+
+KEY: body.et_dispute_tip
+EN:  You claim counterparty's deposit. Both deposits frozen 60 days.
+RU:  Вы претендуете на депозит контрагента. Оба депозита заморожены на 60 дней.
+NEW: 
+
+KEY: body.et_mutual_tip
+EN:  Both parties get their deposits back. No penalty.
+RU:  Обе стороны получают свои депозиты обратно. Без штрафов.
+NEW: 
+
+KEY: body.et_offer_tip
+EN:  Your deposit will be offered to the counterparty as compensation.
+RU:  Ваш депозит будет предложен контрагенту в качестве компенсации.
+NEW: 
+
+KEY: body.identity_verifications
+EN:  Identity Verifications
+RU:  Подтверждения личности
+NEW: 
+
+KEY: body.identity_verified_onchain
+EN:  Identity verified on-chain
+RU:  Личность подтверждена on-chain
+NEW: 
+
+KEY: body.intent_not_visible
+EN:  Intent does not make you visible to others — only published listings (for landlords) appear in feed.
+RU:  Ваш запрос не виден другим — в ленте показаны только опубликованные объявления (для владельцев).
+NEW: 
+
+KEY: body.landlord_deposited_wait
+EN:  Landlord deposited. Tenant: deposit {amount} USDC.
+RU:  Арендодатель внёс залог. Арендатор: внесите {amount} USDC.
+NEW: 
+
+KEY: body.light_desc
+EN:  Classic light interface
+RU:  Классический светлый интерфейс
+NEW: 
+
+KEY: body.light_mode
+EN:  Light mode
+RU:  Светлая тема
+NEW: 
+
+KEY: body.listing_deleted
+EN:  Listing deleted
+RU:  Объявление удалено
+NEW: 
+
+KEY: body.listing_wizard_coming
+EN:  Listing wizard coming next
+RU:  Мастер создания объявлений — скоро
+NEW: 
+
+KEY: body.loading
+EN:  Loading…
+RU:  Загрузка…
+NEW: 
+
+KEY: body.manage_listings
+EN:  Manage what's visible to tenants. Up to 3 listings.
+RU:  Управляйте тем, что видят жильцы. До 3 объявлений.
+NEW: 
+
+KEY: body.name_cannot_undo
+EN:  This cannot be undone. After confirming, you will not be able to rename.
+RU:  Это нельзя отменить. После подтверждения вы не сможете переименоваться.
+NEW: 
+
+KEY: body.name_confirm
+EN:  Set "{name}" as your permanent display name?
+RU:  Установить "{name}" как ваше постоянное отображаемое имя?
+NEW: 
+
+KEY: body.name_one_time
+EN:  One-time only. Once set, the display name is permanent and cannot be changed later. Pick carefully.
+RU:  Только один раз. После установки отображаемое имя станет постоянным и не может быть изменено. Выбирайте внимательно.
+NEW: 
+
+KEY: body.no_listings
+EN:  You don't have any listings yet
+RU:  У вас пока нет объявлений
+NEW: 
+
+KEY: body.no_messages
+EN:  No messages yet
+RU:  Сообщений пока нет
+NEW: 
+
+KEY: body.no_propdep_set
+EN:  No property security deposit set
+RU:  Депозит за имущество не установлен
+NEW: 
+
+KEY: body.no_transactions
+EN:  No transactions yet
+RU:  Транзакций пока нет
+NEW: 
+
+KEY: body.not_yet_signed
+EN:  Not yet signed
+RU:  Ещё не подписано
+NEW: 
+
+KEY: body.on_chain
+EN:  On-chain
+RU:  On-chain
+NEW: 
+
+KEY: body.on_chain_verified
+EN:  On-chain verified
+RU:  Подтверждено on-chain
+NEW: 
+
+KEY: body.phone_coming_soon
+EN:  optional · coming soon
+RU:  необязательно · скоро появится
+NEW: 
+
+KEY: body.processing
+EN:  Processing…
+RU:  Обработка…
+NEW: 
+
+KEY: body.product_updates
+EN:  Product updates
+RU:  Обновления продукта
+NEW: 
+
+KEY: body.propdep_returned_full
+EN:  Property deposit returned in full
+RU:  Депозит за имущество возвращён полностью
+NEW: 
+
+KEY: body.publish_apartment
+EN:  Publish your apartment
+RU:  Опубликуйте вашу квартиру
+NEW: 
+
+KEY: body.real_people_only
+EN:  Real people only. No bots.
+RU:  Только реальные люди. Без ботов.
+NEW: 
+
+KEY: body.renewal_info
+EN:  If you wish to continue, sign a brand-new agreement with the same counterparty.
+RU:  Если хотите продолжить — подпишите новый контракт с тем же контрагентом.
+NEW: 
+
+KEY: body.renewal_vote_explain
+EN:  Extend = renew on same terms. Renegotiate = current lease ends, discuss new contract in chat. End = lease expires, deposits returned.
+RU:  Продлить = на тех же условиях. Пересмотреть = текущая аренда заканчивается, новый контракт обсуждаете в чате. Завершить = аренда истекает, депозиты возвращаются.
+NEW: 
+
+KEY: body.review_before_signing
+EN:  Review all transactions before signing
+RU:  Проверьте все транзакции перед подписанием
+NEW: 
+
+KEY: body.saving
+EN:  Saving…
+RU:  Сохранение…
+NEW: 
+
+KEY: body.scan_qr
+EN:  Scan the QR code or open your wallet app…
+RU:  Отсканируйте QR-код или откройте приложение кошелька…
+NEW: 
+
+KEY: body.security_deposit_escrow
+EN:  security deposit in escrow
+RU:  депозит за имущество в эскроу
+NEW: 
+
+KEY: body.sending
+EN:  Sending…
+RU:  Отправка…
+NEW: 
+
+KEY: body.set_intent_subtitle
+EN:  Tell us what you're looking for — city, budget, type.
+RU:  Расскажите, что ищете — город, бюджет, тип.
+NEW: 
+
+KEY: body.show_can_pay
+EN:  Show you can pay. Hold at least 1× monthly rent. Just checked, never locked.
+RU:  Покажите, что можете платить. Держите на балансе минимум 1× месячной аренды. Проверяется однократно, средства не блокируются.
+NEW: 
+
+KEY: body.signing
+EN:  Signing…
+RU:  Подписание…
+NEW: 
+
+KEY: body.switch_desc
+EN:  Currently: {role}. Switch to {target}.
+RU:  Сейчас: {role}. Переключить на {target}.
+NEW: 
+
+KEY: body.switch_warning
+EN:  Your current intent will be cleared. You'll need to set a new one for your new role.
+RU:  Ваше текущее намерение будет сброшено. Вам нужно будет задать новое для новой роли.
+NEW: 
+
+KEY: body.switching
+EN:  Switching…
+RU:  Переключение…
+NEW: 
+
+KEY: body.tenant_deposited_wait
+EN:  Tenant deposited. Landlord: deposit {amount} USDC.
+RU:  Жилец внёс депозит. Владелец: внесите {amount} USDC.
+NEW: 
+
+KEY: body.use_faceid
+EN:  Use Face ID or Touch ID to sign in…
+RU:  Используйте Face ID или Touch ID для входа…
+NEW: 
+
+KEY: body.waiting_landlord
+EN:  Waiting for landlord…
+RU:  Ожидание ответа владельца…
+NEW: 
+
+KEY: body.waiting_landlord_inspect
+EN:  Waiting for landlord to inspect property…
+RU:  Ожидание осмотра объекта владельцем…
+NEW: 
+
+KEY: body.waiting_photos
+EN:  Waiting for Landlord to upload photos…
+RU:  Ожидание загрузки фото владельцем…
+NEW: 
+
+KEY: body.waiting_tenant
+EN:  Waiting for tenant…
+RU:  Ожидание ответа жильца…
+NEW: 
+
+KEY: body.wallet_balance
+EN:  Wallet balance
+RU:  Баланс кошелька
+NEW: 
+
+KEY: body.what_looking_for
+EN:  What are you looking for? Sign it with your wallet.
+RU:  Что ищете? Подпишите кошельком.
+NEW: 
+
+KEY: body.what_offering
+EN:  What are you offering? Sign it with your wallet.
+RU:  Что предлагаете? Подпишите кошельком.
+NEW: 
+
+KEY: body.what_to_send
+EN:  What to send you
+RU:  Какие уведомления отправлять
+NEW: 
+
+KEY: btn.accept_claim
+EN:  Accept Claim — Give My Deposit
+RU:  Принять претензию — отдать мой депозит
+NEW: 
+
+KEY: btn.add
+EN:  Add
+RU:  Добавить
+NEW: 
+
+KEY: btn.apply_now
+EN:  Apply now
+RU:  Подать заявку
+NEW: 
+
+KEY: btn.archive
+EN:  Archive
+RU:  Архивировать
+NEW: 
+
+KEY: btn.archive_contract
+EN:  Move to archive
+RU:  В архив
+NEW: 
+
+KEY: btn.ask_host
+EN:  Ask host
+RU:  Спросить хозяина
+NEW: 
+
+KEY: btn.back
+EN:  ← Back
+RU:  ← Назад
+NEW: 
+
+KEY: btn.back_review
+EN:  ← Back to review
+RU:  ← Вернуться к проверке
+NEW: 
+
+KEY: btn.cancel
+EN:  Cancel
+RU:  Отмена
+NEW: 
+
+KEY: btn.cancel_rental_dispute
+EN:  Cancel rental dispute (penalty applies)
+RU:  Отменить спор по аренде (штраф)
+NEW: 
+
+KEY: btn.change_email
+EN:  Change email
+RU:  Изменить email
+NEW: 
+
+KEY: btn.chat
+EN:  Chat
+RU:  Чат
+NEW: 
+
+KEY: btn.check_balance
+EN:  Check balance →
+RU:  Проверить баланс →
+NEW: 
+
+KEY: btn.close
+EN:  Close
+RU:  Закрыть
+NEW: 
+
+KEY: btn.complete_reg
+EN:  Complete registration →
+RU:  Завершить регистрацию →
+NEW: 
+
+KEY: btn.confirm
+EN:  Confirm
+RU:  Подтвердить
+NEW: 
+
+KEY: btn.continue
+EN:  Continue →
+RU:  Продолжить →
+NEW: 
+
+KEY: btn.copied
+EN:  Copied!
+RU:  Скопировано!
+NEW: 
+
+KEY: btn.copy_address
+EN:  Copy address
+RU:  Копировать адрес
+NEW: 
+
+KEY: btn.create
+EN:  Create
+RU:  Создать
+NEW: 
+
+KEY: btn.create_another
+EN:  + Create another listing
+RU:  + Создать ещё объявление
+NEW: 
+
+KEY: btn.create_first_listing
+EN:  Create your first listing
+RU:  Создайте своё первое объявление
+NEW: 
+
+KEY: btn.delete
+EN:  Delete
+RU:  Удалить
+NEW: 
+
+KEY: btn.download_pdf
+EN:  Download Agreement PDF
+RU:  Скачать договор в PDF
+NEW: 
+
+KEY: btn.edit
+EN:  Edit
+RU:  Редактировать
+NEW: 
+
+KEY: btn.edit_intent
+EN:  Edit intent
+RU:  Изменить запрос
+NEW: 
+
+KEY: btn.end_lease
+EN:  End Lease
+RU:  Завершить аренду
+NEW: 
+
+KEY: btn.end_not_renewing
+EN:  End — not renewing
+RU:  Завершить — без продления
+NEW: 
+
+KEY: btn.extend
+EN:  Extend — same terms
+RU:  Продлить — на тех же условиях
+NEW: 
+
+KEY: btn.flag_rent_missed
+EN:  Flag Rent Missed — Forfeit Tenant's Deposit
+RU:  Зафиксировать неоплату — удержать депозит жильца
+NEW: 
+
+KEY: btn.force_checkout
+EN:  Force Checkout (silence expired)
+RU:  Принудительный выезд (срок ожидания истёк)
+NEW: 
+
+KEY: btn.go_back
+EN:  Go back
+RU:  Вернуться
+NEW: 
+
+KEY: btn.go_dashboard
+EN:  → Go to Dashboard
+RU:  → В договор
+NEW: 
+
+KEY: btn.grant_grace
+EN:  Grant Extra Days for Rent
+RU:  Предоставить дополнительные дни для оплаты
+NEW: 
+
+KEY: btn.landlord_deposit
+EN:  Landlord Deposit ({amount} USDC)
+RU:  Депозит владельца ({amount} USDC)
+NEW: 
+
+KEY: btn.next_funds
+EN:  Next: Proof of Funds →
+RU:  Далее: Подтверждение платёжеспособности →
+NEW: 
+
+KEY: btn.next_intent
+EN:  Next: Proof of Intent →
+RU:  Далее: Подтверждение намерений →
+NEW: 
+
+KEY: btn.offer_place
+EN:  Offer viewing
+RU:  Предложить просмотр
+NEW: 
+
+KEY: btn.offer_viewing
+EN:  Offer viewing
+RU:  Предложить просмотр
+NEW: 
+
+KEY: btn.offered
+EN:  Offered
+RU:  Предложено
+NEW: 
+
+KEY: btn.open
+EN:  Open
+RU:  Открыть
+NEW: 
+
+KEY: btn.open_et_form
+EN:  Open Terminate Early Form
+RU:  Открыть форму досрочного расторжения
+NEW: 
+
+KEY: btn.open_full_doc
+EN:  Lease Agreement
+RU:  Договор аренды
+NEW: 
+
+KEY: btn.pause
+EN:  Pause
+RU:  Приостановить
+NEW: 
+
+KEY: btn.pause_intent
+EN:  Pause
+RU:  Пауза
+NEW: 
+
+KEY: btn.pay_rent
+EN:  Pay Rent ({amount} USDC)
+RU:  Оплатить аренду ({amount} USDC)
+NEW: 
+
+KEY: btn.print
+EN:  Print
+RU:  Печать
+NEW: 
+
+KEY: btn.publish
+EN:  Publish
+RU:  Опубликовать
+NEW: 
+
+KEY: btn.quick_summary
+EN:  Quick Summary
+RU:  Краткая сводка
+NEW: 
+
+KEY: btn.receive
+EN:  Receive
+RU:  Получить
+NEW: 
+
+KEY: btn.refresh
+EN:  Refresh
+RU:  Обновить
+NEW: 
+
+KEY: btn.refresh_balance
+EN:  Refresh balance
+RU:  Обновить баланс
+NEW: 
+
+KEY: btn.release_frozen
+EN:  Release Frozen Funds
+RU:  Разблокировать замороженные депозиты
+NEW: 
+
+KEY: btn.remove
+EN:  Remove
+RU:  Удалить
+NEW: 
+
+KEY: btn.renegotiate
+EN:  Renegotiate — discuss new terms
+RU:  Пересмотреть — обсудить новые условия
+NEW: 
+
+KEY: btn.request_viewing
+EN:  Request viewing
+RU:  Запросить просмотр
+NEW: 
+
+KEY: btn.resend
+EN:  Resend
+RU:  Отправить повторно
+NEW: 
+
+KEY: btn.resume
+EN:  Resume
+RU:  Возобновить
+NEW: 
+
+KEY: btn.resume_intent
+EN:  Resume
+RU:  Возобновить
+NEW: 
+
+KEY: btn.resume_recheck
+EN:  Resume (recheck balance)
+RU:  Возобновить (перепроверить баланс)
+NEW: 
+
+KEY: btn.save
+EN:  Save
+RU:  Сохранить
+NEW: 
+
+KEY: btn.save_bookmark
+EN:  Save
+RU:  Сохранить
+NEW: 
+
+KEY: btn.save_changes
+EN:  Save changes
+RU:  Сохранить изменения
+NEW: 
+
+KEY: btn.save_intent
+EN:  Save intent
+RU:  Сохранить запрос
+NEW: 
+
+KEY: btn.saved
+EN:  Saved
+RU:  Сохранено
+NEW: 
+
+KEY: btn.send
+EN:  Send
+RU:  Отправить
+NEW: 
+
+KEY: btn.set_name
+EN:  Set name
+RU:  Задать имя
+NEW: 
+
+KEY: btn.set_permanently
+EN:  Yes, set permanently
+RU:  Да, задать навсегда
+NEW: 
+
+KEY: btn.sign_deposit
+EN:  Sign & Deposit
+RU:  Подписать и внести депозит
+NEW: 
+
+KEY: btn.sign_intent
+EN:  Sign intent with wallet →
+RU:  Подписать намерение кошельком →
+NEW: 
+
+KEY: btn.sign_wallet
+EN:  Sign with wallet
+RU:  Подписать кошельком
+NEW: 
+
+KEY: btn.start_agreement
+EN:  Start Agreement
+RU:  Начать контракт
+NEW: 
+
+KEY: btn.start_new_agreement
+EN:  Start a New Agreement with {peer}
+RU:  Начать новый контракт с {peer}
+NEW: 
+
+KEY: btn.switch_to_landlord
+EN:  Switch to Landlord
+RU:  Стать владельцем
+NEW: 
+
+KEY: btn.switch_to_tenant
+EN:  Switch to Tenant
+RU:  Стать жильцом
+NEW: 
+
+KEY: btn.tenant_deposit
+EN:  Tenant Deposit ({amount} USDC)
+RU:  Депозит жильца ({amount} USDC)
+NEW: 
+
+KEY: btn.terminate_early
+EN:  Terminate Early
+RU:  Досрочное расторжение
+NEW: 
+
+KEY: btn.tx_history
+EN:  Transaction History
+RU:  История транзакций
+NEW: 
+
+KEY: btn.verify_identity
+EN:  Verify identity →
+RU:  Подтвердить личность →
+NEW: 
+
+KEY: btn.view
+EN:  View
+RU:  Просмотр
+NEW: 
+
+KEY: btn.viewing_requested
+EN:  Viewing requested
+RU:  Просмотр запрошен
+NEW: 
+
+KEY: btn.yes_switch
+EN:  Yes, switch
+RU:  Да, сменить
+NEW: 
+
+KEY: cf.ack_by_party
+EN:  Acknowledgement by each party
+RU:  Подтверждение каждой стороной
+NEW: 
+
+KEY: cf.ack_tenant_terms
+EN:  Tenant: I agree to the contract terms above and the standard pi2pi protocol clauses.
+RU:  Жилец: Я согласен с условиями контракта выше и стандартными положениями протокола pi2pi.
+NEW: 
+
+KEY: cf.add
+EN:  Add
+RU:  Добавить
+NEW: 
+
+KEY: cf.agree_provide
+EN:  I agree to provide this deposit
+RU:  Я согласен внести этот депозит
+NEW: 
+
+KEY: cf.agreed_will_deposit
+EN:  Agreed — I will deposit {amount} USDC
+RU:  Согласен — я внесу {amount} USDC
+NEW: 
+
+KEY: cf.agreement_summary
+EN:  Agreement Summary
+RU:  Сводка по контракту
+NEW: 
+
+KEY: cf.amount_max
+EN:  Amount (max {max} USDC)
+RU:  Сумма (макс. {max} USDC)
+NEW: 
+
+KEY: cf.back
+EN:  Back
+RU:  Назад
+NEW: 
+
+KEY: cf.both_equal
+EN:  Both equal 1× monthly rent. Auto-calculated.
+RU:  Оба равны 1× ежемесячной аренде. Рассчитываются автоматически.
+NEW: 
+
+KEY: cf.commitment_dep
+EN:  Commitment deposit (tenant) = {amount} USDC
+RU:  Commitment Deposit (жилец) = {amount} USDC
+NEW: 
+
+KEY: cf.commitment_dep_label
+EN:  Commitment Deposit (Tenant)
+RU:  Commitment Deposit (Жилец)
+NEW: 
+
+KEY: cf.commitment_to_escrow
+EN:  {mr} USDC — commitment deposit → escrow
+RU:  {mr} USDC — Commitment Deposit → эскроу
+NEW: 
+
+KEY: cf.confirm_no_deposit
+EN:  Confirm: no deposit required
+RU:  Подтвердить: депозит не требуется
+NEW: 
+
+KEY: cf.confirmed_no_deposit
+EN:  Confirmed — no deposit
+RU:  Подтверждено — без депозита
+NEW: 
+
+KEY: cf.counterparty_signature
+EN:  Counterparty signature
+RU:  Подпись контрагента
+NEW: 
+
+KEY: cf.deployed_onchain
+EN:  Agreement deployed on-chain!
+RU:  Контракт задеплоен on-chain!
+NEW: 
+
+KEY: cf.deposit_agreed
+EN:  Deposit agreed — {amount} USDC · locks in Aave v2 on signing
+RU:  Депозит согласован — {amount} USDC · блокируется в Aave v2 при подписании
+NEW: 
+
+KEY: cf.first_rent_to_ll
+EN:  {mr} USDC — first month rent → Landlord
+RU:  {mr} USDC — аренда за первый месяц → Владелец
+NEW: 
+
+KEY: cf.hosting_dep
+EN:  Hosting deposit (landlord) = {amount} USDC
+RU:  Hosting Deposit (владелец) = {amount} USDC
+NEW: 
+
+KEY: cf.hosting_dep_label
+EN:  Hosting Deposit (Landlord)
+RU:  Hosting Deposit (Владелец)
+NEW: 
+
+KEY: cf.hosting_deposit_note
+EN:  (hosting deposit)
+RU:  (Hosting Deposit)
+NEW: 
+
+KEY: cf.id_warning
+EN:  The platform does not verify identity documents. Both parties are responsible for personally reviewing each other's ID before signing.
+RU:  Платформа не верифицирует документы. Обе стороны обязаны лично проверить документы друг друга перед подписанием.
+NEW: 
+
+KEY: cf.important
+EN:  Important
+RU:  ★ Важное
+NEW: 
+
+KEY: cf.inventory_ll
+EN:  List items included with the rental. Mark important items and add photos. Tenant will confirm.
+RU:  Перечислите предметы, включённые в аренду. Отметьте важные и добавьте фото. Жилец подтвердит.
+NEW: 
+
+KEY: cf.inventory_tn
+EN:  Review the inventory list prepared by Landlord. Confirm it matches what you observed.
+RU:  Проверьте опись, подготовленную владельцем. Подтвердите, что она соответствует тому, что вы видели.
+NEW: 
+
+KEY: cf.ipfs_prefix
+EN:  IPFS: {cid}…
+RU:  IPFS: {cid}…
+NEW: 
+
+KEY: cf.landlord_confirmed_id
+EN:  ✓ Landlord confirmed your ID.
+RU:  ✓ Владелец подтвердил ваш документ.
+NEW: 
+
+KEY: cf.landlord_id
+EN:  Landlord ID
+RU:  Документ владельца
+NEW: 
+
+KEY: cf.landlord_national_id
+EN:  Landlord — National ID
+RU:  Владелец — Удостоверение личности
+NEW: 
+
+KEY: cf.landlord_total
+EN:  Landlord total required
+RU:  Всего необходимо владельцу
+NEW: 
+
+KEY: cf.lease_ends
+EN:  Lease ends: {date}
+RU:  Окончание аренды: {date}
+NEW: 
+
+KEY: cf.ll_ack_tenant_id
+EN:  Landlord: I have personally reviewed the tenant's ID and accept it as valid.
+RU:  Владелец: Я лично проверил документ жильца и считаю его действительным.
+NEW: 
+
+KEY: cf.ll_decides
+EN:  Landlord decides: no deposit or set amount
+RU:  Владелец решает: без депозита или указать сумму
+NEW: 
+
+KEY: cf.ll_requires_deposit
+EN:  Landlord requires {amount} USDC deposit. This will be locked in Aave v2 and earns you yield while locked.
+RU:  Владелец требует депозит {amount} USDC. Он блокируется в Aave v2 и приносит вам доход, пока заблокирован.
+NEW: 
+
+KEY: cf.lock_hosting
+EN:  Now lock your hosting deposit ({mr} USDC) to activate the contract.
+RU:  Теперь заблокируйте Hosting Deposit ({mr} USDC) для активации контракта.
+NEW: 
+
+KEY: cf.mark
+EN:  Mark
+RU:  ☆ Отметить
+NEW: 
+
+KEY: cf.max_photos_reached
+EN:  Maximum {max} photos reached.
+RU:  Достигнут максимум — {max} фотографий.
+NEW: 
+
+KEY: cf.monthly_rent_label
+EN:  Monthly Rent
+RU:  Ежемесячная аренда
+NEW: 
+
+KEY: cf.no_deposit_agreed
+EN:  No deposit — both parties agreed
+RU:  Без депозита — обе стороны согласны
+NEW: 
+
+KEY: cf.no_deposit_info
+EN:  Property deposit not required by landlord
+RU:  Депозит за имущество не требуется владельцем
+NEW: 
+
+KEY: cf.no_deposit_required
+EN:  No deposit required
+RU:  Депозит не требуется
+NEW: 
+
+KEY: cf.none
+EN:  None
+RU:  Нет
+NEW: 
+
+KEY: cf.not_signed
+EN:  Not signed yet
+RU:  Ещё не подписано
+NEW: 
+
+KEY: cf.only_tenant_deploy
+EN:  Only tenant can initiate the on-chain deployment. Tenant will create the agreement and deposit first. You will deposit from the dashboard after.
+RU:  Только жилец может инициировать деплой on-chain. Жилец создаст контракт и внесёт депозит первым. Вы внесёте депозит из дашборда позже.
+NEW: 
+
+KEY: cf.ownership_cert
+EN:  Property Ownership Certificate
+RU:  Свидетельство о праве собственности
+NEW: 
+
+KEY: cf.ownership_warning
+EN:  The platform does not verify property ownership documents. The tenant is solely responsible for confirming the landlord's right to rent this property.
+RU:  Платформа не верифицирует документы о собственности. Жилец несёт полную ответственность за подтверждение права владельца сдавать этот объект.
+NEW: 
+
+KEY: cf.parties
+EN:  Parties
+RU:  Стороны
+NEW: 
+
+KEY: cf.photos_ll
+EN:  Upload current photos of the property. Tenant will review them before confirming.
+RU:  Загрузите актуальные фото объекта. Жилец проверит их перед подтверждением.
+NEW: 
+
+KEY: cf.photos_tn
+EN:  Review the property photos uploaded by Landlord. Confirm they match what you saw during viewing.
+RU:  Проверьте фото объекта, загруженные владельцем. Подтвердите, что они соответствуют тому, что вы видели при просмотре.
+NEW: 
+
+KEY: cf.polling
+EN:  Polling server every 3 seconds…
+RU:  Опрос сервера каждые 3 секунды…
+NEW: 
+
+KEY: cf.propdep_desc
+EN:  Landlord may require a security deposit to protect against property damage. Any amount up to 3× monthly rent. Deposited by tenant into Aave v2 — earns yield for tenant while locked.
+RU:  Владелец может потребовать депозит для защиты от повреждения имущества. Любая сумма до 3× ежемесячной аренды. Вносится жильцом в Aave v2 — приносит доход жильцу, пока заблокирован.
+NEW: 
+
+KEY: cf.propdep_label
+EN:  Property Security Deposit
+RU:  Депозит за имущество
+NEW: 
+
+KEY: cf.propdep_landlord
+EN:  Landlord
+RU:  Владелец
+NEW: 
+
+KEY: cf.propdep_tenant
+EN:  Tenant
+RU:  Жилец
+NEW: 
+
+KEY: cf.propdep_title
+EN:  Property Security Deposit
+RU:  Депозит за имущество
+NEW: 
+
+KEY: cf.propdep_to_escrow
+EN:  {amount} USDC — property deposit → escrow
+RU:  {amount} USDC — депозит за имущество → эскроу
+NEW: 
+
+KEY: cf.property_ownership
+EN:  Property Ownership
+RU:  Право собственности
+NEW: 
+
+KEY: cf.property_photos_count
+EN:  Property photos ({count}/{max})
+RU:  Фотографии объекта ({count}/{max})
+NEW: 
+
+KEY: cf.property_term
+EN:  Property & Term
+RU:  Объект и срок
+NEW: 
+
+KEY: cf.protocol_terms
+EN:  Standard pi2pi protocol terms
+RU:  Стандартные условия протокола pi2pi
+NEW: 
+
+KEY: cf.rent_commit_propdep
+EN:  (rent + commitment + prop.dep.)
+RU:  (аренда + Commitment Deposit + депозит за имущество)
+NEW: 
+
+KEY: cf.rental_agreement
+EN:  Rental Agreement
+RU:  Договор аренды
+NEW: 
+
+KEY: cf.review_terms_tn
+EN:  Review the terms proposed by Landlord. Confirm to continue.
+RU:  Проверьте условия, предложенные владельцем. Подтвердите для продолжения.
+NEW: 
+
+KEY: cf.set
+EN:  Set
+RU:  Задать
+NEW: 
+
+KEY: cf.set_deposit_amount
+EN:  Or set deposit amount:
+RU:  Или укажите сумму депозита:
+NEW: 
+
+KEY: cf.set_terms_ll
+EN:  Set the terms of the rental agreement. These will be locked on-chain when both parties sign.
+RU:  Задайте условия договора аренды. Они фиксируются on-chain после подписания обеими сторонами.
+NEW: 
+
+KEY: cf.sign
+EN:  Sign
+RU:  Подписать
+NEW: 
+
+KEY: cf.signed
+EN:  Signed ✓
+RU:  Подписано ✓
+NEW: 
+
+KEY: cf.step_ids
+EN:  IDs
+RU:  Документы
+NEW: 
+
+KEY: cf.step_inventory
+EN:  Condition
+RU:  Опись
+NEW: 
+
+KEY: cf.step_ownership
+EN:  Ownership
+RU:  Собственность
+NEW: 
+
+KEY: cf.step_photos
+EN:  Photos
+RU:  Фото
+NEW: 
+
+KEY: cf.step_propdep
+EN:  Prop. Deposit
+RU:  Депозит за имущ.
+NEW: 
+
+KEY: cf.step_sign
+EN:  Sign & Deploy
+RU:  Подпись и деплой
+NEW: 
+
+KEY: cf.step_terms
+EN:  Terms
+RU:  Условия
+NEW: 
+
+KEY: cf.tap_add_photo
+EN:  Tap to add photo
+RU:  Нажмите, чтобы добавить фото
+NEW: 
+
+KEY: cf.tap_close
+EN:  Tap anywhere to close
+RU:  Нажмите в любом месте, чтобы закрыть
+NEW: 
+
+KEY: cf.tap_fullscreen
+EN:  Tap any photo to view fullscreen.
+RU:  Нажмите на фото для просмотра во весь экран.
+NEW: 
+
+KEY: cf.tenant_confirmed_id
+EN:  ✓ Tenant confirmed your ID.
+RU:  ✓ Жилец подтвердил ваш документ.
+NEW: 
+
+KEY: cf.tenant_confirmed_inventory
+EN:  ✓ Tenant confirmed inventory.
+RU:  ✓ Жилец подтвердил опись.
+NEW: 
+
+KEY: cf.tenant_confirmed_ownership
+EN:  ✓ Tenant confirmed ownership.
+RU:  ✓ Жилец подтвердил право собственности.
+NEW: 
+
+KEY: cf.tenant_confirmed_photos
+EN:  ✓ Tenant confirmed photos.
+RU:  ✓ Жилец подтвердил фото.
+NEW: 
+
+KEY: cf.tenant_confirmed_terms
+EN:  ✓ Tenant confirmed terms.
+RU:  ✓ Жилец подтвердил условия.
+NEW: 
+
+KEY: cf.tenant_deployed
+EN:  Tenant deployed & deposited
+RU:  Жилец задеплоил и внёс депозит
+NEW: 
+
+KEY: cf.tenant_id
+EN:  Tenant ID
+RU:  Документ жильца
+NEW: 
+
+KEY: cf.tenant_national_id
+EN:  Tenant — National ID
+RU:  Жилец — Удостоверение личности
+NEW: 
+
+KEY: cf.tenant_total
+EN:  Tenant total required
+RU:  Всего необходимо жильцу
+NEW: 
+
+KEY: cf.term_disputes
+EN:  Disputes:
+RU:  Споры:
+NEW: 
+
+KEY: cf.term_disputes_desc
+EN:  60-day deposit freeze. If unresolved — deposits return to original owners (wash settlement).
+RU:  60-дневная заморозка депозитов. Если не разрешён — депозиты возвращаются владельцам (нулевое урегулирование).
+NEW: 
+
+KEY: cf.term_grace
+EN:  Rent grace:
+RU:  Отсрочка оплаты:
+NEW: 
+
+KEY: cf.term_grace_desc
+EN:  Landlord may extend the payment grace period up to 14 days at their discretion.
+RU:  Владелец может продлить период оплаты до 14 дней по своему усмотрению.
+NEW: 
+
+KEY: cf.term_propdep
+EN:  Property deposit:
+RU:  Депозит за имущество:
+NEW: 
+
+KEY: cf.term_propdep_desc
+EN:  Landlord has up to 7 days after lease end to file a damage claim via on-chain protocol.
+RU:  Владелец имеет до 7 дней после окончания аренды для подачи претензии через on-chain протокол.
+NEW: 
+
+KEY: cf.term_termination
+EN:  Termination:
+RU:  Расторжение:
+NEW: 
+
+KEY: cf.term_termination_desc
+EN:  Either party may initiate early termination via on-chain protocol (mutual exit / exit with loss / disputed exit).
+RU:  Любая из сторон может инициировать досрочное расторжение через on-chain протокол (обоюдный выход / выход с потерей / оспоренный выход).
+NEW: 
+
+KEY: cf.term_vacate
+EN:  Vacate period on early termination:
+RU:  Срок выезда при досрочном расторжении:
+NEW: 
+
+KEY: cf.term_vacate_desc
+EN:  Initiated by tenant — 3 days to vacate. Initiated by landlord — 7 days to vacate.
+RU:  По инициативе жильца — 3 дня на выезд. По инициативе владельца — 7 дней на выезд.
+NEW: 
+
+KEY: cf.tn_ack_inventory
+EN:  Tenant: I have reviewed the inventory and confirm it matches what I saw during viewing.
+RU:  Жилец: Я проверил опись и подтверждаю, что она соответствует тому, что я видел при просмотре.
+NEW: 
+
+KEY: cf.tn_ack_landlord_id
+EN:  Tenant: I have personally reviewed the landlord's ID and accept it as valid.
+RU:  Жилец: Я лично проверил документ владельца и считаю его действительным.
+NEW: 
+
+KEY: cf.tn_ack_ownership
+EN:  Tenant: I have reviewed the ownership documents and am satisfied the landlord has the right to rent this property. I understand the platform does not verify this.
+RU:  Жилец: Я проверил документы о собственности и убедился, что владелец имеет право сдавать этот объект. Я понимаю, что платформа это не проверяет.
+NEW: 
+
+KEY: cf.tn_ack_photos
+EN:  Tenant: I have reviewed all {count} photo(s) and confirm they accurately represent the property condition as seen during viewing.
+RU:  Жилец: Я проверил все {count} фото и подтверждаю, что они точно отражают состояние объекта при просмотре.
+NEW: 
+
+KEY: cf.total_gas
+EN:  Total: {total} USDC + gas
+RU:  Итого: {total} USDC + газ
+NEW: 
+
+KEY: cf.upload_national_id
+EN:  Upload your National ID
+RU:  Загрузите ваше удостоверение личности
+NEW: 
+
+KEY: cf.upload_ownership
+EN:  Upload ownership document
+RU:  Загрузите документ о собственности
+NEW: 
+
+KEY: cf.upload_your_id
+EN:  Upload your ID
+RU:  Загрузите ваш документ
+NEW: 
+
+KEY: cf.uploaded
+EN:  Uploaded
+RU:  Загружено
+NEW: 
+
+KEY: cf.uploaded_by_ll
+EN:  Uploaded by Landlord
+RU:  Загружено владельцем
+NEW: 
+
+KEY: cf.uploading_ipfs
+EN:  Uploading to IPFS…
+RU:  Загрузка в IPFS…
+NEW: 
+
+KEY: cf.view
+EN:  View
+RU:  Просмотр
+NEW: 
+
+KEY: cf.waiting_landlord_id
+EN:  Waiting for Landlord — National ID
+RU:  Ожидание удостоверения владельца
+NEW: 
+
+KEY: cf.waiting_landlord_review_id
+EN:  Waiting for Landlord to review your ID.
+RU:  Ожидание проверки вашего документа владельцем.
+NEW: 
+
+KEY: cf.waiting_landlord_upload
+EN:  Waiting for Landlord to upload ID.
+RU:  Ожидание загрузки документа владельцем.
+NEW: 
+
+KEY: cf.waiting_ll_deposit
+EN:  Waiting for landlord to set deposit…
+RU:  Ожидание установки депозита владельцем…
+NEW: 
+
+KEY: cf.waiting_ll_ownership
+EN:  Waiting for Landlord to upload ownership document
+RU:  Ожидание загрузки документа о собственности владельцем
+NEW: 
+
+KEY: cf.waiting_ll_terms
+EN:  Waiting for Landlord to fill in all contract terms.
+RU:  Ожидание заполнения всех условий владельцем.
+NEW: 
+
+KEY: cf.waiting_signature
+EN:  Waiting for signature…
+RU:  Ожидание подписи…
+NEW: 
+
+KEY: cf.waiting_tenant_deploy
+EN:  Waiting for Tenant to deploy & deposit
+RU:  Ожидание деплоя и депозита от жильца
+NEW: 
+
+KEY: cf.waiting_tenant_id
+EN:  Waiting for Tenant — National ID
+RU:  Ожидание удостоверения жильца
+NEW: 
+
+KEY: cf.waiting_tenant_inventory
+EN:  Waiting for Tenant to confirm inventory.
+RU:  Ожидание подтверждения описи жильцом.
+NEW: 
+
+KEY: cf.waiting_tenant_photos
+EN:  Waiting for Tenant to review and confirm photos.
+RU:  Ожидание проверки и подтверждения фото жильцом.
+NEW: 
+
+KEY: cf.waiting_tenant_review
+EN:  Waiting for Tenant to review and confirm.
+RU:  Ожидание проверки и подтверждения жильцом.
+NEW: 
+
+KEY: cf.waiting_tenant_review_id
+EN:  Waiting for Tenant to review your ID.
+RU:  Ожидание проверки вашего документа жильцом.
+NEW: 
+
+KEY: cf.waiting_tenant_terms
+EN:  Waiting for Tenant to review and confirm terms.
+RU:  Ожидание подтверждения условий жильцом.
+NEW: 
+
+KEY: cf.waiting_tenant_upload
+EN:  Waiting for Tenant to upload ID.
+RU:  Ожидание загрузки документа жильцом.
+NEW: 
+
+KEY: cf.wallet_info
+EN:  All on-chain payments and deposits go to/from this address. Confirmed by signature at final step.
+RU:  Все платежи и депозиты on-chain поступают на/с этого адреса. Подтверждается подписью на финальном шаге.
+NEW: 
+
+KEY: cf.wallet_label
+EN:  Wallet:
+RU:  Кошелёк:
+NEW: 
+
+KEY: cf.x_monthly
+EN:  = {x}× monthly rent · max {max} USDC
+RU:  = {x}× ежемесячная аренда · макс. {max} USDC
+NEW: 
+
+KEY: cf.yield_estimate
+EN:  Est. yield: +{tenantYield} USDC/mo to you · {pi2piYield} USDC/mo to pi2pi
+RU:  Расч. доход: +{tenantYield} USDC/мес. вам · {pi2piYield} USDC/мес. pi2pi
+NEW: 
+
+KEY: cf.you_will_pay
+EN:  You will pay:
+RU:  Вы оплатите:
+NEW: 
+
+KEY: cf.your_signature
+EN:  Your signature
+RU:  Ваша подпись
+NEW: 
+
+KEY: chat.accept_contract
+EN:  Accept contract
+RU:  Принять договор
+NEW: 
+
+KEY: chat.agreement_created
+EN:  Rental agreement created on-chain. Tenant deposited {amount} USDC.
+RU:  Договор аренды создан on-chain. Жилец внёс {amount} USDC.
+NEW: 
+
+KEY: chat.agreement_on_chain
+EN:  Rental Agreement is now on-chain. Open the Print Agreement button on your Dashboard to view, print, or save as PDF. The full document includes parties, terms, deposits, dispute rules, and a verifiable on-chain signature.
+RU:  Договор аренды теперь on-chain. Нажмите «Печать договора» в дашборде для просмотра, печати или сохранения в PDF. Полный документ включает стороны, условия, депозиты, правила разрешения споров и верифицируемую on-chain подпись.
+NEW: 
+
+KEY: chat.bond_posted
+EN:  ⚡ Deposits frozen — early exit disputed. 60-day freeze active.
+RU:  ⚡ Депозиты заморожены — досрочный выход оспорен. 60-дневная заморозка активна.
+NEW: 
+
+KEY: chat.both_accepted
+EN:  Both accepted — ready for on-chain
+RU:  Обе стороны согласны — готово к деплою on-chain
+NEW: 
+
+KEY: chat.claim_accepted
+EN:  Accepted claim — deposit transferred to counterparty.
+RU:  Претензия принята — депозит переведён контрагенту.
+NEW: 
+
+KEY: chat.counter_claim
+EN:  Counterparty refused AND counter-claimed initiator's deposit. Position: victim — demands compensation. Deposits frozen 60 days.
+RU:  Контрагент отклонил И выдвинул встречную претензию на депозит инициатора. Позиция: пострадавший — требует компенсацию. Депозиты заморожены на 60 дней.
+NEW: 
+
+KEY: chat.deal_archived
+EN:  📦 Deal archived. Full financial history is preserved on-chain — view it any time via Print Payments. Chat history remains accessible.
+RU:  📦 Контракт в архиве. Полная финансовая история сохранена on-chain — просматривайте в любое время через «Печать платежей». История чата остаётся доступной.
+NEW: 
+
+KEY: chat.deposit_transferred
+EN:  Deposit transferred to counterparty. Contract settled.
+RU:  Депозит переведён контрагенту. Контракт закрыт.
+NEW: 
+
+KEY: chat.deposits_frozen
+EN:  ⚡ Deposits frozen 60 days. Dispute opened.
+RU:  ⚡ Депозиты заморожены на 60 дней. Спор открыт.
+NEW: 
+
+KEY: chat.dispute_accepted
+EN:  Dispute claim accepted. Deposits transferred. Contract settled.
+RU:  Претензия по спору принята. Депозиты переведены. Контракт закрыт.
+NEW: 
+
+KEY: chat.dispute_cancelled
+EN:  🔓 Dispute cancelled. Deposits unfrozen and returned to each owner.
+RU:  🔓 Спор отменён. Депозиты разморожены и возвращены каждому.
+NEW: 
+
+KEY: chat.dispute_conceded
+EN:  Dispute conceded. Counterparty claim accepted.
+RU:  Спор урегулирован уступкой. Претензия контрагента принята.
+NEW: 
+
+KEY: chat.doc_encrypted
+EN:   Document encrypted on IPFS.
+RU:   Документ зашифрован в IPFS.
+NEW: 
+
+KEY: chat.et_dispute
+EN:  Terminate Early — Dispute opened. Deposits frozen 60 days.
+RU:  Досрочное расторжение — открыт спор. Депозиты заморожены на 60 дней.
+NEW: 
+
+KEY: chat.et_mutual
+EN:  Early termination requested — each keeps own deposit (no penalty). Please confirm.
+RU:  Запрошено досрочное расторжение — каждый сохраняет свой депозит (без штрафа). Подтвердите.
+NEW: 
+
+KEY: chat.et_offer
+EN:  Terminate Early — {role} offered their deposit as compensation. Deposits transferred automatically. Vacate deadline: {days} days.
+RU:  Досрочное расторжение — {role} предложил свой депозит в качестве компенсации. Депозиты переведены автоматически. Срок выезда: {days} дней.
+NEW: 
+
+KEY: chat.frozen_released
+EN:  🔓 Frozen funds released. Dispute resolved. All deposits distributed.
+RU:  🔓 Замороженные средства разблокированы. Спор разрешён. Все депозиты распределены.
+NEW: 
+
+KEY: chat.grace_granted
+EN:  🤝 Landlord granted {days} extra days for rent payment.
+RU:  🤝 Владелец предоставил {days} дополнительных дней для оплаты аренды.
+NEW: 
+
+KEY: chat.hosting_returned
+EN:  📤 Hosting deposit returned to landlord.
+RU:  📤 Hosting Deposit возвращён арендодателю.
+NEW: 
+
+KEY: chat.landlord_deposited
+EN:  Landlord deposited {amount} USDC. Contract activated!
+RU:  Владелец внёс {amount} USDC. Контракт активирован!
+NEW: 
+
+KEY: chat.lease_ended
+EN:  🏁 Lease ended — commitment & hosting deposits returned to both parties.
+RU:  🏁 Аренда завершена — Commitment Deposit и Hosting Deposit возвращены обеим сторонам.
+NEW: 
+
+KEY: chat.lease_terminated
+EN:  Lease terminated due to rent default.
+RU:  Аренда расторгнута из-за неоплаты.
+NEW: 
+
+KEY: chat.msg_accept_contract
+EN:  I accept the rental agreement. Ready to sign on-chain.
+RU:  Принимаю договор аренды. Готов подписать on-chain.
+NEW: 
+
+KEY: chat.msg_offer_viewing
+EN:  I'd like to offer you a viewing of my property
+RU:  Хочу предложить вам просмотр моего жилья
+NEW: 
+
+KEY: chat.msg_propose_contract
+EN:  I'd like to propose a rental agreement. Let's sign on-chain.
+RU:  Хочу предложить договор аренды. Подпишем on-chain.
+NEW: 
+
+KEY: chat.msg_request_viewing
+EN:  I'd like to request a viewing
+RU:  Хочу запросить просмотр
+NEW: 
+
+KEY: chat.mutual_exit_signed
+EN:  🤝 Mutual exit signed. Deposits returned to each party. Contract settled.
+RU:  🤝 Обоюдный выход подписан. Депозиты возвращены каждой стороне. Контракт закрыт.
+NEW: 
+
+KEY: chat.peer_resumed
+EN:  This user is back online.
+RU:  Этот пользователь снова доступен.
+NEW: 
+
+KEY: chat.peer_suspended
+EN:  This user's wallet balance dropped. They are temporarily unavailable.
+RU:  Баланс кошелька этого пользователя снизился. Он временно недоступен.
+NEW: 
+
+KEY: chat.propdep.accepted
+EN:  Damage claim accepted: {amount} USDC → Landlord
+RU:  Претензия по ущербу принята: {amount} USDC → Владелец
+NEW: 
+
+KEY: chat.propdep.bond_posted
+EN:  Deposits frozen — damage claim disputed. 60-day freeze active.
+RU:  Депозиты заморожены — претензия по ущербу оспорена. 60-дневная заморозка активна.
+NEW: 
+
+KEY: chat.propdep.cancelled
+EN:  Damage claim cancelled. Full deposit → Tenant.
+RU:  Претензия по ущербу отменена. Полный депозит → Жилец.
+NEW: 
+
+KEY: chat.propdep.changed_mind
+EN:  Changed mind — damage claim accepted: {amount} USDC → Landlord
+RU:  Передумал — претензия по ущербу принята: {amount} USDC → Владелец
+NEW: 
+
+KEY: chat.propdep.claim_filed
+EN:  Damage claim filed: {amount} USDC
+RU:  Претензия по ущербу подана: {amount} USDC
+NEW: 
+
+KEY: chat.propdep.dispute_cancelled
+EN:  Dispute cancelled. Deposits unfrozen. Initiator's deposit → counterparty as penalty.
+RU:  Спор отменён. Депозиты разморожены. Депозит инициатора → контрагенту в качестве штрафа.
+NEW: 
+
+KEY: chat.propdep.disputed
+EN:  Damage claim disputed. Landlord must confirm freeze within 3 days.
+RU:  Претензия по ущербу оспорена. Владелец должен подтвердить заморозку в течение 3 дней.
+NEW: 
+
+KEY: chat.propdep.dropped
+EN:  Damage claim dropped. Full deposit → Tenant.
+RU:  Претензия по ущербу отозвана. Полный депозит → Жилец.
+NEW: 
+
+KEY: chat.propdep.expired
+EN:  ⏰ Claim expired — no freeze confirmed. Full deposit → Tenant.
+RU:  ⏰ Претензия истекла — заморозка не подтверждена. Полный депозит → Жилец.
+NEW: 
+
+KEY: chat.propdep.freeze_expired
+EN:  Freeze expired. Funds released.
+RU:  Заморозка истекла. Средства разблокированы.
+NEW: 
+
+KEY: chat.propdep.no_damage
+EN:  No damage confirmed. Full deposit → Tenant.
+RU:  Ущерба нет. Полный депозит → Жилец.
+NEW: 
+
+KEY: chat.propdep_window
+EN:  📦 Property security deposit window is open. Landlord may file damage claims within 7 days.
+RU:  📦 Срок по депозиту за имущество открыт. Владелец может подать претензию по ущербу в течение 7 дней.
+NEW: 
+
+KEY: chat.propose_contract
+EN:  Propose contract
+RU:  Предложить контракт
+NEW: 
+
+KEY: chat.refuse_freeze
+EN:  Counterparty refused and froze deposits for 60 days. Position: defensive — disagrees with claim, no counter-demand.
+RU:  Контрагент отклонил и заморозил депозиты на 60 дней. Позиция: защитная — не согласен с претензией, без встречных требований.
+NEW: 
+
+KEY: chat.renewal_expired
+EN:  ⏰ Renewal vote expired — checkout started.
+RU:  ⏰ Время голосования за продление истекло — начат процесс выезда.
+NEW: 
+
+KEY: chat.rent_missed
+EN:  Rent missed — tenant's commitment deposit forfeited to landlord.
+RU:  Аренда не оплачена — Commitment Deposit жильца удержан в пользу владельца.
+NEW: 
+
+KEY: chat.rent_paid
+EN:  💸 Rent paid: {amount} USDC (month {month}).
+RU:  💸 Аренда оплачена: {amount} USDC (месяц {month}).
+NEW: 
+
+KEY: chat.signed_agreement
+EN:  {role} signed the rental agreement (off-chain signature).
+RU:  {role} подписал(а) договор аренды (off-chain подпись).
+NEW: 
+
+KEY: chat.start_conversation
+EN:  Start the conversation. Messages are stored on the server.
+RU:  Начните разговор. Сообщения хранятся на сервере.
+NEW: 
+
+KEY: chat.sys.contract_cancelled
+EN:  Contract proposal cancelled
+RU:  Предложение по договору отменено
+NEW: 
+
+KEY: chat.sys.viewing_declined
+EN:  Viewing request declined
+RU:  Запрос на просмотр отклонён
+NEW: 
+
+KEY: chat.sys_contract_accepted
+EN:  Rental agreement accepted
+RU:  Договор аренды принят
+NEW: 
+
+KEY: chat.sys_contract_activated
+EN:  Contract activated on-chain
+RU:  Контракт активирован on-chain
+NEW: 
+
+KEY: chat.sys_contract_document
+EN:  Contract document on-chain
+RU:  Документ контракта on-chain
+NEW: 
+
+KEY: chat.sys_contract_proposed
+EN:  Rental agreement proposed
+RU:  Предложен договор аренды
+NEW: 
+
+KEY: chat.sys_contract_signed
+EN:  Agreement signed
+RU:  Договор подписан
+NEW: 
+
+KEY: chat.sys_viewing_confirmed
+EN:  Viewing confirmed
+RU:  Просмотр подтверждён
+NEW: 
+
+KEY: chat.sys_viewing_offered
+EN:  Viewing offered
+RU:  Вам предложен просмотр
+NEW: 
+
+KEY: chat.sys_viewing_requested
+EN:  👁 Viewing requested
+RU:  👁 Просмотр запрошен
+NEW: 
+
+KEY: chat.tenant_deposited
+EN:  Tenant deposited {amount} USDC (commitment + first rent).
+RU:  Жилец внёс {amount} USDC (Commitment Deposit + первый месяц).
+NEW: 
+
+KEY: chat.tenant_vacate
+EN:  Tenant has {days} days to vacate. Property security deposit window is now open for damage claims.
+RU:  ⏳ У жильца {days} дней на выезд. Срок подачи претензий по депозиту за имущество теперь открыт.
+NEW: 
+
+KEY: chat.viewing_offered
+EN:  You have been offered a viewing. Reply to start a conversation.
+RU:  Вам предложен просмотр. Напишите, чтобы начать переписку.
+NEW: 
+
+KEY: chat.viewing_offered_hint
+EN:  The landlord cannot write to you until you reply.
+RU:  Владелец не сможет вам написать, пока вы не ответите.
+NEW: 
+
+KEY: chat.vote_end
+EN:  Voted NO — lease will end at expiry. Not interested in renewal.
+RU:  Проголосовал ПРОТИВ — аренда завершится по истечении срока. Не заинтересован в продлении.
+NEW: 
+
+KEY: chat.vote_renegotiate
+EN:  🔄 Wants to renegotiate — open to renewal but with different terms. Please discuss in chat.
+RU:  🔄 Хочет пересмотреть условия — открыт к продлению, но на других условиях. Пожалуйста, обсудите в чате.
+NEW: 
+
+KEY: chat.vote_renew
+EN:  Voted YES to renew lease on same terms.
+RU:  Проголосовал ЗА продление аренды на тех же условиях.
+NEW: 
+
+KEY: chat.waiting_acceptance
+EN:  Waiting for acceptance…
+RU:  Ожидание согласия…
+NEW: 
+
+KEY: chat.waiting_peer_respond
+EN:  Waiting for {peer} to respond before you can message…
+RU:  Ожидание ответа от {peer}, прежде чем вы сможете написать…
+NEW: 
+
+KEY: chat.you_suspended
+EN:  You cannot send messages while your account is suspended.
+RU:  Вы не можете отправлять сообщения, пока ваш аккаунт приостановлен.
+NEW: 
+
+KEY: chatpage.apply_now
+EN:  Apply now
+RU:  Подать заявку
+NEW: 
+
+KEY: chatpage.invite
+EN:  I'd like to invite you to view my property. Are you available this week?
+RU:  Приглашаю на просмотр. Свободны на этой неделе?
+NEW: 
+
+KEY: chatpage.offer
+EN:  I'd like to make an offer — can we discuss the terms?
+RU:  Хочу сделать предложение — обсудим условия?
+NEW: 
+
+KEY: chatpage.offer_viewing
+EN:  Offer viewing
+RU:  Предложить просмотр
+NEW: 
+
+KEY: chatpage.on_chain
+EN:  On-chain
+RU:  On-chain
+NEW: 
+
+KEY: chatpage.question
+EN:  Could you share additional photos of the kitchen and bathroom?
+RU:  Можете прислать ещё фото кухни и ванной?
+NEW: 
+
+KEY: chatpage.request_viewing
+EN:  Request viewing
+RU:  Запросить просмотр
+NEW: 
+
+KEY: chatpage.start_agreement
+EN:  Start Agreement
+RU:  Начать оформление
+NEW: 
+
+KEY: chatpage.verified_landlord
+EN:  Verified landlord
+RU:  Подтверждённый владелец
+NEW: 
+
+KEY: chatpage.verified_tenant
+EN:  Verified tenant
+RU:  Подтверждённый жилец
+NEW: 
+
+KEY: chatpage.viewing_request_sent
+EN:  Viewing request sent
+RU:  Запрос на просмотр отправлен
+NEW: 
+
+KEY: chatpage.viewing_requested
+EN:  Viewing requested
+RU:  Просмотр запрошен
+NEW: 
+
+KEY: chatpage.warn_no_viewing
+EN:  Contract requested before viewing was confirmed. Proceeding is possible but not recommended.
+RU:  Договор запрошен до подтверждения просмотра. Продолжить можно, но не рекомендуется.
+NEW: 
+
+KEY: closure.archive_note
+EN:  Archived · on-chain record immutable · full history via Print Agreement below
+RU:  В архиве · on-chain запись неизменна · полная история через «Печать договора» ниже
+NEW: 
+
+KEY: closure.disputed
+EN:  Disputed
+RU:  Оспорено
+NEW: 
+
+KEY: closure.early_term
+EN:  Early termination
+RU:  Досрочное расторжение
+NEW: 
+
+KEY: closure.exit_with_loss
+EN:  Exit with loss
+RU:  Выход с потерей
+NEW: 
+
+KEY: closure.h.cancelled
+EN:  Cancelled before deposits
+RU:  Отменён до внесения депозитов
+NEW: 
+
+KEY: closure.h.cancelled_unfunded
+EN:  Cancelled (counterparty didn't deposit)
+RU:  Отменён (контрагент не внёс депозит)
+NEW: 
+
+KEY: closure.h.clean
+EN:  Lease ended cleanly
+RU:  Аренда завершена без претензий
+NEW: 
+
+KEY: closure.h.closed
+EN:  Contract closed
+RU:  Контракт закрыт
+NEW: 
+
+KEY: closure.h.conceded
+EN:  Dispute initiator conceded
+RU:  Инициатор спора уступил
+NEW: 
+
+KEY: closure.h.dispute_accepted
+EN:  Counterparty accepted dispute claim
+RU:  Контрагент принял претензию
+NEW: 
+
+KEY: closure.h.dispute_cancelled
+EN:  Dispute cancelled by initiator (penalty applied)
+RU:  Спор отменён инициатором (штраф)
+NEW: 
+
+KEY: closure.h.dispute_resolved
+EN:  Dispute resolved
+RU:  Спор разрешён
+NEW: 
+
+KEY: closure.h.emergency
+EN:  Emergency settlement (180 days stuck)
+RU:  Экстренное урегулирование (180 дней без движения)
+NEW: 
+
+KEY: closure.h.et_expired
+EN:  Terminate early timed out — deposits returned
+RU:  Срок досрочного расторжения истёк — депозиты возвращены
+NEW: 
+
+KEY: closure.h.exit_loss
+EN:  {who} exited with loss
+RU:  {who} вышел с потерей
+NEW: 
+
+KEY: closure.h.freeze_expired
+EN:  60-day freeze expired — wash resolution
+RU:  60-дневная заморозка истекла — нулевое урегулирование
+NEW: 
+
+KEY: closure.h.lease_ended
+EN:  Lease ended on term
+RU:  Аренда завершена в срок
+NEW: 
+
+KEY: closure.h.mutual
+EN:  {who} proposed mutual exit — counterparty agreed
+RU:  {who} предложил обоюдный выход — контрагент согласился
+NEW: 
+
+KEY: closure.h.rent_missed
+EN:  Rent missed — deposits forfeited to landlord
+RU:  Аренда не оплачена — депозиты удержаны владельцем
+NEW: 
+
+KEY: closure.h.settlement
+EN:  Mutual settlement mid-freeze
+RU:  Обоюдное урегулирование в ходе заморозки
+NEW: 
+
+KEY: closure.hide_timeline
+EN:  ▲ Hide full closure timeline
+RU:  ▲ Скрыть полную хронологию закрытия
+NEW: 
+
+KEY: closure.loading
+EN:  (loading…)
+RU:  (загрузка…)
+NEW: 
+
+KEY: closure.method
+EN:  Method
+RU:  Способ
+NEW: 
+
+KEY: closure.mutual_exit
+EN:  Mutual exit
+RU:  Обоюдный выход
+NEW: 
+
+KEY: closure.natural_end
+EN:  Natural end
+RU:  Естественное завершение
+NEW: 
+
+KEY: closure.no
+EN:  No
+RU:  Нет
+NEW: 
+
+KEY: closure.no_events
+EN:  No on-chain events found for this agreement.
+RU:  Не найдено on-chain событий для этого контракта.
+NEW: 
+
+KEY: closure.not_loaded
+EN:  Not loaded yet.
+RU:  Ещё не загружено.
+NEW: 
+
+KEY: closure.on_term
+EN:  On-term
+RU:  По сроку
+NEW: 
+
+KEY: closure.reading
+EN:  Reading on-chain event logs (Arc RPC, ~20 parallel calls)…
+RU:  Чтение on-chain событий (Arc RPC, ~20 параллельных запросов)…
+NEW: 
+
+KEY: closure.rent_paid_before
+EN:  Rent paid before closure
+RU:  Аренда оплачена до закрытия
+NEW: 
+
+KEY: closure.s.cancelled
+EN:  Agreement cancelled while still in Created state — no funds moved.
+RU:  Контракт отменён в состоянии Created — средства не перемещались.
+NEW: 
+
+KEY: closure.s.cancelled_unfunded
+EN:  One side deposited but the other didn't within 24 hours. Depositor was refunded.
+RU:  Одна сторона внесла депозит, другая нет в течение 24 часов. Средства возвращены.
+NEW: 
+
+KEY: closure.s.clean
+EN:  Both parties returned their own deposits. No damage claimed.
+RU:  Обе стороны получили свои депозиты обратно. Претензий по ущербу нет.
+NEW: 
+
+KEY: closure.s.closed
+EN:  All funds distributed. Expand timeline for full history.
+RU:  Все средства распределены. Разверните хронологию для полной истории.
+NEW: 
+
+KEY: closure.s.conceded
+EN:  Initiator gave up the dispute. All deposits went to counterparty.
+RU:  Инициатор отказался от спора. Все депозиты переведены контрагенту.
+NEW: 
+
+KEY: closure.s.dispute_accepted
+EN:  All deposits went to the dispute initiator.
+RU:  Все депозиты переведены инициатору спора.
+NEW: 
+
+KEY: closure.s.dispute_cancelled
+EN:  Initiator's deposit transferred to counterparty as penalty for withdrawing.
+RU:  Депозит инициатора переведён контрагенту как штраф за отмену.
+NEW: 
+
+KEY: closure.s.dispute_resolved
+EN:  Either one side conceded / accepted, or 60-day freeze expired.
+RU:  Одна сторона уступила / приняла претензию, или истёк 60-дневный срок заморозки.
+NEW: 
+
+KEY: closure.s.emergency
+EN:  Agreement got stuck past 180 days; owner manually resolved to return deposits.
+RU:  Контракт завис на 180+ дней; администратор вернул депозиты вручную.
+NEW: 
+
+KEY: closure.s.et_expired
+EN:  The counterparty didn't respond within 7 days. Both deposits returned to owners.
+RU:  Контрагент не ответил в течение 7 дней. Оба депозита возвращены.
+NEW: 
+
+KEY: closure.s.exit_loss
+EN:  Initiator's deposit was transferred to counterparty as compensation.
+RU:  Депозит инициатора переведён контрагенту в качестве компенсации.
+NEW: 
+
+KEY: closure.s.freeze_expired
+EN:  No side reached agreement within the freeze window. Each party got their own deposit back.
+RU:  Стороны не достигли соглашения за время заморозки. Каждый получил свой депозит обратно.
+NEW: 
+
+KEY: closure.s.lease_ended
+EN:  Reached the agreed end date. Deposits returned to each owner.
+RU:  Достигнута согласованная дата окончания. Депозиты возвращены каждому.
+NEW: 
+
+KEY: closure.s.mutual
+EN:  Each party got their own deposit back. No penalty.
+RU:  Каждая сторона получила свой депозит обратно. Без штрафов.
+NEW: 
+
+KEY: closure.s.rent_missed
+EN:  Tenant didn't pay rent past the grace period. Landlord received commitment + hosting + yield.
+RU:  Жилец не оплатил аренду в льготный период. Владелец получил commitment + hosting + доход.
+NEW: 
+
+KEY: closure.s.settlement
+EN:  Both sides agreed on a split of the frozen funds before 60-day expiry.
+RU:  Обе стороны согласовали распределение замороженных средств до истечения 60 дней.
+NEW: 
+
+KEY: closure.show_timeline
+EN:  ▼ Show full closure timeline
+RU:  ▼ Показать полную хронологию закрытия
+NEW: 
+
+KEY: closure.terminated
+EN:  Terminated
+RU:  Расторгнут
+NEW: 
+
+KEY: closure.type
+EN:  Closure type
+RU:  Как закрыт
+NEW: 
+
+KEY: closure.went_through_dispute
+EN:  Went through dispute
+RU:  Прошло через спор
+NEW: 
+
+KEY: closure.yes_freeze
+EN:  Yes (60-day freeze)
+RU:  Да (60-дневная заморозка)
+NEW: 
+
+KEY: confirm.remove_email
+EN:  Remove your email from pi2pi? You'll stop receiving notifications.
+RU:  Удалить email из pi2pi? Вы перестанете получать уведомления.
+NEW: 
+
+KEY: contract.cancel_btn
+EN:  Cancel contract
+RU:  Отменить договор
+NEW: 
+
+KEY: contract.cancel_confirm
+EN:  Are you sure you want to cancel the current contract proposal?
+RU:  Вы уверены, что хотите отменить текущий договор?
+NEW: 
+
+KEY: contract.cancel_no
+EN:  No, continue
+RU:  Нет, продолжить
+NEW: 
+
+KEY: contract.cancel_yes
+EN:  Yes, cancel
+RU:  Да, отменить
+NEW: 
+
+KEY: contract.err_peer_busy
+EN:  This user is currently reviewing another contract proposal. Try again later.
+RU:  Этот пользователь рассматривает другое предложение. Попробуйте позже.
+NEW: 
+
+KEY: contract.err_you_have_active
+EN:  You already have an active contract proposal. Cancel it first.
+RU:  У вас уже есть активное предложение по договору. Сначала отмените его.
+NEW: 
+
+KEY: contract.peer_busy
+EN:  This user is finalizing a contract with another party. New proposals are temporarily unavailable.
+RU:  Этот пользователь оформляет контракт с другой стороной. Новые предложения временно недоступны.
+NEW: 
+
+KEY: contract.revert.already_deposited
+EN:  You have already placed your deposit.
+RU:  Вы уже внесли депозит.
+NEW: 
+
+KEY: contract.revert.already_extended
+EN:  Grace already extended for this rent cycle.
+RU:  Льготный период уже продлён для этого цикла оплаты.
+NEW: 
+
+KEY: contract.revert.already_settled
+EN:  Agreement has already been settled.
+RU:  Контракт уже закрыт.
+NEW: 
+
+KEY: contract.revert.already_voted
+EN:  You have already voted.
+RU:  Вы уже проголосовали.
+NEW: 
+
+KEY: contract.revert.amounts_mismatch
+EN:  Deposit amount does not match the expected value.
+RU:  Сумма депозита не соответствует ожидаемому значению.
+NEW: 
+
+KEY: contract.revert.bond_already_posted
+EN:  Bond has already been posted.
+RU:  Бонд уже внесён.
+NEW: 
+
+KEY: contract.revert.bond_posted_use_accept
+EN:  Bond was posted — use acceptClaimAfterBond instead.
+RU:  Залог внесён — используйте acceptClaimAfterBond.
+NEW: 
+
+KEY: contract.revert.bond_poster_cannot_accept
+EN:  The party that posted the bond cannot accept its own claim.
+RU:  Сторона, внёсшая бонд, не может принять свою же претензию.
+NEW: 
+
+KEY: contract.revert.deadline_not_passed
+EN:  Deadline has not yet passed.
+RU:  Крайний срок ещё не наступил.
+NEW: 
+
+KEY: contract.revert.deposits_already_placed
+EN:  Deposits have already been placed.
+RU:  Депозиты уже внесены.
+NEW: 
+
+KEY: contract.revert.freeze_not_expired
+EN:  The 60-day freeze has not yet expired.
+RU:  60-дневная заморозка ещё не истекла.
+NEW: 
+
+KEY: contract.revert.generic
+EN:  This action could not be completed on-chain. Details: {reason}
+RU:  Это действие не удалось выполнить on-chain. Подробности: {reason}
+NEW: 
+
+KEY: contract.revert.initiator_already_signed
+EN:  You have already signed this proposal.
+RU:  Вы уже подписали это предложение.
+NEW: 
+
+KEY: contract.revert.invalid_claim_amount
+EN:  Claim amount must be greater than zero and not exceed the deposit.
+RU:  Сумма претензии должна быть больше нуля и не превышать депозит.
+NEW: 
+
+KEY: contract.revert.invalid_extension
+EN:  Grace extension must be between 1 and 14 days.
+RU:  Продление льготного периода должно быть от 1 до 14 дней.
+NEW: 
+
+KEY: contract.revert.lease_expired
+EN:  Cannot pay rent — the lease has expired.
+RU:  Невозможно оплатить аренду — срок контракта истёк.
+NEW: 
+
+KEY: contract.revert.lending_unavailable
+EN:  Lending market is currently unavailable. Please retry later.
+RU:  Рынок кредитования временно недоступен. Попробуйте позже.
+NEW: 
+
+KEY: contract.revert.no_bond_posted
+EN:  No bond has been posted.
+RU:  Бонд не внесён.
+NEW: 
+
+KEY: contract.revert.no_proposal
+EN:  There is no pending settlement proposal.
+RU:  Нет ожидающего предложения по урегулированию.
+NEW: 
+
+KEY: contract.revert.no_vote_started
+EN:  No renewal vote is currently in progress.
+RU:  Голосование за продление не начато.
+NEW: 
+
+KEY: contract.revert.not_a_party
+EN:  Only the tenant or landlord can perform this action.
+RU:  Только жилец или владелец могут выполнить это действие.
+NEW: 
+
+KEY: contract.revert.not_active
+EN:  Agreement must be active for this action.
+RU:  Контракт должен быть активен для этого действия.
+NEW: 
+
+KEY: contract.revert.not_disputed
+EN:  Property deposit is not in Disputed state.
+RU:  Депозит за имущество не в состоянии спора.
+NEW: 
+
+KEY: contract.revert.not_frozen
+EN:  Property deposit is not in Frozen state.
+RU:  Депозит за имущество не заморожен.
+NEW: 
+
+KEY: contract.revert.not_landlord
+EN:  Only the landlord can perform this action.
+RU:  Только владелец может выполнить это действие.
+NEW: 
+
+KEY: contract.revert.not_mutual_type
+EN:  This action is only available for Mutual early termination.
+RU:  Это действие доступно только для обоюдного досрочного расторжения.
+NEW: 
+
+KEY: contract.revert.not_overdue_yet
+EN:  Rent is not yet overdue.
+RU:  Аренда ещё не просрочена.
+NEW: 
+
+KEY: contract.revert.not_owner
+EN:  Only the contract admin can perform this action.
+RU:  Только админ контракта может выполнить это действие.
+NEW: 
+
+KEY: contract.revert.not_tenant
+EN:  Only the tenant can perform this action.
+RU:  Только жилец может выполнить это действие.
+NEW: 
+
+KEY: contract.revert.only_bond_poster
+EN:  Only the bond poster can cancel.
+RU:  Только внёсший бонд может отменить.
+NEW: 
+
+KEY: contract.revert.only_counterparty_can_contest
+EN:  Only the counterparty can contest.
+RU:  Только контрагент может оспорить.
+NEW: 
+
+KEY: contract.revert.only_initiator_can_cancel
+EN:  Only the party who initiated the early termination can cancel it.
+RU:  Только сторона, инициировавшая досрочное расторжение, может его отменить.
+NEW: 
+
+KEY: contract.revert.only_initiator_can_concede
+EN:  Only the initiator can concede.
+RU:  Только инициатор может уступить.
+NEW: 
+
+KEY: contract.revert.prop_deposit_too_high
+EN:  Property security deposit cannot exceed 3× monthly rent.
+RU:  Депозит за имущество не может превышать 3× ежемесячной аренды.
+NEW: 
+
+KEY: contract.revert.proposer_cannot_confirm
+EN:  The party that proposed settlement cannot also confirm it.
+RU:  Сторона, предложившая урегулирование, не может его же подтвердить.
+NEW: 
+
+KEY: contract.revert.response_expired
+EN:  Response period has expired.
+RU:  Срок ответа истёк.
+NEW: 
+
+KEY: contract.revert.same_address
+EN:  Tenant and landlord cannot be the same address.
+RU:  Жилец и владелец не могут иметь одинаковый адрес.
+NEW: 
+
+KEY: contract.revert.settlement_mismatch
+EN:  Proposed settlement does not match the total frozen amount.
+RU:  Предложенное урегулирование не соответствует общей замороженной сумме.
+NEW: 
+
+KEY: contract.revert.silence_not_expired
+EN:  Silence period has not yet expired.
+RU:  Период ожидания ещё не истёк.
+NEW: 
+
+KEY: contract.revert.tenant_already_responded
+EN:  Tenant has already responded.
+RU:  Жилец уже ответил.
+NEW: 
+
+KEY: contract.revert.too_early_renewal
+EN:  Renewal voting opens 30 days before lease end.
+RU:  Голосование за продление открывается за 30 дней до окончания аренды.
+NEW: 
+
+KEY: contract.revert.user_rejected
+EN:  Transaction was rejected in the wallet.
+RU:  Транзакция отклонена в кошельке.
+NEW: 
+
+KEY: contract.revert.window_closed
+EN:  The damage claim window has closed.
+RU:  Срок подачи претензий закрыт.
+NEW: 
+
+KEY: contract.revert.window_not_open
+EN:  The damage claim window has not yet opened.
+RU:  Срок подачи претензий ещё не открыт.
+NEW: 
+
+KEY: contract.revert.wrong_state
+EN:  This action is not available in the current agreement state.
+RU:  Это действие недоступно в текущем состоянии контракта.
+NEW: 
+
+KEY: contract.revert.zero_address
+EN:  Address cannot be empty.
+RU:  Адрес не может быть пустым.
+NEW: 
+
+KEY: contract.revert.zero_amount
+EN:  Amount cannot be zero.
+RU:  Сумма не может быть нулевой.
+NEW: 
+
+KEY: contract.you_busy
+EN:  You are finalizing a contract with another party. New proposals are unavailable. Chat is open.
+RU:  Вы оформляете контракт с другой стороной. Новые предложения недоступны. Переписка открыта.
+NEW: 
+
+KEY: dash.agreement_with
+EN:  Agreement with
+RU:  Контракт с
+NEW: 
+
+KEY: dash.archive
+EN:  Archive
+RU:  Архив
+NEW: 
+
+KEY: dash.archived_on
+EN:  Archived on
+RU:  В архиве с
+NEW: 
+
+KEY: dash.both_accepted_sign
+EN:  Both parties accepted. Open chat to sign on-chain.
+RU:  Обе стороны подтвердили. Откройте чат для подписи on-chain.
+NEW: 
+
+KEY: dash.continue_agreement
+EN:  Continue agreement
+RU:  Продолжить контракт
+NEW: 
+
+KEY: dash.contract_in_progress
+EN:  Contract in progress
+RU:  Контракт в процессе
+NEW: 
+
+KEY: deal.checkout
+EN:  Checkout in Progress
+RU:  Выезд в процессе
+NEW: 
+
+KEY: deal.damage
+EN:  Damage Claim (legacy)
+RU:  Претензия по ущербу (устаревшее)
+NEW: 
+
+KEY: deal.detail_declined_renewal
+EN:  Either party declined renewal
+RU:  Одна из сторон отказалась от продления
+NEW: 
+
+KEY: deal.detail_unknown
+EN:  Unknown state
+RU:  Неизвестное состояние
+NEW: 
+
+KEY: deal.dispute
+EN:  Dispute Open
+RU:  Спор открыт
+NEW: 
+
+KEY: deal.ended
+EN:  Inspection Window
+RU:  Срок осмотра
+NEW: 
+
+KEY: deal.ending
+EN:  Ending in {days} {dayWord}
+RU:  Завершение через {days} {dayWord}
+NEW: 
+
+KEY: deal.et_proposed
+EN:  Terminate Early Proposed
+RU:  Предложено досрочное расторжение
+NEW: 
+
+KEY: deal.live
+EN:  Live
+RU:  Активна
+NEW: 
+
+KEY: deal.pending
+EN:  Pending Signatures
+RU:  Ожидание подписей
+NEW: 
+
+KEY: deal.propdep_claimed
+EN:  Damage Claim Filed
+RU:  Претензия по ущербу подана
+NEW: 
+
+KEY: deal.propdep_disputed
+EN:  Damage Claim Disputed
+RU:  Претензия по ущербу оспорена
+NEW: 
+
+KEY: deal.propdep_frozen
+EN:  Property Deposit Frozen
+RU:  Депозит за имущество заморожен
+NEW: 
+
+KEY: deal.settled
+EN:  Settled
+RU:  Закрыта
+NEW: 
+
+KEY: deal.settled_partial
+EN:  Settling Property Deposit
+RU:  Распределение депозита за имущество
+NEW: 
+
+KEY: deploy.approving
+EN:  Approving USDC…
+RU:  Одобрение USDC…
+NEW: 
+
+KEY: deploy.cancelled
+EN:  Cancelled
+RU:  Отменено
+NEW: 
+
+KEY: deploy.confirming
+EN:  Waiting for confirmation…
+RU:  Ожидание подтверждения…
+NEW: 
+
+KEY: deploy.creating
+EN:  Creating agreement on-chain…
+RU:  Создание контракта on-chain…
+NEW: 
+
+KEY: deploy.depositing
+EN:  Depositing…
+RU:  Внесение депозита…
+NEW: 
+
+KEY: deploy.done
+EN:  Done!
+RU:  Готово!
+NEW: 
+
+KEY: deploy.done_waiting
+EN:  Done! Waiting for Landlord deposit…
+RU:  Готово! Ожидание депозита владельца…
+NEW: 
+
+KEY: deploy.encrypting
+EN:  Encrypting contract document for IPFS…
+RU:  Шифрование документа контракта для IPFS…
+NEW: 
+
+KEY: deploy.locking
+EN:  Locking hosting deposit…
+RU:  Блокировка Hosting Deposit…
+NEW: 
+
+KEY: deploy.reading_id
+EN:  Reading next agreement ID…
+RU:  Чтение следующего ID контракта…
+NEW: 
+
+KEY: deploy.sign_faceid
+EN:  Sign once with FaceID — approve + create + deposit…
+RU:  Подпишите один раз через FaceID — одобрить + создать + внести депозит…
+NEW: 
+
+KEY: deposit.commitment
+EN:  Commitment (Tenant)
+RU:  Commitment Deposit (Жилец)
+NEW: 
+
+KEY: deposit.first_rent
+EN:  First Rent Paid
+RU:  Первый месяц оплачен
+NEW: 
+
+KEY: deposit.hosting
+EN:  Hosting (Landlord)
+RU:  Hosting Deposit (Владелец)
+NEW: 
+
+KEY: deposit.security
+EN:  Security Deposit
+RU:  Депозит за имущество
+NEW: 
+
+KEY: err.cannot_respond
+EN:  Cannot respond — agreement state: {state}. Expected: {expected}
+RU:  Невозможно ответить — состояние контракта: {state}. Ожидалось: {expected}
+NEW: 
+
+KEY: err.draft_create_failed
+EN:  Could not create draft on server
+RU:  Не удалось создать черновик на сервере
+NEW: 
+
+KEY: err.error
+EN:  Error
+RU:  Ошибка
+NEW: 
+
+KEY: err.failed
+EN:  Failed
+RU:  Ошибка
+NEW: 
+
+KEY: err.file_too_large
+EN:  File too large. Maximum {size}MB.
+RU:  Файл слишком большой. Максимум {size} МБ.
+NEW: 
+
+KEY: err.flag_reverted
+EN:  flagRentMissed reverted
+RU:  flagRentMissed откатился
+NEW: 
+
+KEY: err.initiator_cannot_contest
+EN:  You are initiator — cannot contest
+RU:  Вы инициатор — не можете оспорить
+NEW: 
+
+KEY: err.insufficient_funds
+EN:  Insufficient funds — top up your wallet before signing.
+RU:  Недостаточно средств — пополните кошелёк перед подписанием.
+NEW: 
+
+KEY: err.max_photos
+EN:  Maximum {count} photos.
+RU:  Максимум {count} фотографий.
+NEW: 
+
+KEY: err.missing_data
+EN:  Missing data
+RU:  Отсутствуют данные
+NEW: 
+
+KEY: err.network_error
+EN:  Network error: {error}
+RU:  Ошибка сети: {error}
+NEW: 
+
+KEY: err.no_agreement
+EN:  No agreement ID
+RU:  Нет ID договора
+NEW: 
+
+KEY: err.no_wallet
+EN:  No wallet connected
+RU:  Кошелёк не подключён
+NEW: 
+
+KEY: err.receipt_timeout
+EN:  Receipt timeout
+RU:  Таймаут получения подтверждения
+NEW: 
+
+KEY: err.reverted_onchain
+EN:  Reverted on-chain. Tx: {hash}
+RU:  Откатилось on-chain. Tx: {hash}
+NEW: 
+
+KEY: err.save_failed
+EN:  Save failed
+RU:  Сохранение не удалось
+NEW: 
+
+KEY: err.signature_rejected
+EN:  Signature rejected
+RU:  Подпись отклонена
+NEW: 
+
+KEY: err.switch_failed
+EN:  Switch failed
+RU:  Переключение не удалось
+NEW: 
+
+KEY: err.tx_failed
+EN:  Transaction failed: {reason}
+RU:  Транзакция не удалась: {reason}
+NEW: 
+
+KEY: err.upload_failed
+EN:  Upload failed: {error}
+RU:  Загрузка не удалась: {error}
+NEW: 
+
+KEY: err.verification_failed
+EN:  Verification failed: {error}
+RU:  Верификация не удалась: {error}
+NEW: 
+
+KEY: err.wallet_not_connected
+EN:  Wallet not connected
+RU:  Кошелёк не подключён
+NEW: 
+
+KEY: err.wallet_required
+EN:  Wallet required
+RU:  Необходим кошелёк
+NEW: 
+
+KEY: err.wrong_state
+EN:  Agreement must be Active. Current: {state}
+RU:  Контракт должен быть активен. Текущее состояние: {state}
+NEW: 
+
+KEY: err.wrong_state_et
+EN:  Wrong state: expected EarlyTermProposed
+RU:  Неверное состояние: ожидалось EarlyTermProposed
+NEW: 
+
+KEY: err.wrong_term_type
+EN:  Wrong term type: expected Mutual
+RU:  Неверный тип расторжения: ожидалось Mutual
+NEW: 
+
+KEY: et.choose
+EN:  Choose how to handle deposits upon exit.
+RU:  Выберите, как распределить залоги при выходе.
+NEW: 
+
+KEY: et.claim_confirm
+EN:  I understand — proceed
+RU:  Я понимаю — продолжить
+NEW: 
+
+KEY: et.claim_sub
+EN:  Close now. Claim their deposit; yours is frozen for 60 days.
+RU:  Закрыть сейчас. Претензия на его депозит; ваш замораживается на 60 дней.
+NEW: 
+
+KEY: et.claim_title
+EN:  File a Claim
+RU:  Заявить претензию
+NEW: 
+
+KEY: et.claim_warning
+EN:  Both deposits will be frozen for 60 days while the dispute is resolved by local law.
+RU:  Оба депозита будут заморожены на 60 дней, пока спор разрешается по местному праву.
+NEW: 
+
+KEY: et.no_go_back
+EN:  No, go back
+RU:  Нет, вернуться
+NEW: 
+
+KEY: et.offer_sub
+EN:  Close now. Your deposit goes to the counterparty.
+RU:  Закрыть сейчас. Ваш депозит уходит контрагенту.
+NEW: 
+
+KEY: et.offer_title
+EN:  Walk Away
+RU:  Уйти, оставив депозит
+NEW: 
+
+KEY: et.par_sub
+EN:  Close now. Each side keeps their own deposit.
+RU:  Закрыть сейчас. Каждый сохраняет свой депозит.
+NEW: 
+
+KEY: et.par_title
+EN:  Each Keeps Own Deposit
+RU:  Каждый сохраняет свой депозит
+NEW: 
+
+KEY: et.reason_label
+EN:  Reason (optional)
+RU:  Причина (необязательно)
+NEW: 
+
+KEY: et.tip_claim
+EN:  This closes the agreement immediately. You claim their deposit and lock yours as security.
+RU:  Договор закрывается немедленно. Вы заявляете претензию на депозит контрагента и блокируете свой как обеспечение.
+NEW: 
+
+KEY: et.tip_offer
+EN:  This closes the agreement immediately. Your deposit is released to the counterparty as the price of leaving.
+RU:  Договор закрывается немедленно. Ваш депозит передаётся контрагенту как цена досрочного выхода.
+NEW: 
+
+KEY: et.tip_par
+EN:  This closes the agreement immediately. If the counterparty accepts, both deposits return to their original owners.
+RU:  Договор закрывается немедленно. Если контрагент согласится, оба депозита возвращаются своим владельцам.
+NEW: 
+
+KEY: et.title
+EN:  Terminate Early
+RU:  Досрочное расторжение
+NEW: 
+
+KEY: et.yes_proceed
+EN:  Yes, proceed
+RU:  Да, продолжить
+NEW: 
+
+KEY: feed.12_months
+EN:  12 months (1 year)
+RU:  12 месяцев (1 год)
+NEW: 
+
+KEY: feed.duration_months
+EN:  Duration (months)
+RU:  Длительность (мес.)
+NEW: 
+
+KEY: feed.find_home
+EN:  Find your home
+RU:  Найди своё жильё
+NEW: 
+
+KEY: feed.find_tenant
+EN:  Find your ideal tenant
+RU:  Найди идеального жильца
+NEW: 
+
+KEY: feed.just_rented
+EN:  Just Rented
+RU:  Только что сдано
+NEW: 
+
+KEY: feed.select_city
+EN:  Select city…
+RU:  Выберите город…
+NEW: 
+
+KEY: feed.signed_on_chain
+EN:  Signed on-chain
+RU:  Подписано on-chain
+NEW: 
+
+KEY: field.amount_usdc
+EN:  Amount (USDC)
+RU:  Сумма (USDC)
+NEW: 
+
+KEY: field.available_from
+EN:  Available From
+RU:  Доступно с
+NEW: 
+
+KEY: field.available_from_short
+EN:  Available From
+RU:  Доступно с
+NEW: 
+
+KEY: field.city
+EN:  City
+RU:  Город
+NEW: 
+
+KEY: field.city_region
+EN:  City / Region
+RU:  Город / Регион
+NEW: 
+
+KEY: field.duration
+EN:  Duration
+RU:  Длительность
+NEW: 
+
+KEY: field.floor
+EN:  Floor (optional)
+RU:  Этаж (необязательно)
+NEW: 
+
+KEY: field.landlord_name
+EN:  Landlord — Full legal name
+RU:  Владелец — Полное имя по документу
+NEW: 
+
+KEY: field.lease_duration
+EN:  Lease Duration
+RU:  Срок аренды
+NEW: 
+
+KEY: field.lease_period
+EN:  Lease Period
+RU:  Срок аренды
+NEW: 
+
+KEY: field.lease_start
+EN:  Lease start date (move-in)
+RU:  Дата начала аренды (заселение)
+NEW: 
+
+KEY: field.max_budget
+EN:  Max budget (USDC/mo)
+RU:  Макс. бюджет (USDC/мес.)
+NEW: 
+
+KEY: field.min_rent
+EN:  Min rent (USDC/mo)
+RU:  Мин. аренда (USDC/мес.)
+NEW: 
+
+KEY: field.min_stay
+EN:  Minimum stay
+RU:  Минимальный срок
+NEW: 
+
+KEY: field.monthly_rent
+EN:  Monthly rent (USDC)
+RU:  Ежемесячная аренда (USDC)
+NEW: 
+
+KEY: field.monthly_rent_short
+EN:  Monthly Rent
+RU:  Ежемесячная аренда
+NEW: 
+
+KEY: field.move_in_date
+EN:  Move-in Date
+RU:  Дата заселения
+NEW: 
+
+KEY: field.neighborhood
+EN:  About the neighborhood?
+RU:  О районе?
+NEW: 
+
+KEY: field.property_address
+EN:  Full property address
+RU:  Полный адрес объекта
+NEW: 
+
+KEY: field.property_type
+EN:  Property Type
+RU:  Тип объекта
+NEW: 
+
+KEY: field.recipient_address
+EN:  Recipient address
+RU:  Адрес получателя
+NEW: 
+
+KEY: field.status
+EN:  Status
+RU:  Статус
+NEW: 
+
+KEY: field.street
+EN:  Street + number
+RU:  Улица + номер дома
+NEW: 
+
+KEY: field.tenant_name
+EN:  Tenant — Full legal name
+RU:  Жилец — Полное имя по документу
+NEW: 
+
+KEY: field.whats_special
+EN:  What's special about this place?
+RU:  Что особенного в этом месте?
+NEW: 
+
+KEY: grace.confirm
+EN:  Grant
+RU:  Предоставить
+NEW: 
+
+KEY: grace.message
+EN:  How many extra days to give the tenant for the current rent cycle?
+RU:  Сколько дополнительных дней дать жильцу для оплаты текущего цикла аренды?
+NEW: 
+
+KEY: grace.placeholder
+EN:  1 to 14 days
+RU:  от 1 до 14 дней
+NEW: 
+
+KEY: grace.title
+EN:  Grant Extra Days
+RU:  Предоставить дополнительные дни
+NEW: 
+
+KEY: inbox.active_chat
+EN:  Active Chat
+RU:  Активный чат
+NEW: 
+
+KEY: inbox.apply_now
+EN:  Apply now →
+RU:  Подать заявку →
+NEW: 
+
+KEY: inbox.chat_open
+EN:  Chat open — your messages are delivered
+RU:  Чат открыт — ваши сообщения доставлены
+NEW: 
+
+KEY: inbox.confirm_viewing
+EN:  ✓ Confirm viewing
+RU:  ✓ Подтвердить просмотр
+NEW: 
+
+KEY: inbox.continue_chat
+EN:  Continue chat
+RU:  Продолжить чат
+NEW: 
+
+KEY: inbox.decline
+EN:  ✗ Decline
+RU:  ✗ Отклонить
+NEW: 
+
+KEY: inbox.early_term_request
+EN:  Early Termination Request
+RU:  Запрос на досрочное расторжение
+NEW: 
+
+KEY: inbox.et_landlord
+EN:  Early Termination — Landlord
+RU:  Досрочное расторжение — Владелец
+NEW: 
+
+KEY: inbox.et_tenant
+EN:  Early Termination — Tenant
+RU:  Досрочное расторжение — Жилец
+NEW: 
+
+KEY: inbox.forced_exit
+EN:  Forced Exit — Landlord Breach
+RU:  Принудительный выезд — Нарушение владельца
+NEW: 
+
+KEY: inbox.mark_all
+EN:  Mark all read
+RU:  Отметить все как прочитанные
+NEW: 
+
+KEY: inbox.message
+EN:  Message
+RU:  Сообщение
+NEW: 
+
+KEY: inbox.next_steps
+EN:  Next steps:
+RU:  Следующие шаги:
+NEW: 
+
+KEY: inbox.no_messages
+EN:  No messages yet
+RU:  Сообщений пока нет
+NEW: 
+
+KEY: inbox.open_chat
+EN:  Open chat
+RU:  Открыть чат
+NEW: 
+
+KEY: inbox.property_suggestion
+EN:  Property Suggestion
+RU:  Предложение объекта
+NEW: 
+
+KEY: inbox.ready_proceed
+EN:  Viewing confirmed. Ready to proceed with the rental agreement?
+RU:  Просмотр подтверждён. Готовы перейти к договору аренды?
+NEW: 
+
+KEY: inbox.rental_application
+EN:  Rental Application
+RU:  Заявка на аренду
+NEW: 
+
+KEY: inbox.request_viewing
+EN:  Request viewing
+RU:  Запросить просмотр
+NEW: 
+
+KEY: inbox.start_agreement
+EN:  Start Agreement →
+RU:  Начать оформление →
+NEW: 
+
+KEY: inbox.title
+EN:  Inbox
+RU:  Входящие
+NEW: 
+
+KEY: inbox.view_listing
+EN:  View listing →
+RU:  Посмотреть объявление →
+NEW: 
+
+KEY: inbox.viewing_confirmed
+EN:  ✓ Viewing confirmed
+RU:  ✓ Просмотр подтверждён
+NEW: 
+
+KEY: inbox.viewing_declined
+EN:  ✗ Viewing declined
+RU:  ✗ Просмотр отклонён
+NEW: 
+
+KEY: inbox.viewing_request
+EN:  Viewing Request
+RU:  Запрос на просмотр
+NEW: 
+
+KEY: inbox.viewing_requested
+EN:  Viewing Requested
+RU:  Просмотр запрошен
+NEW: 
+
+KEY: inbox.viewing_sent
+EN:  Viewing request sent — waiting for landlord to confirm
+RU:  Запрос на просмотр отправлен — ожидание подтверждения арендодателем
+NEW: 
+
+KEY: inbox.violation_notice
+EN:  Termination Notice — Violation
+RU:  Уведомление о расторжении — Нарушение
+NEW: 
+
+KEY: inbox.while_you_wait
+EN:  While you wait, you can message the landlord or apply directly:
+RU:  Пока ждёте — напишите владельцу или подайте заявку напрямую:
+NEW: 
+
+KEY: inbox.you_replied
+EN:  You replied: "{msg}"
+RU:  Вы ответили: "{msg}"
+NEW: 
+
+KEY: lease.all_read
+EN:  All sections read ✓
+RU:  Все разделы прочитаны ✓
+NEW: 
+
+KEY: lease.confirm_read
+EN:  I have read and understood this section
+RU:  Я прочитал и понял данный раздел
+NEW: 
+
+KEY: lease.next_section
+EN:  Next section →
+RU:  Следующий раздел →
+NEW: 
+
+KEY: lease.prev_section
+EN:  ← Previous
+RU:  ← Назад
+NEW: 
+
+KEY: lease.proceed_sign
+EN:  Proceed to signing →
+RU:  Перейти к подписанию →
+NEW: 
+
+KEY: lease.read_title
+EN:  Read the Agreement
+RU:  Ознакомьтесь с договором
+NEW: 
+
+KEY: lease.reading_complete
+EN:  Agreement reviewed. You may now sign.
+RU:  Договор изучен. Можете подписать.
+NEW: 
+
+KEY: lease.section_of
+EN:  Section {current} of {total}
+RU:  Раздел {current} из {total}
+NEW: 
+
+KEY: ll.create
+EN:  Create
+RU:  Создать
+NEW: 
+
+KEY: ll.have_drafts
+EN:  You have {count} draft(s) — finish to start receiving viewing requests.
+RU:  У вас {count} черновик(ов) — завершите, чтобы начать получать запросы на просмотр.
+NEW: 
+
+KEY: ll.in_wallet
+EN:  in wallet
+RU:  в кошельке
+NEW: 
+
+KEY: ll.no_feed
+EN:  You won't appear in the feed until you publish a listing.
+RU:  Вы не появитесь в ленте, пока не опубликуете объявление.
+NEW: 
+
+KEY: ll.open
+EN:  Open
+RU:  Открыть
+NEW: 
+
+KEY: ll.publish
+EN:  Publish your apartment
+RU:  Опубликуйте вашу квартиру
+NEW: 
+
+KEY: ll.required_in_wallet
+EN:  {amount} USDC required · {balance}
+RU:  {amount} USDC необходимо · {balance}
+NEW: 
+
+KEY: ll.x_active
+EN:  {count} active
+RU:  {count} активн.
+NEW: 
+
+KEY: ll.x_draft
+EN:  {count} draft
+RU:  {count} черновик
+NEW: 
+
+KEY: ll.x_drafts
+EN:  {count} drafts
+RU:  {count} черновиков
+NEW: 
+
+KEY: ll.x_paused
+EN:  {count} paused
+RU:  {count} приостановлено
+NEW: 
+
+KEY: lw.300m
+EN:  300m radius
+RU:  радиус 300 м
+NEW: 
+
+KEY: lw.about_neighborhood
+EN:  About the neighborhood?
+RU:  О районе?
+NEW: 
+
+KEY: lw.add_photo
+EN:  Add photo
+RU:  Добавить фото
+NEW: 
+
+KEY: lw.address_privacy
+EN:  Tenants only see the district + an approximate zone. Exact address goes to your tenant after they sign.
+RU:  Жильцы видят только район + приблизительную зону. Точный адрес передаётся жильцу после подписания.
+NEW: 
+
+KEY: lw.almost_done
+EN:  Almost done
+RU:  Почти готово
+NEW: 
+
+KEY: lw.approx_zone
+EN:  Approximate zone · {district}
+RU:  Приблизительная зона · {district}
+NEW: 
+
+KEY: lw.auto_write
+EN:  Auto-write
+RU:  Автосоздание
+NEW: 
+
+KEY: lw.chars_count
+EN:  {count} / 500 chars · min 80
+RU:  {count} / 500 символов · минимум 80
+NEW: 
+
+KEY: lw.commit_plus_security
+EN:  1× commitment + 1× security
+RU:  1× Commitment Deposit + 1× депозит за имущество
+NEW: 
+
+KEY: lw.composing
+EN:  composing…
+RU:  составление…
+NEW: 
+
+KEY: lw.confirm_zone
+EN:  Confirm your zone
+RU:  Подтвердите вашу зону
+NEW: 
+
+KEY: lw.continue
+EN:  Continue →
+RU:  Продолжить →
+NEW: 
+
+KEY: lw.cover
+EN:  COVER
+RU:  ОБЛОЖКА
+NEW: 
+
+KEY: lw.edit_amenities
+EN:  Edit amenities
+RU:  Редактировать удобства
+NEW: 
+
+KEY: lw.edit_description
+EN:  Edit description
+RU:  Редактировать описание
+NEW: 
+
+KEY: lw.edit_essentials
+EN:  Edit essentials
+RU:  Редактировать основное
+NEW: 
+
+KEY: lw.edit_photos
+EN:  Edit photos
+RU:  Редактировать фото
+NEW: 
+
+KEY: lw.edit_zone
+EN:  Edit zone
+RU:  Редактировать зону
+NEW: 
+
+KEY: lw.escrow_at_signing
+EN:  Escrow at signing
+RU:  Эскроу при подписании
+NEW: 
+
+KEY: lw.et_how
+EN:  How does it work?
+RU:  Как это работает?
+NEW: 
+
+KEY: lw.et_terms
+EN:  Terminate early terms: governed by smart contract
+RU:  Условия досрочного расторжения: регулируются смарт-контрактом
+NEW: 
+
+KEY: lw.feed_card
+EN:  Feed card
+RU:  Карточка в ленте
+NEW: 
+
+KEY: lw.fill_essentials
+EN:  Fill the essentials to begin
+RU:  Заполните основные данные для начала
+NEW: 
+
+KEY: lw.fill_prompts
+EN:  Fill the prompts above to see your description.
+RU:  Заполните поля выше, чтобы увидеть описание.
+NEW: 
+
+KEY: lw.floor_optional
+EN:  Floor (optional)
+RU:  Этаж (необязательно)
+NEW: 
+
+KEY: lw.full_listing
+EN:  Full listing
+RU:  Полное объявление
+NEW: 
+
+KEY: lw.how_tenants_see
+EN:  How tenants will see it
+RU:  Как видят жильцы
+NEW: 
+
+KEY: lw.kitchen_warn
+EN:  You marked Full kitchen — add a kitchen photo to publish
+RU:  Отметили «Полная кухня» — добавьте фото кухни для публикации
+NEW: 
+
+KEY: lw.list_your_place
+EN:  List your place
+RU:  Разместите объявление
+NEW: 
+
+KEY: lw.location
+EN:  Location
+RU:  Расположение
+NEW: 
+
+KEY: lw.looks_right
+EN:  Looks right →
+RU:  Всё верно →
+NEW: 
+
+KEY: lw.min_months
+EN:  Min {months} mo
+RU:  Мин. {months} мес.
+NEW: 
+
+KEY: lw.min_stay
+EN:  Minimum stay
+RU:  Минимальный срок
+NEW: 
+
+KEY: lw.min_stay_note
+EN:  pi2pi only works with leases of 6 months or longer
+RU:  pi2pi работает только с арендой от 6 месяцев
+NEW: 
+
+KEY: lw.minimum_months
+EN:  Minimum {months} months
+RU:  Минимум {months} месяцев
+NEW: 
+
+KEY: lw.monthly_rent
+EN:  Monthly rent
+RU:  Ежемесячная аренда
+NEW: 
+
+KEY: lw.most_listings
+EN:  Most listings have 5–8 features
+RU:  Большинство объявлений содержат 5–8 характеристик
+NEW: 
+
+KEY: lw.new_listing
+EN:  New listing
+RU:  Новое объявление
+NEW: 
+
+KEY: lw.photo_count
+EN:  5 to 10 photos · first one is the cover
+RU:  от 5 до 10 фото · первое будет обложкой
+NEW: 
+
+KEY: lw.photos_hint
+EN:  Bright, wide-angle photos perform better
+RU:  Яркие широкоугольные фото выглядят лучше
+NEW: 
+
+KEY: lw.pick_at_least
+EN:  pick at least 3
+RU:  выберите минимум 3
+NEW: 
+
+KEY: lw.preview
+EN:  Preview
+RU:  Предпросмотр
+NEW: 
+
+KEY: lw.privacy_note
+EN:  Your exact address stays private until a tenant signs the lease. This protects your privacy and prevents drive-by visits. Drag the marker to fine-tune.
+RU:  Точный адрес остаётся приватным до подписания договора жильцом. Это защищает вашу приватность и предотвращает нежелательные визиты. Перетащите маркер для уточнения.
+NEW: 
+
+KEY: lw.property
+EN:  Property
+RU:  Объект
+NEW: 
+
+KEY: lw.property_type
+EN:  Property type
+RU:  Тип объекта
+NEW: 
+
+KEY: lw.publish_listing
+EN:  Publish listing →
+RU:  Опубликовать объявление →
+NEW: 
+
+KEY: lw.publishing
+EN:  Publishing…
+RU:  Публикация…
+NEW: 
+
+KEY: lw.resume_draft
+EN:  Resume draft
+RU:  Продолжить черновик
+NEW: 
+
+KEY: lw.save_draft
+EN:  Save draft
+RU:  Сохранить черновик
+NEW: 
+
+KEY: lw.saved_draft
+EN:  You have a saved draft
+RU:  У вас есть сохранённый черновик
+NEW: 
+
+KEY: lw.saved_draft_desc
+EN:  Your progress from last time was saved automatically. Continue where you left off — or start a new listing from scratch.
+RU:  Ваш прогресс с прошлого раза сохранён автоматически. Продолжите с того места, где остановились — или начните новое объявление с нуля.
+NEW: 
+
+KEY: lw.selected
+EN:  selected
+RU:  выбрано
+NEW: 
+
+KEY: lw.show_your_place
+EN:  Show your place
+RU:  Покажите ваше жильё
+NEW: 
+
+KEY: lw.start_fresh
+EN:  Start fresh
+RU:  Начать заново
+NEW: 
+
+KEY: lw.street_number
+EN:  Street + number
+RU:  Улица + номер дома
+NEW: 
+
+KEY: lw.takes_about
+EN:  Takes about 3 minutes
+RU:  Займёт около 3 минут
+NEW: 
+
+KEY: lw.tap_everything
+EN:  Tap everything that's there. Skip what isn't.
+RU:  Нажмите на всё, что есть. Пропустите то, чего нет.
+NEW: 
+
+KEY: lw.tap_to_label
+EN:  Tap to label
+RU:  Нажмите для подписи
+NEW: 
+
+KEY: lw.tenants_see_circle
+EN:  Tenants will see this circle, not the exact pin
+RU:  Жильцы увидят этот круг, а не точное местоположение
+NEW: 
+
+KEY: lw.type_in_district
+EN:  {type} in {district}
+RU:  {type} в {district}
+NEW: 
+
+KEY: lw.uploading
+EN:  Uploading…
+RU:  Загрузка…
+NEW: 
+
+KEY: lw.wallet_must_hold
+EN:  Wallet must hold ≥ this amount in USDC at all times
+RU:  На кошельке должно быть ≥ этой суммы в USDC постоянно
+NEW: 
+
+KEY: lw.well_write
+EN:  We'll write it from your tags. Edit if you want.
+RU:  Мы составим описание из ваших тегов. Отредактируйте при желании.
+NEW: 
+
+KEY: lw.whats_included
+EN:  What's included?
+RU:  Что включено?
+NEW: 
+
+KEY: lw.whats_special
+EN:  What's special about this place?
+RU:  Что особенного в этом месте?
+NEW: 
+
+KEY: lw.where_tbilisi
+EN:  Where in Tbilisi?
+RU:  Где в Тбилиси?
+NEW: 
+
+KEY: lw.write_own
+EN:  Write my own
+RU:  Написать своё
+NEW: 
+
+KEY: lw.zone_approx
+EN:  {district}, Tbilisi · approximate
+RU:  {district}, Тбилиси · приблизительно
+NEW: 
+
+KEY: menu.disconnect
+EN:  Disconnect
+RU:  Выйти
+NEW: 
+
+KEY: menu.my_account
+EN:  My account
+RU:  Мой аккаунт
+NEW: 
+
+KEY: menu.my_listings
+EN:  My listings
+RU:  Мои объявления
+NEW: 
+
+KEY: menu.my_search
+EN:  My Search
+RU:  Мой запрос
+NEW: 
+
+KEY: menu.reset_account
+EN:  Reset account
+RU:  Сбросить аккаунт
+NEW: 
+
+KEY: menu.reset_all
+EN:  Reset all (both accounts + server)
+RU:  Сбросить всё (оба аккаунта + сервер)
+NEW: 
+
+KEY: menu.settings
+EN:  Settings
+RU:  Настройки
+NEW: 
+
+KEY: menu.wallet
+EN:  Wallet
+RU:  Кошелёк
+NEW: 
+
+KEY: mi.18_months
+EN:  18 months
+RU:  18 месяцев
+NEW: 
+
+KEY: mi.1_year
+EN:  1 year
+RU:  1 год
+NEW: 
+
+KEY: mi.2_years
+EN:  2 years
+RU:  2 года
+NEW: 
+
+KEY: mi.6_months
+EN:  6 months
+RU:  6 месяцев
+NEW: 
+
+KEY: mi.city
+EN:  City
+RU:  Город
+NEW: 
+
+KEY: mi.city_region
+EN:  City / Region
+RU:  Город / Регион
+NEW: 
+
+KEY: mi.im_offering
+EN:  I'm offering
+RU:  Я предлагаю
+NEW: 
+
+KEY: mi.intent_privacy
+EN:  Your search request is visible to landlords looking for tenants.
+RU:  Ваш запрос виден владельцам, которые ищут жильцов.
+NEW: 
+
+KEY: mi.looking_for
+EN:  What you're looking for.
+RU:  Что вы ищете.
+NEW: 
+
+KEY: mi.max_budget
+EN:  Max budget (USDC/mo)
+RU:  Макс. бюджет (USDC/мес.)
+NEW: 
+
+KEY: mi.max_budget_short
+EN:  Max budget
+RU:  Макс. бюджет
+NEW: 
+
+KEY: mi.min_rent
+EN:  Min rent (USDC/mo)
+RU:  Мин. аренда (USDC/мес.)
+NEW: 
+
+KEY: mi.min_rent_short
+EN:  Min rent
+RU:  Мин. аренда
+NEW: 
+
+KEY: mi.offering
+EN:  What you're offering.
+RU:  Что вы предлагаете.
+NEW: 
+
+KEY: mi.paused_hint
+EN:  Your search request is paused and not visible to landlords. Resume to start receiving offers again.
+RU:  Ваш запрос на паузе и не виден владельцам. Возобновите, чтобы снова получать предложения.
+NEW: 
+
+KEY: mi.saved
+EN:  Saved
+RU:  Сохранено
+NEW: 
+
+KEY: mi.select_city
+EN:  Select a city
+RU:  Выберите город
+NEW: 
+
+KEY: mi.select_duration
+EN:  Select duration
+RU:  Выберите срок
+NEW: 
+
+KEY: mi.status_active
+EN:  Your request is visible to landlords
+RU:  Ваш запрос виден владельцам
+NEW: 
+
+KEY: mi.status_paused
+EN:  Your request is hidden from landlords
+RU:  Ваш запрос скрыт от владельцев
+NEW: 
+
+KEY: mi.status_suspended
+EN:  Suspended — low balance
+RU:  Приостановлено — низкий баланс
+NEW: 
+
+KEY: mi.suspended_hint
+EN:  Your request was auto-suspended because your wallet balance dropped below the minimum. Top up your wallet to resume.
+RU:  Ваш запрос автоматически приостановлен, потому что баланс кошелька упал ниже минимума. Пополните кошелёк для возобновления.
+NEW: 
+
+KEY: misc.active
+EN:  active
+RU:  активно
+NEW: 
+
+KEY: misc.arc_testnet
+EN:  Arc Testnet
+RU:  Arc Testnet
+NEW: 
+
+KEY: misc.archived
+EN:  Archived
+RU:  Архив
+NEW: 
+
+KEY: misc.auto_release
+EN:  Auto-release: {date}
+RU:  Автовозврат: {date}
+NEW: 
+
+KEY: misc.available
+EN:  Available
+RU:  Доступно
+NEW: 
+
+KEY: misc.bathrooms
+EN:  Bathrooms
+RU:  Ванные
+NEW: 
+
+KEY: misc.bedrooms
+EN:  Bedrooms
+RU:  Спальни
+NEW: 
+
+KEY: misc.both
+EN:  Both
+RU:  Обе стороны
+NEW: 
+
+KEY: misc.budget
+EN:  Budget
+RU:  Бюджет
+NEW: 
+
+KEY: misc.contracts
+EN:  contracts
+RU:  контракты
+NEW: 
+
+KEY: misc.counterparty
+EN:  Counterparty
+RU:  Контрагент
+NEW: 
+
+KEY: misc.d_h_remaining
+EN:  {d}d {h}h remaining
+RU:  {d}д {h}ч осталось
+NEW: 
+
+KEY: misc.day
+EN:  day
+RU:  день
+NEW: 
+
+KEY: misc.days
+EN:  days
+RU:  дней
+NEW: 
+
+KEY: misc.disputes
+EN:  disputes
+RU:  диспуты
+NEW: 
+
+KEY: misc.draft
+EN:  draft
+RU:  черновик
+NEW: 
+
+KEY: misc.drafts
+EN:  drafts
+RU:  черновики
+NEW: 
+
+KEY: misc.ends
+EN:  Ends
+RU:  Завершение
+NEW: 
+
+KEY: misc.in_wallet
+EN:  in wallet
+RU:  в кошельке
+NEW: 
+
+KEY: misc.incl_first
+EN:  (incl. first rent)
+RU:  (вкл. первый месяц)
+NEW: 
+
+KEY: misc.initiator
+EN:  Initiator
+RU:  Инициатор
+NEW: 
+
+KEY: misc.landlord
+EN:  Landlord
+RU:  Владелец
+NEW: 
+
+KEY: misc.months
+EN:  months
+RU:  мес.
+NEW: 
+
+KEY: misc.mr_deposited
+EN:  MR deposited
+RU:  МА внесена
+NEW: 
+
+KEY: misc.network_arc
+EN:  Network: Arc Testnet (chainId 5042002)
+RU:  Сеть: Arc Testnet (chainId 5042002)
+NEW: 
+
+KEY: misc.next
+EN:  Next
+RU:  Далее
+NEW: 
+
+KEY: misc.on_chain
+EN:  On-chain
+RU:  On-chain
+NEW: 
+
+KEY: misc.paused
+EN:  paused
+RU:  приостановлено
+NEW: 
+
+KEY: misc.payments
+EN:  Payments
+RU:  Платежи
+NEW: 
+
+KEY: misc.reviews
+EN:  reviews
+RU:  отзывы
+NEW: 
+
+KEY: misc.started
+EN:  Started
+RU:  Начало
+NEW: 
+
+KEY: misc.tenant
+EN:  Tenant
+RU:  Жилец
+NEW: 
+
+KEY: misc.unverified
+EN:  Unverified
+RU:  Не подтверждено
+NEW: 
+
+KEY: misc.usdc
+EN:  USDC
+RU:  USDC
+NEW: 
+
+KEY: misc.usdc_balance
+EN:  USDC Balance
+RU:  Баланс USDC
+NEW: 
+
+KEY: misc.usdc_mo
+EN:  USDC/mo
+RU:  USDC/мес.
+NEW: 
+
+KEY: misc.usdc_month
+EN:  USDC / month
+RU:  USDC / мес.
+NEW: 
+
+KEY: misc.usdc_required
+EN:  USDC required
+RU:  USDC необходимо
+NEW: 
+
+KEY: misc.usdc_transfers
+EN:  USDC transfers · Arc Testnet
+RU:  Переводы USDC · Arc Testnet
+NEW: 
+
+KEY: misc.verified
+EN:  Verified
+RU:  Подтверждено
+NEW: 
+
+KEY: misc.verified_on_chain
+EN:  Verified on-chain
+RU:  Подтверждено on-chain
+NEW: 
+
+KEY: misc.viewings
+EN:  viewings
+RU:  просмотры
+NEW: 
+
+KEY: misc.wallet
+EN:  Wallet
+RU:  Кошелёк
+NEW: 
+
+KEY: misc.you
+EN:  You
+RU:  Вы
+NEW: 
+
+KEY: misc.your_wallet_address
+EN:  Your wallet address
+RU:  Адрес вашего кошелька
+NEW: 
+
+KEY: ml.archive_confirm
+EN:  Archive this listing? It will be hidden permanently.
+RU:  Архивировать это объявление? Оно будет скрыто навсегда.
+NEW: 
+
+KEY: ml.auto_paused
+EN:  Auto-paused: wallet balance dropped
+RU:  Автопауза: баланс кошелька упал
+NEW: 
+
+KEY: ml.buffer
+EN:  Buffer
+RU:  Буфер
+NEW: 
+
+KEY: ml.delete_confirm
+EN:  Delete this draft? This cannot be undone.
+RU:  Удалить этот черновик? Это нельзя отменить.
+NEW: 
+
+KEY: ml.manage_sub
+EN:  Manage what's visible to tenants. Up to 3 listings.
+RU:  Управляйте тем, что видят жильцы. До 3 объявлений.
+NEW: 
+
+KEY: ml.no_photo
+EN:  no photo
+RU:  нет фото
+NEW: 
+
+KEY: ml.pausing
+EN:  Pausing…
+RU:  Приостановка…
+NEW: 
+
+KEY: ml.publishing
+EN:  Publishing…
+RU:  Публикация…
+NEW: 
+
+KEY: ml.required_active
+EN:  Required for active listings
+RU:  Необходимо для активных объявлений
+NEW: 
+
+KEY: ml.resuming
+EN:  Resuming…
+RU:  Возобновление…
+NEW: 
+
+KEY: ml.status_active
+EN:  Active
+RU:  Активно
+NEW: 
+
+KEY: ml.status_archived
+EN:  Archived
+RU:  В архиве
+NEW: 
+
+KEY: ml.status_draft
+EN:  Draft
+RU:  Черновик
+NEW: 
+
+KEY: ml.status_paused
+EN:  Paused
+RU:  На паузе
+NEW: 
+
+KEY: ml.status_suspended
+EN:  Suspended
+RU:  Приостановлено
+NEW: 
+
+KEY: ml.top_up
+EN:  top up or pause one
+RU:  пополните или приостановите одно
+NEW: 
+
+KEY: ml.trying
+EN:  Trying…
+RU:  Попытка…
+NEW: 
+
+KEY: ml.wallet
+EN:  Wallet
+RU:  Кошелёк
+NEW: 
+
+KEY: mock.desc_0
+EN:  Blockchain-secured lease. Zero intermediaries, zero platform fee. Smart contract escrow ensures deposit auto-release.
+RU:  Аренда на блокчейне. Без посредников, без комиссии платформы. Смарт-контракт обеспечивает автовозврат депозита.
+NEW: 
+
+KEY: mock.desc_1
+EN:  Modern 1BR in the heart of Da Nang. Blockchain-secured lease, zero intermediaries, zero platform fee. Smart contract escrow ensures deposit auto-release.
+RU:  Современная 1-комнатная в центре Дананга. Аренда на блокчейне, без посредников, без комиссии платформы. Смарт-контракт обеспечивает автовозврат депозита.
+NEW: 
+
+KEY: mock.desc_10
+EN:  Modern studio overlooking the Han River. Open plan, smart lock, full USDC rental with blockchain-verified deposit.
+RU:  Современная студия с видом на реку Хан. Открытая планировка, умный замок, аренда в USDC с on-chain депозитом.
+NEW: 
+
+KEY: mock.desc_11
+EN:  Sun-drenched corner loft in Belgrano. Industrial design, double-height ceilings, USDC rent settled on-chain each month.
+RU:  Залитый солнцем угловой лофт в Бельграно. Индустриальный дизайн, двойная высота потолков, аренда в USDC расчёт on-chain каждый месяц.
+NEW: 
+
+KEY: mock.desc_12
+EN:  Premium 3BR on the prestigious Vake boulevard. Close to embassies and parks. Deposit in Aave escrow, yield earned daily.
+RU:  Премиальная 3-комнатная на престижном бульваре Ваке. Рядом с посольствами и парками. Депозит в Aave, доход начисляется ежедневно.
+NEW: 
+
+KEY: mock.desc_13
+EN:  Hillside villa on Son Tra Peninsula with ocean panorama. Private garden, smart home, fully tokenised lease on Ethereum.
+RU:  Вилла на склоне полуострова Сон Тра с панорамой на океан. Свой сад, умный дом, полностью токенизированная аренда на Ethereum.
+NEW: 
+
+KEY: mock.desc_2
+EN:  Industrial-chic loft in Palermo. On-chain deposit auto-returns within 48h of checkout.
+RU:  Лофт в индустриальном стиле в Палермо. On-chain депозит автоматически возвращается в течение 48ч после выезда.
+NEW: 
+
+KEY: mock.desc_3
+EN:  Cosy studio in the historic Old Town district. Stone walls, exposed wood beams, on-chain lease. Walk to Narikala Fortress.
+RU:  Уютная студия в историческом Старом городе. Каменные стены, деревянные балки, on-chain аренда. Пешком до крепости Нарикала.
+NEW: 
+
+KEY: mock.desc_4
+EN:  Private pool, beach access. Fully tokenised, rent in USDC, deposit in escrow smart contract.
+RU:  Свой бассейн, выход к пляжу. Полностью токенизировано, аренда в USDC, депозит в смарт-контракте.
+NEW: 
+
+KEY: mock.desc_5
+EN:  Bright 2BR in Palermo Soho, steps from restaurants and parks. USDC rent, smart contract deposit, zero agency.
+RU:  Светлая 2-комнатная в Палермо Сохо, в шаге от ресторанов и парков. Аренда в USDC, депозит через смарт-контракт, без агентств.
+NEW: 
+
+KEY: mock.desc_6
+EN:  Modern flat in Vera district with panoramic city views. Deposit in Aave v2 escrow, earns yield while you live here.
+RU:  Современная квартира в районе Вера с панорамным видом на город. Депозит в Aave v2, приносит доход, пока вы здесь живёте.
+NEW: 
+
+KEY: mock.desc_7
+EN:  Compact 1BR 200m from My Khe beach. Sea breeze, fast fibre, on-chain deposit auto-return on checkout.
+RU:  Компактная 1-комнатная в 200 м от пляжа Ми Кхе. Морской бриз, быстрый интернет, автовозврат on-chain депозита при выезде.
+NEW: 
+
+KEY: mock.desc_8
+EN:  Elegant apartment in Recoleta, surrounded by French architecture and museums. On-chain lease, zero intermediaries.
+RU:  Элегантная квартира в Реколете, в окружении французской архитектуры и музеев. On-chain аренда, без посредников.
+NEW: 
+
+KEY: mock.desc_9
+EN:  Spacious family apartment in quiet Saburtalo. Great transport links, on-chain contract, deposits auto-released at checkout.
+RU:  Просторная семейная квартира в тихом Сабуртало. Отличное транспортное сообщение, on-chain контракт, депозиты автоматически возвращаются при выезде.
+NEW: 
+
+KEY: mock.tag_below_market
+EN:  Below market
+RU:  Ниже рынка
+NEW: 
+
+KEY: mock.tag_new
+EN:  New
+RU:  Новое
+NEW: 
+
+KEY: mock.tag_top_rated
+EN:  Top rated
+RU:  Лучший рейтинг
+NEW: 
+
+KEY: mock.tag_verified
+EN:  Verified
+RU:  Подтверждено
+NEW: 
+
+KEY: mock.title_0
+EN:  Penthouse Sky Residence
+RU:  Пентхаус Sky Residence
+NEW: 
+
+KEY: mock.title_1
+EN:  Da Nang City Apartment
+RU:  Квартира в центре Дананга
+NEW: 
+
+KEY: mock.title_10
+EN:  Han River Studio
+RU:  Студия у реки Хан
+NEW: 
+
+KEY: mock.title_11
+EN:  Belgrano Corner Loft
+RU:  Угловой лофт в Бельграно
+NEW: 
+
+KEY: mock.title_12
+EN:  Vake Boulevard 3BR
+RU:  3-комнатная на бульваре Ваке
+NEW: 
+
+KEY: mock.title_13
+EN:  Son Tra Peninsula Villa
+RU:  Вилла на полуострове Сон Тра
+NEW: 
+
+KEY: mock.title_2
+EN:  Loft District Studio
+RU:  Студия в лофт-квартале
+NEW: 
+
+KEY: mock.title_3
+EN:  Old Town Studio
+RU:  Студия в Старом городе
+NEW: 
+
+KEY: mock.title_4
+EN:  Beachfront Villa
+RU:  Вилла у пляжа
+NEW: 
+
+KEY: mock.title_5
+EN:  Palermo Chic 2BR
+RU:  Стильная 2-комнатная в Палермо
+NEW: 
+
+KEY: mock.title_6
+EN:  Vera Highrise 1BR
+RU:  1-комнатная в высотке Вера
+NEW: 
+
+KEY: mock.title_7
+EN:  My Khe Beachside Room
+RU:  Комната у пляжа Ми Кхе
+NEW: 
+
+KEY: mock.title_8
+EN:  Recoleta Classic 1BR
+RU:  Классическая 1-комнатная в Реколете
+NEW: 
+
+KEY: mock.title_9
+EN:  Saburtalo 2BR Family Flat
+RU:  2-комнатная для семьи в Сабуртало
+NEW: 
+
+KEY: modal.cancel_damage_claim.confirm
+EN:  Cancel claim
+RU:  Отменить претензию
+NEW: 
+
+KEY: modal.cancel_damage_claim.danger
+EN:  You cannot file another claim after this.
+RU:  Вы не сможете подать ещё одну претензию.
+NEW: 
+
+KEY: modal.cancel_damage_claim.message
+EN:  Full property security deposit will be returned to Tenant.
+RU:  Полный депозит за имущество будет возвращён жильцу.
+NEW: 
+
+KEY: modal.cancel_damage_claim.title
+EN:  Cancel Damage Claim
+RU:  Отменить претензию по ущербу
+NEW: 
+
+KEY: modal.cancel_dispute.confirm
+EN:  I understand — cancel dispute
+RU:  Я понимаю — отменить спор
+NEW: 
+
+KEY: modal.cancel_dispute.danger
+EN:  YOUR DEPOSIT will be transferred to the counterparty as penalty for initiating and cancelling the dispute.
+RU:  ВАШ ДЕПОЗИТ будет переведён контрагенту в качестве штрафа за инициирование и отмену спора.
+NEW: 
+
+KEY: modal.cancel_dispute.message
+EN:  Deposits will be unfrozen.
+RU:  Депозиты будут разморожены.
+NEW: 
+
+KEY: modal.cancel_dispute.title
+EN:  Cancel Dispute
+RU:  Отменить спор
+NEW: 
+
+KEY: modal.drop_damage_claim.confirm
+EN:  Drop claim
+RU:  Отозвать претензию
+NEW: 
+
+KEY: modal.drop_damage_claim.danger
+EN:  You cannot file another claim after this.
+RU:  Вы не сможете подать ещё одну претензию.
+NEW: 
+
+KEY: modal.drop_damage_claim.message
+EN:  Full property security deposit will be returned to Tenant.
+RU:  Полный депозит за имущество будет возвращён жильцу.
+NEW: 
+
+KEY: modal.drop_damage_claim.title
+EN:  Drop Damage Claim
+RU:  Отозвать претензию по ущербу
+NEW: 
+
+KEY: nav.account
+EN:  Account
+RU:  Аккаунт
+NEW: 
+
+KEY: nav.deals
+EN:  Deals
+RU:  Контракты
+NEW: 
+
+KEY: nav.explore
+EN:  Explore
+RU:  Поиск
+NEW: 
+
+KEY: nav.inbox
+EN:  Inbox
+RU:  Входящие
+NEW: 
+
+KEY: nav.properties
+EN:  Properties
+RU:  Жильё
+NEW: 
+
+KEY: nav.saved
+EN:  Saved
+RU:  Сохранённое
+NEW: 
+
+KEY: nav.tenants
+EN:  Tenants
+RU:  Жильцы
+NEW: 
+
+KEY: nextstep.active.landlord
+EN:  Monitor rent · flag if tenant defaults
+RU:  Отслеживайте оплату · зафиксируйте, если жилец не платит
+NEW: 
+
+KEY: nextstep.active.tenant
+EN:  Pay rent on time · avoid commitment deposit forfeit
+RU:  Оплачивайте аренду вовремя · избегайте удержания Commitment Deposit
+NEW: 
+
+KEY: nextstep.actor.both
+EN:  Both
+RU:  Обе стороны
+NEW: 
+
+KEY: nextstep.actor.counterparty
+EN:  Counterparty
+RU:  Контрагент
+NEW: 
+
+KEY: nextstep.actor.landlord
+EN:  Landlord
+RU:  Владелец
+NEW: 
+
+KEY: nextstep.actor.tenant
+EN:  Tenant
+RU:  Жилец
+NEW: 
+
+KEY: nextstep.actor.you
+EN:  You
+RU:  Вы
+NEW: 
+
+KEY: nextstep.actor_label
+EN:  Actor: {who}
+RU:  Действующая сторона: {who}
+NEW: 
+
+KEY: nextstep.checkout.vacate
+EN:  Lease concludes soon · prepare to vacate
+RU:  Аренда скоро завершится · готовьтесь к выезду
+NEW: 
+
+KEY: nextstep.dispute.both
+EN:  Deposits frozen 60 days · may concede, accept, or wait out freeze
+RU:  Депозиты заморожены на 60 дней · можно уступить, принять или дождаться разморозки
+NEW: 
+
+KEY: nextstep.ended.landlord
+EN:  Inspect property · file damage claim or release deposit
+RU:  Осмотрите объект · подайте претензию или верните депозит
+NEW: 
+
+KEY: nextstep.ended.tenant
+EN:  Lease ended · waiting for landlord to release deposit
+RU:  Аренда завершена · ожидание возврата депозита владельцем
+NEW: 
+
+KEY: nextstep.ending.both
+EN:  Vote on renewal · extend or start checkout
+RU:  Проголосуйте за продление · продлить или начать выезд
+NEW: 
+
+KEY: nextstep.et.counterparty
+EN:  Review termination request · accept, contest, or wait
+RU:  Рассмотрите запрос на расторжение · примите, оспорьте или подождите
+NEW: 
+
+KEY: nextstep.et.initiator
+EN:  You initiated early exit · wait for counterparty response
+RU:  Вы инициировали досрочный выход · ожидайте ответа контрагента
+NEW: 
+
+KEY: nextstep.propdep_claimed.landlord
+EN:  You filed damage claim · awaiting tenant response
+RU:  Вы подали претензию по ущербу · ожидание ответа жильца
+NEW: 
+
+KEY: nextstep.propdep_claimed.tenant
+EN:  Review damage claim · accept or dispute within 3 days
+RU:  Рассмотрите претензию по ущербу · примите или оспорьте в течение 3 дней
+NEW: 
+
+KEY: nextstep.propdep_disputed.landlord
+EN:  Tenant disputed · post bond to escalate or withdraw claim
+RU:  Жилец оспорил · внесите бонд для эскалации или отзовите претензию
+NEW: 
+
+KEY: nextstep.propdep_disputed.tenant
+EN:  You disputed the claim · awaiting landlord bond
+RU:  Вы оспорили претензию · ожидание бонда владельца
+NEW: 
+
+KEY: nextstep.propdep_frozen.both
+EN:  Property deposit frozen 60 days · resolving off-chain
+RU:  Депозит за имущество заморожен на 60 дней · разрешение off-chain
+NEW: 
+
+KEY: nextstep.provisional.awaiting
+EN:  Awaiting deposits to activate
+RU:  Ожидание депозитов для активации
+NEW: 
+
+KEY: nextstep.provisional.both
+EN:  Both sides must deposit to activate contract
+RU:  Обе стороны должны внести депозит для активации контракта
+NEW: 
+
+KEY: nextstep.provisional.landlord_waiting
+EN:  Landlord deposited · tenant deposit required
+RU:  Владелец внёс депозит · требуется депозит жильца
+NEW: 
+
+KEY: nextstep.provisional.tenant_waiting
+EN:  Tenant deposited · landlord deposit required
+RU:  Жилец внёс депозит · требуется депозит владельца
+NEW: 
+
+KEY: nextstep.settled_partial.both
+EN:  Agreement closed · awaiting property deposit distribution
+RU:  Контракт закрыт · ожидание распределения депозита за имущество
+NEW: 
+
+KEY: ph.add_item
+EN:  Add item (e.g. Refrigerator)…
+RU:  Добавить предмет (напр. Холодильник)…
+NEW: 
+
+KEY: ph.address_0x
+EN:  0x...
+RU:  0x...
+NEW: 
+
+KEY: ph.address_example
+EN:  Chavchavadze Ave 24, apt 12
+RU:  пр. Чавчавадзе 24, кв. 12
+NEW: 
+
+KEY: ph.amount
+EN:  0.00
+RU:  0.00
+NEW: 
+
+KEY: ph.as_per_id
+EN:  As per ID document
+RU:  Как в документе
+NEW: 
+
+KEY: ph.budget
+EN:  e.g. 500
+RU:  напр. 500
+NEW: 
+
+KEY: ph.claim_amount
+EN:  Claim amount
+RU:  Сумма претензии
+NEW: 
+
+KEY: ph.description
+EN:  Tell tenants what they need to know about your place…
+RU:  Расскажите жильцам, что им нужно знать о вашем месте…
+NEW: 
+
+KEY: ph.email
+EN:  your@email.com
+RU:  ваш@email.com
+NEW: 
+
+KEY: ph.floor
+EN:  3
+RU:  3
+NEW: 
+
+KEY: ph.name
+EN:  e.g. Dmitriy
+RU:  напр. Дмитрий
+NEW: 
+
+KEY: ph.neighborhood
+EN:  Walk to Vake Park, lots of cafes nearby...
+RU:  Рядом парк Ваке, множество кафе поблизости...
+NEW: 
+
+KEY: ph.phone
+EN:  +1 234 567 8900
+RU:  +7 123 456 7890
+NEW: 
+
+KEY: ph.reason
+EN:  Describe the reason for exit…
+RU:  Опишите причину выхода…
+NEW: 
+
+KEY: ph.rent
+EN:  1200
+RU:  1200
+NEW: 
+
+KEY: ph.reply
+EN:  Reply…
+RU:  Ответить…
+NEW: 
+
+KEY: ph.reply_optional
+EN:  Add a message (optional)…
+RU:  Добавьте сообщение (необязательно)…
+NEW: 
+
+KEY: ph.special
+EN:  Quiet, sunny, great natural light...
+RU:  Тихо, солнечно, отличное естественное освещение...
+NEW: 
+
+KEY: ph.street_city
+EN:  Street, city, country
+RU:  Улица, город, страна
+NEW: 
+
+KEY: ph.type_message
+EN:  Type a message…
+RU:  Введите сообщение…
+NEW: 
+
+KEY: prop.continue_without
+EN:  Continue without viewing
+RU:  Продолжить без просмотра
+NEW: 
+
+KEY: prop.request_first
+EN:  Request viewing first
+RU:  Сначала запросить просмотр
+NEW: 
+
+KEY: prop.skip_body
+EN:  You haven't requested a viewing yet. We strongly recommend seeing the property in person and verifying the landlord's documents before applying.
+RU:  Вы ещё не запрашивали просмотр. Настоятельно рекомендуем осмотреть объект лично и проверить документы владельца перед подачей заявки.
+NEW: 
+
+KEY: prop.uploaded_label
+EN:  Uploaded
+RU:  Загружено
+NEW: 
+
+KEY: prop.view_id
+EN:  View
+RU:  Просмотр
+NEW: 
+
+KEY: prop.viewing_protects
+EN:  Viewing protects you.
+RU:  Просмотр защищает вас.
+NEW: 
+
+KEY: propdep.body.claim_filed_wait
+EN:  Claim filed: {amount} USDC. Waiting for tenant response.
+RU:  Претензия подана: {amount} USDC. Ожидание ответа жильца.
+NEW: 
+
+KEY: propdep.body.claim_tenant_disputed
+EN:  Claim: {amount} USDC — Tenant disputed
+RU:  Претензия: {amount} USDC — жилец оспорил
+NEW: 
+
+KEY: propdep.body.deposits_frozen_amount
+EN:  Deposits Frozen — {amount} USDC
+RU:  Депозиты заморожены — {amount} USDC
+NEW: 
+
+KEY: propdep.body.freeze_or_drop
+EN:  Tenant disputed. Freeze deposits to proceed or drop the claim.
+RU:  Жилец оспорил. Заморозьте депозиты для продолжения или отзовите претензию.
+NEW: 
+
+KEY: propdep.body.freeze_ready
+EN:  Freeze expired — ready to release
+RU:  Заморозка истекла — готово к разблокировке
+NEW: 
+
+KEY: propdep.body.response_deadline
+EN:  Response deadline: {date}
+RU:  Крайний срок ответа: {date}
+NEW: 
+
+KEY: propdep.body.tenant_claim_notice
+EN:  Landlord claims {amount} USDC for property damage
+RU:  Владелец претендует на {amount} USDC за повреждение имущества
+NEW: 
+
+KEY: propdep.body.you_disputed
+EN:  You disputed. Landlord must confirm freeze within 3 days or claim is cancelled.
+RU:  Вы оспорили. Владелец должен подтвердить заморозку в течение 3 дней, иначе претензия отменяется.
+NEW: 
+
+KEY: propdep.btn.accept_claim
+EN:  Accept Claim ({amount} USDC → Landlord)
+RU:  Принять претензию ({amount} USDC → Владелец)
+NEW: 
+
+KEY: propdep.btn.accept_claim_short
+EN:  Accept Claim — {amount} USDC → Landlord
+RU:  Принять претензию — {amount} USDC → Владелец
+NEW: 
+
+KEY: propdep.btn.cancel_claim
+EN:  🚫 Cancel Claim
+RU:  🚫 Отменить претензию
+NEW: 
+
+KEY: propdep.btn.cancel_dispute
+EN:  Cancel Dispute — unfreeze deposits
+RU:  Отменить спор — разморозить залоги
+NEW: 
+
+KEY: propdep.btn.change_mind_accept
+EN:  Change mind — Accept Claim ({amount} USDC → Landlord)
+RU:  Передумал — принять претензию ({amount} USDC → Владелец)
+NEW: 
+
+KEY: propdep.btn.dispute_claim
+EN:  Dispute Claim
+RU:  Оспорить претензию
+NEW: 
+
+KEY: propdep.btn.drop_claim
+EN:  Drop Claim — full deposit returns to tenant
+RU:  Отозвать претензию — полный депозит возвращается жильцу
+NEW: 
+
+KEY: propdep.btn.expire_claim
+EN:  Expire Claim
+RU:  Претензия истекла
+NEW: 
+
+KEY: propdep.btn.file_claim
+EN:  File Claim
+RU:  Подать претензию
+NEW: 
+
+KEY: propdep.btn.freeze_deposits
+EN:  Freeze Deposits — open 60-day freeze
+RU:  Заморозить депозиты — 60-дневная заморозка
+NEW: 
+
+KEY: propdep.btn.no_damage
+EN:  No Damage — return full deposit ({amount} USDC)
+RU:  Без ущерба — вернуть полный депозит ({amount} USDC)
+NEW: 
+
+KEY: propdep.btn.release_frozen
+EN:  Release Frozen Funds
+RU:  Разблокировать замороженные депозиты
+NEW: 
+
+KEY: propdep.locked_active
+EN:  Locked — active lease. Released at checkout.
+RU:  Заблокирован — активная аренда. Возвращается при выезде.
+NEW: 
+
+KEY: propdep.no_damage_result
+EN:  No damage claimed. Full deposit returned to Tenant.
+RU:  Претензий нет. Полный депозит возвращён жильцу.
+NEW: 
+
+KEY: propdep.resolved_returned
+EN:  Property deposit resolved. Full deposit returned to Tenant.
+RU:  Депозит за имущество разрешён. Полный депозит возвращён жильцу.
+NEW: 
+
+KEY: propdep.tip.accept_after_bond
+EN:  Accept the damage claim. Claimed amount goes to Landlord. Deposits unfrozen. Remainder of your deposit returns to you.
+RU:  Принять претензию по ущербу. Заявленная сумма переводится владельцу. Депозиты размораживаются. Остаток вашего депозита возвращается вам.
+NEW: 
+
+KEY: propdep.tip.accept_claim_tenant
+EN:  You agree with the damage claim. The claimed amount will be transferred to Landlord. Any remainder of your security deposit returns to you. This is final.
+RU:  Вы соглашаетесь с претензией по ущербу. Заявленная сумма будет переведена владельцу. Остаток вашего депозита вернётся вам. Это окончательно.
+NEW: 
+
+KEY: propdep.tip.cancel_claim
+EN:  Withdraw your damage claim. Full property security deposit returns to Tenant. You cannot file another claim after this.
+RU:  Отзовите претензию по ущербу. Полный депозит за имущество возвращается жильцу. Вы не сможете подать ещё одну претензию.
+NEW: 
+
+KEY: propdep.tip.cancel_dispute
+EN:  Cancel the dispute and unfreeze deposits. Your deposit is transferred to the counterparty as penalty for initiating and cancelling the dispute.
+RU:  Отменить спор и разморозить депозиты. Ваш депозит переводится контрагенту в качестве штрафа за инициирование и отмену спора.
+NEW: 
+
+KEY: propdep.tip.change_mind
+EN:  You previously disputed but now agree with the claim. The claimed amount transfers to Landlord. Remainder returns to you.
+RU:  Вы ранее оспорили, но теперь согласны с претензией. Заявленная сумма переводится владельцу. Остаток возвращается вам.
+NEW: 
+
+KEY: propdep.tip.dispute_claim
+EN:  You reject the damage claim. Landlord must confirm the freeze within 3 days to proceed to a 60-day deposit freeze. If Landlord does not confirm, the claim is dropped and your full deposit returns.
+RU:  Вы отклоняете претензию по ущербу. Владелец должен подтвердить заморозку в течение 3 дней для 60-дневной заморозки депозитов. Если владелец не подтвердит — претензия отклоняется и ваш депозит возвращается полностью.
+NEW: 
+
+KEY: propdep.tip.drop_claim
+EN:  Withdraw your damage claim. Full property deposit returns to Tenant. You cannot file another claim.
+RU:  Отзовите претензию. Полный депозит за имущество возвращается жильцу. Вы не сможете подать ещё одну претензию.
+NEW: 
+
+KEY: propdep.tip.expire_claim
+EN:  Landlord did not confirm the freeze within 3 days after your dispute. The claim expires automatically. Full deposit returns to you.
+RU:  Владелец не подтвердил заморозку в течение 3 дней после вашего оспаривания. Претензия автоматически истекает. Полный депозит возвращается вам.
+NEW: 
+
+KEY: propdep.tip.file_claim
+EN:  File a damage claim against the property deposit. Tenant will have 3 days to accept or dispute. If disputed, deposits will be frozen for 60 days.
+RU:  Подайте претензию по ущербу к депозиту за имущество. У жильца будет 3 дня для принятия или оспаривания. В случае оспаривания депозиты будут заморожены на 60 дней.
+NEW: 
+
+KEY: propdep.tip.freeze_deposits
+EN:  Freeze all deposits for 60 days while the dispute is resolved offline by local law. Deposits return to each party after the freeze period.
+RU:  Заморозить все депозиты на 60 дней, пока спор разрешается off-chain по местному праву. Депозиты возвращаются каждой стороне после периода заморозки.
+NEW: 
+
+KEY: propdep.tip.no_damage
+EN:  Landlord confirms no property damage. Full security deposit returns to Tenant immediately. This action is final and cannot be reversed.
+RU:  Владелец подтверждает отсутствие повреждений. Полный депозит за имущество возвращается жильцу немедленно. Это действие окончательно и не может быть отменено.
+NEW: 
+
+KEY: propdep.tip.release_frozen
+EN:  The 60-day freeze period has expired. Release all frozen deposits — each party receives their deposit back. Dispute is resolved.
+RU:  60-дневный период заморозки истёк. Разблокируйте все замороженные депозиты — каждая сторона получает свой депозит обратно. Спор разрешён.
+NEW: 
+
+KEY: renewal.confirm_terms
+EN:  Confirm rent amount and lease terms
+RU:  Подтвердить сумму аренды и условия
+NEW: 
+
+KEY: renewal.fresh_photos
+EN:  Take fresh photos for the new inventory
+RU:  Сделать свежие фотографии для новой описи
+NEW: 
+
+KEY: renewal.inspect_property
+EN:  Inspect property condition in person
+RU:  Осмотреть состояние объекта лично
+NEW: 
+
+KEY: renewal.reverify_docs
+EN:  Re-verify counterparty documents (passport, proof of ownership)
+RU:  Повторно проверить документы контрагента (паспорт, подтверждение собственности)
+NEW: 
+
+KEY: renewal.vote_explain
+EN:  Extend = renew on same terms. Renegotiate = current lease ends, discuss new contract in chat. End = lease expires, deposits returned.
+RU:  Продлить = на тех же условиях. Пересмотреть = текущая аренда заканчивается, новый контракт обсуждаете в чате. Завершить = аренда истекает, депозиты возвращаются.
+NEW: 
+
+KEY: rep.label_long
+EN:  viewings / contracts / disputes
+RU:  просмотры / контракты / диспуты
+NEW: 
+
+KEY: rep.label_short
+EN:  V/C/D
+RU:  П/К/Д
+NEW: 
+
+KEY: role.landlord
+EN:  Landlord
+RU:  Владелец
+NEW: 
+
+KEY: role.looking
+EN:  Looking for a place
+RU:  Ищу жильё
+NEW: 
+
+KEY: role.offering
+EN:  Offering a place
+RU:  Предлагаю жильё
+NEW: 
+
+KEY: role.tenant
+EN:  Tenant
+RU:  Жилец
+NEW: 
+
+KEY: sign.amount_x_rent
+EN:  Amount ({multiplier}× rent)
+RU:  Сумма ({multiplier}× аренда)
+NEW: 
+
+KEY: sign.balance_check
+EN:  Wallet balance check
+RU:  Проверка баланса кошелька
+NEW: 
+
+KEY: sign.block
+EN:  Block
+RU:  Блок
+NEW: 
+
+KEY: sign.breakdown
+EN:  1st month ({mr}) + Commitment Deposit ({mr2})
+RU:  1-й месяц ({mr}) + Commitment Deposit ({mr2})
+NEW: 
+
+KEY: sign.breakdown_propdep
+EN:   + Property Security Deposit ({propDep})
+RU:  + Депозит за имущество ({propDep})
+NEW: 
+
+KEY: sign.commitment_dep
+EN:  Commitment Deposit
+RU:  Commitment Deposit
+NEW: 
+
+KEY: sign.confirmations
+EN:  Confirmations
+RU:  Подтверждения
+NEW: 
+
+KEY: sign.confirmed
+EN:  Confirmed ✓
+RU:  Подтверждено ✓
+NEW: 
+
+KEY: sign.confirming
+EN:  Confirming…
+RU:  Подтверждение…
+NEW: 
+
+KEY: sign.contract
+EN:  Contract
+RU:  Договор
+NEW: 
+
+KEY: sign.deposits_base
+EN:  Commitment + Hosting Deposits ({base} USDC):
+RU:  Commitment + Hosting Deposits ({base} USDC):
+NEW: 
+
+KEY: sign.downloaded
+EN:  Downloaded
+RU:  Скачано
+NEW: 
+
+KEY: sign.insufficient
+EN:  Insufficient funds — top up your wallet before signing.
+RU:  Недостаточно средств — пополните кошелёк перед подписанием.
+NEW: 
+
+KEY: sign.ipfs
+EN:  IPFS
+RU:  IPFS
+NEW: 
+
+KEY: sign.ipfs_detail
+EN:  Qm7x…f3a2 (docs + photos)
+RU:  Qm7x…f3a2 (документы + фото)
+NEW: 
+
+KEY: sign.late_clause
+EN:  Late payment clause
+RU:  Условие просрочки платежа
+NEW: 
+
+KEY: sign.late_clause_text
+EN:  If rent is not paid within the agreed window, your Commitment Deposit ({mr} USDC) is automatically transferred to the landlord. Agreement is terminated. You confirm to vacate within 3 days.
+RU:  Если аренда не оплачена в установленный срок, ваш Commitment Deposit ({mr} USDC) автоматически переводится владельцу. Контракт расторгается. Вы обязуетесь освободить помещение в течение 3 дней.
+NEW: 
+
+KEY: sign.network
+EN:  Network
+RU:  Сеть
+NEW: 
+
+KEY: sign.network_ok
+EN:  Arc Testnet ✓
+RU:  Arc Testnet ✓
+NEW: 
+
+KEY: sign.next_onchain
+EN:  All payments recorded on-chain permanently
+RU:  Все платежи навсегда записываются on-chain
+NEW: 
+
+KEY: sign.next_pay
+EN:  Pay rent monthly in your dashboard
+RU:  Ежемесячная оплата аренды в дашборде
+NEW: 
+
+KEY: sign.next_propdep
+EN:  Property deposit returned on checkout (if no damage)
+RU:  Депозит за имущество возвращается при выезде (если нет ущерба)
+NEW: 
+
+KEY: sign.next_yield
+EN:  Staking yield credited monthly to your wallet
+RU:  Доход от стейкинга ежемесячно начисляется на ваш кошелёк
+NEW: 
+
+KEY: sign.payment_token
+EN:  Payment token
+RU:  Токен оплаты
+NEW: 
+
+KEY: sign.propdep_agreed
+EN:  Property Security Deposit — agreed
+RU:  Депозит за имущество — согласован
+NEW: 
+
+KEY: sign.propdep_label
+EN:  Property Sec. Deposit
+RU:  Депозит за имущество
+NEW: 
+
+KEY: sign.propdep_not_included
+EN:  Property Security Deposit — not included
+RU:  Депозит за имущество — не включён
+NEW: 
+
+KEY: sign.propdep_yield_base
+EN:  Property Security Deposit ({amount} USDC):
+RU:  Депозит за имущество ({amount} USDC):
+NEW: 
+
+KEY: sign.propdep_yield_you
+EN:  You: ~{amount} USDC/mo (full yield, your money)
+RU:  Вы: ~{amount} USDC/мес. (весь доход, ваши средства)
+NEW: 
+
+KEY: sign.required_min
+EN:  Required minimum
+RU:  Необходимый минимум
+NEW: 
+
+KEY: sign.status
+EN:  Status
+RU:  Статус
+NEW: 
+
+KEY: sign.status_active
+EN:  ACTIVE
+RU:  ACTIVE
+NEW: 
+
+KEY: sign.tx_commitment
+EN:  Commitment Deposit (Tenant)
+RU:  Commitment Deposit (Жилец)
+NEW: 
+
+KEY: sign.tx_commitment_detail
+EN:  {mr} USDC → Aave v2 · auto-transfers to landlord if rent missed
+RU:  {mr} USDC → Aave v2 · автоматически переводится владельцу при неоплате
+NEW: 
+
+KEY: sign.tx_first_rent
+EN:  First month rent
+RU:  Аренда за первый месяц
+NEW: 
+
+KEY: sign.tx_first_rent_detail
+EN:  {mr} USDC → Landlord wallet
+RU:  {mr} USDC → Кошелёк владельца
+NEW: 
+
+KEY: sign.tx_hash
+EN:  Tx Hash
+RU:  Хеш транзакции
+NEW: 
+
+KEY: sign.tx_hash_chain
+EN:  Contract hash → Blockchain
+RU:  Хеш договора → Блокчейн
+NEW: 
+
+KEY: sign.tx_hash_detail
+EN:  Agreement + files → IPFS + Arc Testnet
+RU:  Договор + файлы → IPFS + Arc Testnet
+NEW: 
+
+KEY: sign.tx_hosting
+EN:  Hosting Deposit (Landlord)
+RU:  Hosting Deposit (Владелец)
+NEW: 
+
+KEY: sign.tx_hosting_detail
+EN:  {mr} USDC → Aave v2 · auto-transfers to tenant if evicted early
+RU:  {mr} USDC → Aave v2 · автоматически переводится жильцу при незаконном выселении
+NEW: 
+
+KEY: sign.tx_propdep
+EN:  Property Security Deposit ({multiplier}× rent)
+RU:  Депозит за имущество ({multiplier}× аренда)
+NEW: 
+
+KEY: sign.tx_propdep_detail
+EN:  {amount} USDC → Aave v2 · returned on checkout if no damage
+RU:  {amount} USDC → Aave v2 · возвращается при выезде, если нет ущерба
+NEW: 
+
+KEY: sign.txs_on_signing
+EN:  Transactions on signing
+RU:  Транзакции при подписании
+NEW: 
+
+KEY: sign.wallet_label
+EN:  {label} — Arc Testnet
+RU:  {label} — Arc Testnet
+NEW: 
+
+KEY: sign.what_next
+EN:  What happens next
+RU:  Что дальше
+NEW: 
+
+KEY: sign.yield_est
+EN:  Est. yield: +{tenantYield} USDC/mo to tenant · {pi2piYield} USDC/mo to pi2pi
+RU:  Расч. доход: +{tenantYield} USDC/мес. жильцу · {pi2piYield} USDC/мес. pi2pi
+NEW: 
+
+KEY: sign.yield_pi2pi
+EN:  pi2pi: ~{amount} USDC/mo
+RU:  pi2pi: ~{amount} USDC/мес.
+NEW: 
+
+KEY: sign.yield_title
+EN:  Staking yield — Aave v2 (~{pct}% APY)
+RU:  Доход от стейкинга — Aave v2 (~{pct}% годовых)
+NEW: 
+
+KEY: sign.yield_you
+EN:  You: ~{amount} USDC/mo · Landlord: ~{amount2} USDC/mo
+RU:  Вы: ~{amount} USDC/мес. · Владелец: ~{amount2} USDC/мес.
+NEW: 
+
+KEY: sign.your_balance
+EN:  Your balance
+RU:  Ваш баланс
+NEW: 
+
+KEY: status.active
+EN:  Active
+RU:  Активен
+NEW: 
+
+KEY: status.archived
+EN:  Archived
+RU:  Архивирован
+NEW: 
+
+KEY: status.awaiting_deposits
+EN:  Awaiting Deposits
+RU:  Ожидание депозитов
+NEW: 
+
+KEY: status.awaiting_landlord
+EN:  Awaiting Landlord deposit
+RU:  Ожидание депозита владельца
+NEW: 
+
+KEY: status.awaiting_tenant
+EN:  Awaiting Tenant deposit
+RU:  Ожидание депозита жильца
+NEW: 
+
+KEY: status.checkout
+EN:  Checkout in Progress
+RU:  Выезд в процессе
+NEW: 
+
+KEY: status.created
+EN:  Created
+RU:  Создан
+NEW: 
+
+KEY: status.damage_claimed
+EN:  Damage Claim Filed
+RU:  Претензия по ущербу подана
+NEW: 
+
+KEY: status.dispute_open
+EN:  Dispute Open
+RU:  Спор открыт
+NEW: 
+
+KEY: status.draft
+EN:  Draft
+RU:  Черновик
+NEW: 
+
+KEY: status.et_proposed
+EN:  Terminate Early Proposed
+RU:  Предложено досрочное расторжение
+NEW: 
+
+KEY: status.lease_ended
+EN:  Lease Ended
+RU:  Аренда завершена
+NEW: 
+
+KEY: status.locked
+EN:  Locked
+RU:  Заблокирован
+NEW: 
+
+KEY: status.paused
+EN:  Paused
+RU:  Приостановлен
+NEW: 
+
+KEY: status.settled
+EN:  Settled
+RU:  Закрыт
+NEW: 
+
+KEY: status.suspended
+EN:  Suspended
+RU:  Заблокирован
+NEW: 
+
+KEY: status.unknown
+EN:  Unknown state
+RU:  Неизвестное состояние
+NEW: 
+
+KEY: status.unverified
+EN:  Unverified
+RU:  Не подтверждён
+NEW: 
+
+KEY: status.verified
+EN:  Verified
+RU:  Подтверждён
+NEW: 
+
+KEY: susp.balance
+EN:  Your balance
+RU:  Ваш баланс
+NEW: 
+
+KEY: susp.body
+EN:  Your wallet balance dropped below the required minimum. Your listing is hidden from search. You cannot browse, chat, or view contacts until your balance is restored.
+RU:  Баланс вашего кошелька упал ниже необходимого минимума. Ваше объявление скрыто из поиска. Вы не можете просматривать, переписываться и видеть контакты, пока баланс не будет восстановлен.
+NEW: 
+
+KEY: susp.contacts_blocked
+EN:  Contacts unavailable — your wallet balance is below the city minimum. Top up to unlock.
+RU:  Контакты недоступны — баланс кошелька ниже минимума города. Пополните для доступа.
+NEW: 
+
+KEY: susp.recheck
+EN:  I've topped up — recheck now
+RU:  Я пополнил — проверить
+NEW: 
+
+KEY: susp.rechecking
+EN:  Checking...
+RU:  Проверяем...
+NEW: 
+
+KEY: susp.required
+EN:  Required minimum
+RU:  Необходимый минимум
+NEW: 
+
+KEY: susp.title
+EN:  Account suspended
+RU:  Аккаунт приостановлен
+NEW: 
+
+KEY: susp.topup_hint
+EN:  Send USDC to your wallet address shown below, then tap the button above.
+RU:  Отправьте USDC на адрес вашего кошелька ниже, затем нажмите кнопку выше.
+NEW: 
+
+KEY: ti.my_intent
+EN:  My intent
+RU:  Я ищу
+NEW: 
+
+KEY: ti.set_intent
+EN:  Set your search intent
+RU:  Задайте критерии поиска
+NEW: 
+
+KEY: ti.set_intent_sub
+EN:  Tell us what you're looking for — city, budget, type.
+RU:  Расскажите, что ищете — город, бюджет, тип.
+NEW: 
+
+KEY: title.about_property
+EN:  About this property
+RU:  Об этом объекте
+NEW: 
+
+KEY: title.agreement_signed
+EN:  Agreement Signed!
+RU:  Договор подписан!
+NEW: 
+
+KEY: title.amenities
+EN:  Amenities
+RU:  Удобства
+NEW: 
+
+KEY: title.appearance
+EN:  Appearance
+RU:  Оформление
+NEW: 
+
+KEY: title.are_you_sure
+EN:  Are you sure?
+RU:  Вы уверены?
+NEW: 
+
+KEY: title.broadcasting
+EN:  Broadcasting transactions
+RU:  Отправка транзакций
+NEW: 
+
+KEY: title.circle_wallet
+EN:  Circle Smart Wallet
+RU:  Circle Smart Wallet
+NEW: 
+
+KEY: title.connecting
+EN:  Connecting wallet…
+RU:  Подключение кошелька…
+NEW: 
+
+KEY: title.contract_settled
+EN:  Contract Settled
+RU:  Договор закрыт
+NEW: 
+
+KEY: title.contract_terms
+EN:  Contract Terms
+RU:  Условия договора
+NEW: 
+
+KEY: title.contracts_listings
+EN:  Contracts & Listings
+RU:  Контракты и объявления
+NEW: 
+
+KEY: title.deposits_locked
+EN:  Deposits Locked
+RU:  Депозиты заблокированы
+NEW: 
+
+KEY: title.discussed_with_party
+EN:  Have you discussed this with the other party?
+RU:  Вы обсудили это с другой стороной?
+NEW: 
+
+KEY: title.display_name
+EN:  Display name
+RU:  Отображаемое имя
+NEW: 
+
+KEY: title.dispute_in_progress
+EN:  Dispute in Progress
+RU:  Спор в процессе
+NEW: 
+
+KEY: title.email
+EN:  Email
+RU:  Email
+NEW: 
+
+KEY: title.i_am_a
+EN:  I am a…
+RU:  Я…
+NEW: 
+
+KEY: title.inbox
+EN:  Inbox
+RU:  Входящие
+NEW: 
+
+KEY: title.language
+EN:  Language
+RU:  Язык
+NEW: 
+
+KEY: title.location
+EN:  Location
+RU:  Расположение
+NEW: 
+
+KEY: title.move_in
+EN:  Move in
+RU:  Заселение
+NEW: 
+
+KEY: title.my_intent
+EN:  My intent
+RU:  Я ищу
+NEW: 
+
+KEY: title.my_listings
+EN:  My listings
+RU:  Мои объявления
+NEW: 
+
+KEY: title.national_id
+EN:  National ID Documents
+RU:  Удостоверения личности
+NEW: 
+
+KEY: title.notifications
+EN:  Notifications
+RU:  Уведомления
+NEW: 
+
+KEY: title.phone
+EN:  Phone
+RU:  Телефон
+NEW: 
+
+KEY: title.profile_wallet
+EN:  Profile & Wallet
+RU:  Профиль и кошелёк
+NEW: 
+
+KEY: title.proof_of_funds
+EN:  Proof of Funds
+RU:  Подтверждение средств
+NEW: 
+
+KEY: title.proof_of_humanity
+EN:  Proof of Humanity
+RU:  Подтверждение человечности
+NEW: 
+
+KEY: title.proof_of_intent
+EN:  Proof of Intent
+RU:  Подтверждение намерения
+NEW: 
+
+KEY: title.proof_of_ownership
+EN:  Proof of Ownership
+RU:  Подтверждение права собственности
+NEW: 
+
+KEY: title.property_inventory
+EN:  Property Condition Checklist
+RU:  Состояние объекта
+NEW: 
+
+KEY: title.property_photos
+EN:  Property Photos
+RU:  Фотографии объекта
+NEW: 
+
+KEY: title.property_security_deposit
+EN:  Property Security Deposit
+RU:  Залог за имущество
+NEW: 
+
+KEY: title.receive_usdc
+EN:  Receive USDC
+RU:  Получить USDC
+NEW: 
+
+KEY: title.renewal_window
+EN:  Renewal Window
+RU:  Окно продления
+NEW: 
+
+KEY: title.rental_agreement
+EN:  Rental Agreement
+RU:  Договор аренды
+NEW: 
+
+KEY: title.send_usdc
+EN:  Send USDC
+RU:  Отправить USDC
+NEW: 
+
+KEY: title.settings
+EN:  Settings
+RU:  Настройки
+NEW: 
+
+KEY: title.sign_agreement
+EN:  Sign Rental Agreement
+RU:  Подписать договор аренды
+NEW: 
+
+KEY: title.sign_deploy
+EN:  Sign & Deploy Agreement
+RU:  Подписать и деплой контракта
+NEW: 
+
+KEY: title.skip_viewing
+EN:  Skip the viewing?
+RU:  Пропустить просмотр?
+NEW: 
+
+KEY: title.switch_role
+EN:  Switch role
+RU:  Сменить роль
+NEW: 
+
+KEY: title.terminate_early
+EN:  Terminate Early
+RU:  Досрочное расторжение
+NEW: 
+
+KEY: title.terminate_early_request
+EN:  Terminate Early Request
+RU:  Запрос на досрочное расторжение
+NEW: 
+
+KEY: title.waiting_wallet
+EN:  Waiting for wallet…
+RU:  Ожидание кошелька…
+NEW: 
+
+KEY: title.walletconnect
+EN:  WalletConnect
+RU:  WalletConnect
+NEW: 
+
+KEY: title.welcome
+EN:  Welcome!
+RU:  Добро пожаловать!
+NEW: 
+
+KEY: toast.auto_enforce
+EN:  Auto-enforcing on-chain: {action}. Please sign in your wallet.
+RU:  Автоисполнение on-chain: {action}. Подпишите в кошельке.
+NEW: 
+
+KEY: toast.auto_enforce_fail
+EN:  Auto-enforce failed: {error}
+RU:  Автоисполнение не удалось: {error}
+NEW: 
+
+KEY: toast.auto_enforce_ok
+EN:  Auto-enforce succeeded: {action}
+RU:  Автоисполнение успешно: {action}
+NEW: 
+
+KEY: toast.auto_enforce_reverted
+EN:  Auto-enforce reverted on-chain. May retry on next poll.
+RU:  Автоисполнение откатилось on-chain. Возможна повторная попытка при следующем запросе.
+NEW: 
+
+KEY: toast.grace_ok
+EN:  Granted {days} extra days to tenant.
+RU:  Жильцу предоставлено {days} дополнительных дней.
+NEW: 
+
+KEY: toast.grace_reverted
+EN:  Grant Extra Days reverted on-chain.
+RU:  «Предоставить дополнительные дни» откатилось on-chain.
+NEW: 
+
+KEY: wallet.auto_fill
+EN:  Address will be filled automatically when QR is detected
+RU:  Адрес будет заполнен автоматически при распознавании QR
+NEW: 
+
+KEY: wallet.clipboard_denied
+EN:  Cannot read clipboard. Paste manually.
+RU:  Не удалось прочитать буфер обмена. Вставьте вручную.
+NEW: 
+
+KEY: wallet.clipboard_no_address
+EN:  Clipboard doesn't contain an address
+RU:  В буфере обмена нет адреса
+NEW: 
+
+KEY: wallet.copied
+EN:  ✓ Copied!
+RU:  ✓ Скопировано!
+NEW: 
+
+KEY: wallet.copy_address
+EN:  Copy address
+RU:  Копировать адрес
+NEW: 
+
+KEY: wallet.disconnected_banner
+EN:  Wallet disconnected. Reconnect to make transactions.
+RU:  Кошелёк отключён. Подключитесь заново для совершения транзакций.
+NEW: 
+
+KEY: wallet.from
+EN:  From
+RU:  От
+NEW: 
+
+KEY: wallet.insufficient
+EN:  Insufficient balance
+RU:  Недостаточно средств
+NEW: 
+
+KEY: wallet.invalid_address
+EN:  Invalid address format
+RU:  Неверный формат адреса
+NEW: 
+
+KEY: wallet.invalid_amount
+EN:  Invalid amount
+RU:  Неверная сумма
+NEW: 
+
+KEY: wallet.no_transactions
+EN:  No transactions yet
+RU:  Транзакций пока нет
+NEW: 
+
+KEY: wallet.paste
+EN:  Paste
+RU:  Вставить
+NEW: 
+
+KEY: wallet.point_camera
+EN:  Point camera at QR code with wallet address
+RU:  Наведите камеру на QR-код с адресом кошелька
+NEW: 
+
+KEY: wallet.receive
+EN:  Receive
+RU:  Получить
+NEW: 
+
+KEY: wallet.receive_usdc
+EN:  Receive USDC
+RU:  Получить USDC
+NEW: 
+
+KEY: wallet.received
+EN:  Received
+RU:  Получено
+NEW: 
+
+KEY: wallet.refresh_balance
+EN:  Refresh balance
+RU:  Обновить баланс
+NEW: 
+
+KEY: wallet.scan
+EN:  Scan
+RU:  Сканировать
+NEW: 
+
+KEY: wallet.send
+EN:  Send
+RU:  Отправить
+NEW: 
+
+KEY: wallet.send_only_warning
+EN:  Send only USDC on Arc Testnet to this address. Other tokens or networks will be lost forever.
+RU:  Отправляйте только USDC в сети Arc Testnet на этот адрес. Другие токены или сети — средства будут потеряны безвозвратно.
+NEW: 
+
+KEY: wallet.send_usdc
+EN:  Send USDC
+RU:  Отправить USDC
+NEW: 
+
+KEY: wallet.send_warning
+EN:  Sending USDC on Arc Testnet. Verify recipient address supports Arc Testnet. Wrong address = lost funds.
+RU:  Отправка USDC в сети Arc Testnet. Убедитесь, что адрес получателя поддерживает Arc Testnet. Неверный адрес = потеря средств.
+NEW: 
+
+KEY: wallet.sent
+EN:  Sent!
+RU:  Отправлено!
+NEW: 
+
+KEY: wallet.sent_label
+EN:  Sent
+RU:  Отправлено
+NEW: 
+
+KEY: wallet.title
+EN:  Wallet
+RU:  Кошелёк
+NEW: 
+
+KEY: wallet.to
+EN:  To
+RU:  Кому
+NEW: 
+
+KEY: wallet.tx
+EN:  TX:
+RU:  TX:
+NEW: 
+
+KEY: wallet.tx_history
+EN:  Transaction History
+RU:  История транзакций
+NEW: 

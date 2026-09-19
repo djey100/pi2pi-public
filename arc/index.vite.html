@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+  <title>pi2pi.io</title>
+
+  <!-- PWA: install as standalone app -->
+  <link rel="manifest" href="/manifest.json?v=3"/>
+  <meta name="theme-color" content="#0A1F3D"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="pi2pi"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon-180.png?v=3"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=3"/>
+
+  <!-- Design tokens v1.0 -->
+  <link rel="stylesheet" href="/styles/tokens.css"/>
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('pi2pi-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- External libs kept on CDN (too large to bundle) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

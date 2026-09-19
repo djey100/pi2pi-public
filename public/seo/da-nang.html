@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rent in Da Nang on pi2pi — deposit-protected P2P rentals | pi2pi</title>
+<meta name="description" content="Peer-to-peer rental agreements in Da Nang, Vietnam with deposits secured in smart-contract escrow and settled in USDC. No agent commissions. Arc Testnet pilot market."/>
+<link rel="canonical" href="https://my.pi2pi.io/da-nang"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="pi2pi"/>
+<meta property="og:title" content="Rent in Da Nang on pi2pi — deposit-protected P2P rentals | pi2pi"/>
+<meta property="og:description" content="Peer-to-peer rental agreements in Da Nang, Vietnam with deposits secured in smart-contract escrow and settled in USDC. No agent commissions. Arc Testnet pilot market."/>
+<meta property="og:url" content="https://my.pi2pi.io/da-nang"/>
+<meta property="og:image" content="https://my.pi2pi.io/images/danang.jpg"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@dim_ul"/>
+<meta name="twitter:title" content="Rent in Da Nang on pi2pi — deposit-protected P2P rentals | pi2pi"/>
+<meta name="twitter:description" content="Peer-to-peer rental agreements in Da Nang, Vietnam with deposits secured in smart-contract escrow and settled in USDC. No agent commissions. Arc Testnet pilot market."/>
+<meta name="twitter:image" content="https://my.pi2pi.io/images/danang.jpg"/>
+
+<link rel="stylesheet" href="/styles/tokens.css"/>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0;
+    font-family: var(--font-ui, -apple-system, system-ui, sans-serif);
+    background: var(--color-bg-primary, #0B0F1A);
+    color: var(--color-text-primary, #F4F6FA);
+    line-height: 1.6;
+  }
+  a { color: var(--color-primary, #16C784); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header.site { border-bottom: 1px solid var(--color-border, #23283A); padding: 16px 0; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; text-decoration: none; color: var(--color-text-primary, #F4F6FA); }
+  .brand span { color: var(--color-primary, #16C784); }
+  nav.primary { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+  nav.primary a { text-decoration: none; color: var(--color-text-secondary, #9AA3B8); }
+  nav.primary a:hover, nav.primary a[aria-current="page"] { color: var(--color-primary, #16C784); }
+  .cta { background: var(--color-primary, #16C784); color: #061012; padding: 8px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; white-space: nowrap; }
+  .testnet-banner { background: var(--color-warning-surface, #2A2210); color: var(--color-warning, #F59E0B); font-size: 13px; text-align: center; padding: 8px 12px; border-bottom: 1px solid var(--color-warning-border, rgba(245,158,11,0.2)); }
+  main { padding: 40px 0 60px; }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
+  h2 { font-size: 22px; margin: 36px 0 12px; }
+  .lede { font-size: 18px; color: var(--color-text-secondary, #9AA3B8); margin-bottom: 28px; }
+  .card { background: var(--color-bg-card, #131826); border: 1px solid var(--color-border, #23283A); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border, #23283A); }
+  code, .mono { font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size: 0.92em; background: var(--color-bg-secondary, #1A2033); padding: 2px 6px; border-radius: 4px; }
+  ul.cities { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
+  ul.cities a { display: inline-block; padding: 6px 12px; border: 1px solid var(--color-border, #23283A); border-radius: 20px; text-decoration: none; font-size: 14px; }
+  footer.site { border-top: 1px solid var(--color-border, #23283A); padding: 28px 0 40px; font-size: 13px; color: var(--color-text-secondary, #9AA3B8); }
+  footer.site nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+  footer.site nav a { color: var(--color-text-secondary, #9AA3B8); text-decoration: none; }
+  footer.site nav a:hover { color: var(--color-primary, #16C784); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"pi2pi","url":"https://my.pi2pi.io","logo":"https://my.pi2pi.io/favicon-32.png","sameAs":["https://x.com/dim_ul"],"description":"pi2pi is a USDC-native rental agreement execution layer on Arc Testnet. Tenants and landlords enter direct peer-to-peer rental agreements settled in USDC, with deposits held in smart-contract escrow."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"pi2pi","url":"https://my.pi2pi.io"}</script>
+</head>
+<body>
+<div class="testnet-banner">pi2pi runs on Arc Testnet. This is a working prototype, not a production financial product — do not use real-world funds beyond small test amounts.</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">pi<span>2</span>pi</a>
+    <nav class="primary">
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+    </nav>
+    <a class="cta" href="https://my.pi2pi.io">Open App →</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>pi2pi in Da Nang</h1>
+    <p class="lede">Da Nang has a growing expat and digital-nomad community, making it a natural fit for pi2pi's cross-border deposit-protection model.</p>
+
+    <h2>Typical rent range</h2>
+    <p>$300–1,000/month (indicative pilot-market range, not a live listings feed — <a href="https://my.pi2pi.io">open the app</a> to see current listings).</p>
+
+    <h2>Operations</h2>
+    <p>Growing expat and digital-nomad community.</p>
+
+    <h2>How renting works here</h2>
+    <p>Same protocol as everywhere else pi2pi operates: browse a listing, negotiate terms in built-in chat, sign an on-chain rental agreement, and settle deposits and monthly rent in USDC through smart-contract escrow instead of handing cash or a bank transfer directly to the other party. No agent commission — traditional agents in this region commonly charge 50–100% of one month's rent just to make the introduction. See <a href="/how-it-works">how it works</a> and <a href="/deposit-protection">deposit protection</a>.</p>
+
+    <h2>Status</h2>
+    <p>pi2pi runs on <strong>Arc Testnet</strong> (chain ID 5042002) — a working prototype for pilot testing, not a mainnet product yet.</p>
+
+    <p>Other pilot markets: <ul class="cities"><li><a href="/tbilisi">Tbilisi</a></li><li><a href="/batumi">Batumi</a></li><li><a href="/nha-trang">Nha Trang</a></li></ul></p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/how-it-works">How it works</a>
+        <a href="/for-tenants">For tenants</a>
+        <a href="/for-landlords">For landlords</a>
+        <a href="/security">Security</a>
+        <a href="/deposit-protection">Deposit protection</a>
+        <a href="/arc">Arc</a>
+        <a href="/faq">FAQ</a>
+      <a href="/tbilisi">Tbilisi</a>
+        <a href="/batumi">Batumi</a>
+        <a href="/da-nang" aria-current="page">Da Nang</a>
+        <a href="/nha-trang">Nha Trang</a>
+      <a href="https://my.pi2pi.io">Open App</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/project-info.json">project-info.json</a>
+    </nav>
+    <p>pi2pi — peer-to-peer rental agreements settled in USDC. Arc Testnet, chain ID 5042002. No platform fees, no commissions, no token. Contact: <a href="https://x.com/dim_ul">@dim_ul</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
